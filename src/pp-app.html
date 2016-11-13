@@ -1,0 +1,219 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="./elements/pp-elements.html">
+<link rel="import" href="../bower_components/app-route/app-location.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
+<link rel="import" href="../bower_components/polymerfire/polymerfire.html">
+
+<link rel="import" href="./elements/pp-styles.html">
+
+<!-- Import Google Analytics -->
+<link rel="import" href="../bower_components/start-google-analytics-tracker/start-google-analytics-tracker.html">
+
+<dom-module id="pp-app">
+  <template>
+    <style include="pp-styles">
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+
+    <app-location route="{{route}}"></app-location>
+    <app-route
+      route="{{route}}"
+      pattern="/:page"
+      data="{{routeData}}"
+      tail="{{subroute}}">
+	  </app-route>
+
+    <iron-ajax
+      auto
+      url="../../data/base64.json"
+      handle-as="json"
+      last-response="{{dataBase64}}">
+    </iron-ajax>
+
+	  <app-drawer-layout fullbleed drawer>
+	    <!-- Drawer content -->
+      <app-drawer swipe-open>
+  	    <div class="scrollable">
+  	      <app-toolbar class="drawer-header">
+            <div class="horizontal layout">
+              <div class="drawer-header-circle">
+                <iron-image class= "drawer-header-image"
+                  sizing="cover" preload
+                  placeholder="[[dataBase64.drawer-header]]"
+                  src="../images/drawer.jpg">
+                </iron-image>
+              </div>
+              <div class="vertical layout">
+                <p class="drawer-quote">Nothing is perfect but can be better. Developing such better things !!!</p>
+                <p class="sub-title" hidden>Info</p>
+              </div>
+            </div>
+  		    </app-toolbar>
+          <iron-selector
+  		      selected="[[page]]"
+  		      attr-for-selected="name"
+  		      class="drawer-list"
+  		      role="navigation"
+  		      on-iron-activate="drawerSelected">
+            <a name="home" href="/home"><iron-icon icon="pp-icons:home"></iron-icon><paper-ripple class="primary"></paper-ripple>Home</a>
+  		      <a name="about" href="/about"><iron-icon icon="pp-icons:account-circle"></iron-icon><paper-ripple class="primary"></paper-ripple>About</a>
+  		      <a name="skills" href="/skills"><iron-icon icon="pp-icons:stars"></iron-icon><paper-ripple class="primary"></paper-ripple>Skills</a>
+            <a name="projects" href="/projects"><iron-icon icon="pp-icons:build"></iron-icon><paper-ripple class="primary"></paper-ripple>Projects</a>
+  		      <a name="work" href="/work"><iron-icon icon="pp-icons:work"></iron-icon><paper-ripple class="primary"></paper-ripple>Work</a>
+            <a name="contact" href="/contact"><iron-icon icon="pp-icons:feedback"></iron-icon><paper-ripple class="primary"></paper-ripple>Contact</a>
+          </iron-selector>
+  		    <div class="flex footer">
+            <p>&copy;2016 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia™ is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are properties of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
+          </div>
+  		  </div>
+	    </app-drawer>
+
+	    <!-- Main content -->
+	    <app-header-layout has-scrolling-region>
+        <app-header condenses fixed effects="material">
+		      <app-toolbar>
+            <paper-icon-button icon="pp-icons:menu" drawer-toggle></paper-icon-button>
+            <div condensed-title>Pranav Pandey</div>
+          </app-toolbar>
+          <app-toolbar></app-toolbar>
+		      <app-toolbar hidden$="[[smallLayout]]"></app-toolbar>
+          <app-toolbar>
+            <div main-title>Pranav Pandey<br>Developer &amp; Designer</div>
+          </app-toolbar>
+		      <app-toolbar></app-toolbar>
+		    </app-header>
+
+        <div class="content-frame">
+          <div class="content-frame" hidden$="[[isLoading]]">
+    		    <iron-pages
+              class="content"
+              role="main"
+              selected="[[page]]"
+              attr-for-selected="name">
+    		      <pp-home loading="{{isLoading}}" name="home"></pp-home>
+              <pp-about loading="{{isLoading}}" name="about"></pp-about>
+    		      <pp-skills loading="{{isLoading}}" name="skills"></pp-skills>
+              <pp-projects loading="{{isLoading}}" name="projects"></pp-projects>
+    		      <pp-work loading="{{isLoading}}" name="work"></pp-work>
+              <pp-contact loading="{{isLoading}}" name="contact"></pp-contact>
+            </iron-pages>
+          </div>
+
+          <div class="progress" hidden$="[[!isLoading]]">
+              <paper-spinner active$="[[isLoading]]"> </paper-spinner>
+          </div>
+        </div>
+	    </app-header-layout>
+
+      <paper-fab
+	      icon="pp-icons:shop"
+	      title="Google Play"
+	      on-tap="openLink"
+	      link="https://play.google.com/store/search?q=pub%3APranav%20Pandey&c=apps&hl=en">
+	    </paper-fab>
+
+      <div class="overlay" id="fireworks">
+      </div>
+	  </app-drawer-layout>
+
+    <iron-media-query query="(max-width:639px)"
+      query-matches="{{smallLayout}}">
+    </iron-media-query>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'pp-app',
+
+      properties: {
+        page: {
+          type: String,
+          reflectToAttribute: true,
+          observer: '_pageChanged'
+        },
+
+        smallLayout: {
+          type: Boolean,
+          value: false
+        }
+      },
+
+      observers: [
+        '_routePageChanged(routeData.page)',
+
+        '_lockScroll(isLoading)'
+      ],
+
+      _routePageChanged: function(page) {
+        this.page = page || 'home';
+      },
+
+      _pageChanged: function(page) {
+        // load page import on demand.
+        var resolvedPageUrl = this.resolveUrl('./pages/pp-' + page + '.html');
+        this.importHref(resolvedPageUrl, null, null, true);
+		    this.fire('iron-signal', {
+          name: 'track-page', data: {
+            path: resolvedPageUrl
+          }
+        });
+
+		    var pageTitle;
+		    switch (page) {
+		      case 'about':
+		  	    pageTitle = 'About - ';
+			      break;
+	        case 'skills':
+			      pageTitle = 'Skills - ';
+			      break;
+		      case 'projects':
+			      pageTitle = 'Projects - ';
+			      break;
+		      case 'work':
+			      pageTitle = 'Work - ';
+			      break;
+		      case 'contact':
+			      pageTitle = 'Contact - ';
+			      break;
+	        default:
+			      pageTitle = '';
+			      break;
+		    }
+		    document.title = pageTitle + 'Pranav Pandey';
+      },
+
+      _lockScroll: function(isLoading) {
+        if (isLoading) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = 'visible';
+        }
+      },
+
+	    drawerSelected: function() {
+        var drawer = this.$$('app-drawer')
+        if(!drawer.persistent) drawer.toggle();
+      },
+
+	    stringify: function(obj) {
+        return JSON.stringify(obj);
+      },
+
+      openLink: function(e) {
+	      var arg = e.target.getAttribute('link');
+        window.open(arg, '_blank');
+      }
+    });
+  </script>
+</dom-module>

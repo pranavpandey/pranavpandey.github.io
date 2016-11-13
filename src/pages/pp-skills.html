@@ -1,0 +1,99 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<dom-module id="pp-skills">
+  <template>
+    <style include="pp-styles"></style>
+
+    <iron-ajax
+      auto
+      url="../../data/skills.json"
+      handle-as="json"
+      loading={{loading}}
+      last-response="{{dataSkills}}">
+    </iron-ajax>
+
+    <h2 class="padding-horizontal">Showcase</h2>
+    <template is="dom-repeat" items="[[dataSkills.showcase]]" as="showcaseData">
+      <a class="showcase"
+        href$="[[showcaseData.url]]" target$="[[setTarget(showcaseData.url)]]" tabindex="-1">
+        <paper-card class="showcase">
+          <div class="card-content">
+            <iron-icon icon$="[[showcaseData.icon]]" src$="[[showcaseData.src]]"
+              style$="[[setColor(showcaseData.accent)]]">
+            </iron-icon>
+          </div>
+          <div class="card-actions">
+            <h2 class="showcase-title"
+              style$="[[setColor(showcaseData.accent)]]">{{showcaseData.title}}</h2>
+          </div>
+          <paper-ripple style$="[[setShowcaseColor(showcaseData.accent, showcaseData.url)]]"></paper-ripple>
+        </paper-card>
+      </a>
+    </template>
+
+	  <template is="dom-repeat" items="[[dataSkills.skills]]" as="skillCategory">
+	    <h2 class="padding-horizontal">{{skillCategory.category}}</h2>
+	    <template is="dom-repeat" items="[[skillCategory.data]]" as="categoryData">
+	      <paper-card>
+          <div class="card-content">
+            <h2 class="card-title">{{categoryData.title}}</h2>
+		        <h3 class="card-subtitle" hidden$="[[!categoryData.subtitle]]">{{categoryData.subtitle}}</h3>
+		        <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
+	        </div>
+		      <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
+		        <template is="dom-repeat" items="[[categoryData.links]]" as="linksSkill">
+			        <a class="paper-button" href$="[[linksSkill.url]]" target="_blank" tabindex="-1">
+                <paper-button class="secondary">
+		              <iron-icon class="small" icon="[[linksSkill.ironIcon]]"></iron-icon>{{linksSkill.link}}
+			          </paper-button>
+		          </a>
+			      </template>
+          </div>
+        </paper-card>
+      </template>
+	  </template>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'pp-skills',
+
+	    properties: {
+        loading: {
+          trpe: Boolean,
+          value: false,
+          notify: true
+        }
+	    },
+
+      isJSONEmpty: function(obj) {
+        return !obj.length ||
+           !obj.filter(function(a) {
+             return Object.keys(a).length;
+           }).length;
+      },
+
+      setColor: function(color) {
+        var style = "color:" + color;
+        return style;
+      },
+
+      setShowcaseColor: function(color, url) {
+        var style = "color:" + (url ? color : "transparent");
+        return style;
+      },
+
+      setTarget: function(href) {
+        return href ? "_blank" : "";
+      }
+    });
+  </script>
+</dom-module>
