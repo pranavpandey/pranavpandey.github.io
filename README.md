@@ -144,3 +144,4 @@ components (and will have bundles created in the fallback `bundled` build).
 ## License
 
 The Polymer library uses a BSD-like license available [here](./LICENSE.txt).
+[Devicon](http://devicon.fr/), [SVG Social Media Icons](https://codepen.io/ruandre/pen/howFi).
