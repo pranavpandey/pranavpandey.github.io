@@ -1,9 +1,13 @@
 # My Personal Website
-Building a place for me on the web...I am following the Material Design
-Guidelines by Google using [Polymer] (https://www.polymer-project.org/1.0/)
-and will keep experimenting with new elements and features. Its open source so
-that anyone can learn from my experiences. It is just a start as I am not a
-professional web developer but I will do my best to make it better.
+
+[![Build Status](https://travis-ci.org/pranavpandey/pranavpandey.github.io.svg?branch=master)](https://travis-ci.org/pranavpandey/pranavpandey.github.io)
+
+This is my personal website in which I am following the
+[Material Design Guidelines](https://material.io/) by Google using
+[Polymer](https://www.polymer-project.org/1.0/) and will keep experimenting
+with new elements and features. I have made it open source so that anyone can
+learn from my experiences. It is just a start as I am not a professional web
+developer but I will do my best to make it better.
 
 ---
 
@@ -11,7 +15,9 @@ professional web developer but I will do my best to make it better.
 
 ### Prerequisites
 
-1. Install the LTS version (4.x) of [Node.js](https://nodejs.org/). The current version (6.x) should work, but is not officially supported. Versions below LTS are not supported.
+1. Install the LTS version (4.x) of [Node.js](https://nodejs.org/). The current
+version (6.x) should work, but is not officially supported. Versions below LTS
+are not supported.
 
 2. Install [polymer-cli](https://github.com/Polymer/polymer-cli).
 
@@ -21,20 +27,23 @@ professional web developer but I will do my best to make it better.
 
 ### Initialize this project
 
-Either clone or fork then, clone to make this project as a starting point for your website.
+Either clone or fork then, clone to make this project as a starting point for
+your website.
 
 ```
 git clone https://github.com/pranavpandey/pranavpandey.github.io
 ```
 
 ### Install dependencies
-It uses [bower] (https://bower.io/) to manage dependensies. Run below command to install `bower` via npm.
+It uses [bower] (https://bower.io/) to manage dependensies. Run below command
+to install `bower` via npm.
 
 ```
 npm install -g bower
 ```
 
-Now, run the below command in the root dir of project to automatically install the dependencies.
+Now, run the below command in the root dir of project to automatically install
+the dependencies.
 
 ```
 bower install
@@ -71,14 +80,15 @@ polymer build
 
 ## Test the build
 
-This command serves the minified version of the app in an unbundled state, as it would
-be served by a push-compatible server.
+This command serves the minified version of the app in an unbundled state,
+as it would be served by a push-compatible server.
 
 ```
 polymer serve build/unbundled
 ```
 
-This command serves the minified version of the app generated using fragment bundling.
+This command serves the minified version of the app generated using fragment
+bundling.
 
 ```
 polymer serve build/bundled
@@ -96,7 +106,9 @@ polymer serve build/bundled
   npm install -g firebase-tools
   ```
 
-  The -g flag instructs npm to install the package globally so that you can use the firebase command from any directory. You may need to install the package with sudo privileges.
+  The -g flag instructs npm to install the package globally so that you can use
+  the firebase command from any directory. You may need to install the package
+  with sudo privileges.
 
 3. cd into your project directory.
 
@@ -107,11 +119,19 @@ polymer serve build/bundled
   firebase init
   ```
 
-  Firebase asks you which app you would like to use for hosting. If you just signed up, you should see one app with a randomly-generated name. You can use that one. Otherwise go to https://www.firebase.com/account to create a new app.
+  Firebase asks you which app you would like to use for hosting. If you just
+  signed up, you should see one app with a randomly-generated name. You can use
+  that one. Otherwise go to https://www.firebase.com/account to create a new
+  app.
 
-5. Firebase asks you the name of your app's public directory. Enter build/bundled. This works because when you run polymer build to build your application, Polymer CLI places your bundled application appropriate for serving on Firebase into the build/bundled folder.
+5. Firebase asks you the name of your app's public directory. Enter
+build/bundled. This works because when you run polymer build to build your
+application, Polymer CLI places your bundled application appropriate for
+serving on Firebase into the build/bundled folder.
 
-6. Edit your firebase configuration to add support for URL routing. Add the following section to your firebase.json file, which will instruct Firebase to serve up index.html for any URL's that don't otherwise end in a file extension.
+6. Edit your firebase configuration to add support for URL routing. Add the
+following section to your firebase.json file, which will instruct Firebase to
+serve up index.html for any URL's that don't otherwise end in a file extension.
 
   ```json
   "rewrites": [ {
@@ -127,6 +147,9 @@ polymer serve build/bundled
   ```
 
   The URL to your live site is listed in the output.
+
+In case of any issue, please follow official guidelines
+[here](https://www.polymer-project.org/1.0/start/toolbox/deploy).
 
 ---
 
