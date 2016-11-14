@@ -86,10 +86,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       isJSONEmpty: function(obj) {
         return !obj.length ||
-          !obj.filter(function(a) {
-            return Object.keys(a).length;
-          }).length;
-        }
+          !obj.filter(function(a){return Object.keys(a).length;}).length;
       },
 
       setBackgroundColor: function(color) {
