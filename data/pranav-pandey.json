@@ -1,568 +1,419 @@
 {
-  "home": {
-    "title": "Welcome!",
-	  "description": "My name is Pranav Pandey. I am a professional software developer and a little bit designer from India working on many technologies, especially from Google.",
-	  "quote": "Nothing is perfect but can be better. Developing such better things !!!"
-  },
-  "about": [
-    {
-  	  "category": "The Beginning...",
-  	  "data": [
-  	    {
-  	      "title": "New Delhi, India",
-  		    "subtitle": "8th August 1992",
-  	      "description": "My name is Pranav Pandey. I was born on August 8th, 1992 in New Delhi, India to my mother Sudha Pandey (maiden name Upadhyay) and father Shrikant Pandey. I grew up with my mother, elder sister and grand parents as my father had expired in a road accident just before my birth. As I was growing up, my elders let me try many different things and provided me with the resources to try them and the major things that came out were playing outdoor games like cricket, bedminton, vollyball; interest in pc games and computer programming. You can serach my name on Google to know more about my contributions in software development, especially in Android.",
-  		    "links": [
-  		      {
-  		        "link": "Google Search",
-  		        "url": "https://www.google.co.in/?gfe_rd=cr&ei=A_7uV7bYEKTG8AfhmJaACA#q=pranav+pandey+android",
-  		        "ironIcon": "pp-icons:search"
-  			    }
-  		    ]
-  	    }
-  	  ]
-  	},
-  	{
-  	  "category": "Background",
-  	  "data": [
-  	    {
-  	      "title": "Qualification",
-  		    "subtitle": "Computer Science & Engineering",
-  	      "description": "I am an Engineer by Qualification (B. Tech. in Computer Science & Engineering) and a Programmer and UI/UX Designer by work. I have 3+ years of experience in Android development. I have also worked on some websites and can design some good graphics in Photoshop/Illustrator. Read below about some of my best things.",
-  		    "links": [
-  		    ]
-  	    },
-    		{
-  	      "title": "Android Themes, MODS and Custom ROMs",
-  		    "subtitle": "Reverse Engineering",
-  	      "description": "I have started custom ROM development by reading tutorials from website and forums like XDA. It helped me a lot in learning the basics and life cycle of Android. I have developed two ROMs (ArcMini and xNXT) which became very popular and also ported many latest (at that time) apps and APIs to 2011 Xperia™ devices. I was first to Port Sony Small Apps API and also released a most stable WALKMAN port for those devices. Then, I became Recognized Themer at XDA followed by Recognized Developer in 2013.",
-  		    "links": [
-  		      {
-  		        "link": "xNXT ROM",
-  		        "url": "http://forum.xda-developers.com/showthread.php?t=2093511",
-  		        "ironIcon": "pp-icons:link"
-  		    	},
-      			{
-      		    "link": "ArcMini ROM",
-      		    "url": "http://forum.xda-developers.com/showthread.php?t=1225668",
-      		    "ironIcon": "pp-icons:link"
-      			}
-  		    ]
-    	  },
-  		  {
-  	      "title": "Android Apps",
-  		    "subtitle": "Forward Engineering",
-  	      "description": "I have started developing apps in 2013. As I ported the Small App API so, I decided to develop Small Apps first which were featured on XDA and many other blogs. There was good response from users due to unique design and advanced features which I have implemented in those apps. Still they are the most advanced small apps for Sony devices. My apps has over 350K downloads on Google Play.",
-  		    "links": [
-  		      {
-    		      "link": "Featured on XDA",
-    		      "url": "http://www.xda-developers.com/expand-your-sony-xperia-small-apps-collection",
-    		      "ironIcon": "pp-icons:link"
-  			    }
-  		    ]
-  	    },
-  		  {
-  	      "title": "Rotation",
-  		    "subtitle": "An Orientation Manager",
-  	      "description": "Switching orientation is always be a problem for people having big devices. So, I have designed a System independent framework to help those users and Rotation was born. Then, I have added all the modes and features on user requests. It has been featured on may blogs and has over 120K downloads on Google Play.",
-  		    "links": [
-  		      {
-    		      "link": "XDA",
-    		      "url": "http://www.xda-developers.com/android/rotation-take-control-orientation-settings",
-    		      "ironIcon": "pp-icons:link"
-  			    },
-  			    {
-    		      "link": "PhoneArena",
-    		      "url": "http://www.phonearena.com/news/How-to-customize-your-Android-phones-screen-orientation-with-Rotation-manager_id63540",
-    		      "ironIcon": "pp-icons:link"
-  			    },
-  			    {
-    		      "link": "AddictiveTips",
-    		      "url": "http://www.addictivetips.com/android/per-app-control-over-your-devices-orientation",
-    		      "ironIcon": "pp-icons:link"
-  			    }
-  		    ]
-  	    },
-  		  {
-  	      "title": "Web development and Future plans",
-  		    "subtitle": "",
-  	      "description": "I have also worked on some websites so that I can improve my web skills. This website is also written & designed by me. Please reach me via this website if you have anything good for me.",
-  		    "links": [
-  		    ]
-  	    }
-  	  ]
-  	},
-	  {
-  	  "category": "Education",
-  	  "data": [
-  	    {
-  	      "title": "Uttar Pradesh Technical University",
-  		    "subtitle": "2010 – 2014",
-  	      "description": "Bachelor of Technology (B.Tech.), Computer Science and Engineering.",
-  		    "links": [
-    		    {
-    		      "link": "Website",
-    		      "url": "http://aktu.ac.in",
-    		      "ironIcon": "pp-icons:public"
-  			    }
-  		    ]
-  	    },
-  		  {
-  	      "title": "Rajkiya Pratibha Vikas Vidyalaya (RPVV)",
-  		    "subtitle": "2007 – 2009",
-  	      "description": "All India Senior School Certificate Examination (Class XII), Physics, Chemistry, Maths (PCM).",
-  		    "links": [
-  		      {
-    		      "link": "Wikipedia",
-    		      "url": "https://en.wikipedia.org/wiki/Rajkiya_Pratibha_Vikas_Vidyalaya",
-    		      "ironIcon": "pp-icons:public"
-  			    }
-  		    ]
-  	    },
-  		  {
-  	      "title": "Rajkiya Pratibha Vikas Vidyalaya (RPVV)",
-  		    "subtitle": "2003 – 2007",
-  	      "description": "Secondary School Certificate Examination (Class X), English, Hindi, Mathematics, Science, Socal Studies, Sanskrit.",
-  		    "links": [
-    		    {
-    		      "link": "Wikipedia",
-    		      "url": "https://en.wikipedia.org/wiki/Rajkiya_Pratibha_Vikas_Vidyalaya",
-    		      "ironIcon": "pp-icons:public"
-  			    }
-  		    ]
-  	    }
-  	  ]
-  	}
-  ],
-  "skills": [
-    {
-	    "category": "Skills",
-	    "data": [
-	      {
-	        "title": "Operating Systems",
-		      "subtitle": "Android, Windows, Linux (Ubuntu), macOS (OS X)",
-	        "description": "Familiar with all the major mobile and desktop operating systems.",
-		      "links": [
-		      ]
-	      },
-		    {
-	        "title": "Software Development",
-		      "subtitle": "Java, C, C++, C#, XML",
-	        "description": "Proficiency in JAVA and Object Oriented Concepts with sufficient knowledge of other similar languages.",
-		      "links": [
-		      ]
-	      },
-		    {
-	        "title": "Android Development",
-		      "subtitle": "AOSP, Theming, Modding Custom ROM and App development",
-	        "description": "I have already developed 14 apps for Android using JAVA, XML, Eclipse and Android Studio. As I am also an AOSP/Custom ROM developer so, I have some basic knowledge of C/Makefile, Python and Smali (assembly) languages.",
-		      "links": [
-		        {
-		          "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-			      },
-			      {
-    		      "link": "XDA",
-    		      "url": "http://forum.xda-developers.com/member.php?u=3962236",
-    		      "ironIcon": "pp-icons:public"
-			      }
-		      ]
-	      },
-		    {
-  	      "title": "Web Development",
-  		    "subtitle": "HTML, CSS, JavaScript, PHP, MySQL, ASP.NET",
-  	      "description": "I have worked on some websites in the past. This website is also written and designed by me in Polymer and Firebase.",
-  		    "links": [
-    		    {
-    		      "link": "Polymer",
-    		      "url": "https://www.polymer-project.org",
-    		      "ironIcon": "pp-icons:polymer"
-		      	},
-			      {
-    		      "link": "Firebase",
-    		      "url": "https://firebase.google.com",
-    		      "ironIcon": "pp-icons:storage"
-			      }
-		      ]
-	      },
-		    {
-  	      "title": "Data Interchange",
-  		    "subtitle": "REST and JSON",
-  	      "description": "Working with REST APIs and designed the JSON architecture of this website to load all the data dynamically.",
-  		    "links": [
-  		    ]
-	      },
-		    {
-  	      "title": "Integrated Development Environment (IDE)",
-  		    "subtitle": "Eclipse (with ADT), Android Studio, Visual Studio",
-  	      "description": "Familier with major software development IDEs out there.",
-  		    "links": [
-  		    ]
-	      },
-		    {
-  	      "title": "Version Control",
-  		    "subtitle": "Git (GitHub, Bitbucket)",
-  	      "description": "Deep understanding of widely used version control system i.e; Git and managing my projects on GitHub and Bitbucket. I have also developed some open source projects. Please have a look to my GitHub profile.",
-  		    "links": [
-  		      {
-    		      "link": "GitHub",
-    		      "url": "https://github.com/pranavpandey",
-    		      "ironIcon": "social-icons:github"
-  			    }
-		      ]
-	      },
-		    {
-  	      "title": "Graphics Design",
-  		    "subtitle": "Photoshop, GIMP, Illustrator",
-  	      "description": "I can design some good graphics in Photoshop/Illustrator and have deep knowledge of Google Material Design. All of my app icons, graphics and banners are also designed by me.",
-  		    "links": [
-    		    {
-    		      "link": "Material Design by Google",
-    		      "url": "https://material.google.com/",
-    		      "ironIcon": "pp-icons:public"
-    		    }
-  		    ]
-	      },
-	    	{
-  	      "title": "Office Tools",
-  		    "subtitle": "Microsoft Office 2013/2010/2007/2003",
-  	      "description": "",
-  		    "links": [
-  		    ]
-	      },
-		    {
-  	      "title": "Spoken Languages",
-  		    "subtitle": "Hindi and English",
-  	      "description": "",
-  		    "links": [
-  		    ]
-	      },
-		    {
-  	      "title": "Others",
-  		    "subtitle": "",
-  	      "description": "Familiar with Unix/Linux environment with command line interface.\nGreat knowledge of computer hardware and can easily assemble and de-assemble it.",
-  		    "links": [
-  		    ]
-	      }
-	    ]
-  	},
-	  {
-  	  "category": "Hobbies",
-  	  "data": [
-  	    {
-    		  "title": "",
-    		  "subtitle": "",
-    	    "description": "Listening to music, Drawing, Playing Cricket, Volley ball, Badminton and PC games, Surfing the Internet.",
-    		  "links": [
-    		  ]
-  		  }
-  	  ]
-    }
-  ],
-  "projects": [
-    {
-	    "category": "Open Source",
-	    "data": [
-	      {
-  	      "title": "Small App Support",
-  		    "subtitle": "",
-  	      "description": "Small App Support is an easy to use library to build attractive small apps for Sony devices with native apps like functionality. I have divided it into different parts for easy understanding. As small app is a service there was a problem displaying a dialog from the small app. So, I have wrote a function to easily display a dialog from a small app. This library is a collection of such type of functions and classes to provide a good interface.",
-  		    "links": [
-    		    {
-    		      "link": "GitHub",
-    		      "url": "https://github.com/pranavpandey/small-app-support",
-    		      "ironIcon": "social-icons:github"
-    			  }
-  		    ]
-	      }
-	    ]
-	  },
-    {
-  	  "category": "Android Apps",
-  	  "data": [
-  	    {
-  	      "title": "Rotation",
-  		    "subtitle": "An Orientation Manager",
-  	      "description": "A tool for Android to control device orientation with per app settings. In this, all the modes are supported including Reverse portrait and Full sensor. It has some unique features like Rotate on Demand, Notification Toggles, Shortcuts and Widgets. Automate Rotation (Locale/Tasker) plugin to switch orientation according to various contexts. It has been downloaded over 120K times on Google Play.",
-  		    "links": [
-    		    {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "Files",
-  		    "subtitle": "Sony Small Apps Extension",
-  	      "description": "A complete file manager that can work on top of any task. Many features like App Manager, Bookmarks, Search, Set wallpaper/ringtone, Copy/replace, Compress/extract, Thumbnails for image/music/video/apk. It has over 25K downloads on Google Play.",
-  		    "links": [
-    		    {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.files.lite&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "Stopwatch",
-  		    "subtitle": "Sony Small Apps Extension",
-  	      "description": "Stopwatch which can be launched from anywhere on top of any task. Features like Pause/Resume/Reset, Laps, Share time. Over 70K downloads on Google Play.",
-  		    "links": [
-    		    {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.stopwatch&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "Torch",
-  		    "subtitle": "Sony Small Apps Extension",
-  	      "description": "Torch which can be launched from anywhere on top of any task. It has some unique features like Strobe, Morse code decoder(SOS), Battery indicator, Auto On/Off. It also works when screen is off to save battery. Over 50K downloads on Google Play.",
-  		    "links": [
-    		    {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.lite&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "Launcher",
-  		    "subtitle": "Sony Small Apps Extension",
-  	      "description": "Launch apps quickly from anywhere on top of any task. Features like Favourites, Share apps as apk, App info, View in Play store and Uninstall. Over 25K downloads on Google Play.",
-  		    "links": [
-    		    {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.launcher&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "Phone",
-  		    "subtitle": "Sony Small Apps Extension",
-  	      "description": "A complete Phone app to make calls from anywhere on top of any task. Many features including Contacts, Call logs, Dialer with cursor, Speed dial, View/Edit/Delete contacts/call logs. Other features like Send message, Copy to clipboard, etc. It has over 30K downloads on Google Play.",
-  		    "links": [
-  		      {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.phone&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "Lock",
-  		    "subtitle": "Sony Small Apps Extension",
-  	      "description": "Lock is a simple small app to lock the device from anywhere. Just 2 clicks (or 1 click) to lock the device. It has been downloaded over 15K times on Google Play",
-  		    "links": [
-    		    {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.lock&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  	      ]
-  	    },
-  	    {
-  	      "title": "Flyrobe",
-  		    "subtitle": "Android App | Fashion on Rent",
-  	      "description": "Re-designed the whole app by implementing Google Material Design guidelines. Integrated various APIs and SDKs as per the requirements and to provide user friendly UI.",
-  		    "links": [
-    		    {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/details?id=com.flyrobe.android&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  		    ]
-  	    }
-  	  ]
-  	},
-  	{
-  	  "category": "Other Projects",
-  	  "data": [
-  	    {
-  	      "title": "xNXT ROM",
-  		    "subtitle": "",
-  	      "description": "A ROM for Xperia™ 2011 MDPI devices based on Sony official ICS (build No. 4.1.B.0.587) with latest apps and MODs to give a unique combination of pleasant design and performance. It has been downloaded over 50K times.",
-  		    "links": [
-    		    {
-    		      "link": "XDA",
-    		      "url": "http://forum.xda-developers.com/showthread.php?t=2093511",
-    		      "ironIcon": "pp-icons:link"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "ArcMini ROM",
-  		    "subtitle": "",
-  	      "description": "One of my first project to start ROM development for Xperia™ 2010 MDPI devices. Based on Cyanogen MOD (2.3.7 and 4.0.4) with unique themes designed by me to give colorful experience. I have also fixed many layout related problems with small screen devices.",
-  		    "links": [
-    		    {
-    		      "link": "XDA",
-    		      "url": "http://forum.xda-developers.com/showthread.php?t=1225668",
-    		      "ironIcon": "pp-icons:link"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "Invoicerr.com",
-  		    "subtitle": "",
-  	      "description": "A website to generate bills, invoices or receipts. Re-designed the whole UI and added ability to add or remove items dynamically. Used various concepts of CSS/HTML and JavaScript to create dynamic list with record of each entered row so that we can modify it also. Updated various Database tables and re-wrote the PHP queries to retrieve and save data according to the customer needs. Fixed various design issues with the final bill and have also implemented the Tax system. User can save upto 4 type of taxes (fully customisable) with per item control.",
-  		    "links": [
-    		    {
-    		      "link": "Website",
-    		      "url": "http://www.invoicerr.com/",
-    		      "ironIcon": "pp-icons:public"
-  			    }
-  	      ]
-  	    }
-  	  ]
-  	},
-  	{
-  	  "category": "College Projects",
-  	  "data": [
-  	    {
-  	      "title": "SensActions/SensLock",
-  		    "subtitle": "",
-  	      "description": "An app for all Android 2.2+ devices to perform various actions without using the key in a quicker and smarter way. It uses different sensors present on the device to perform different actions. SensActions can make any device able to respond your shakes and swipes/waves like any other flagship device and sometime for fun also.\n\nI was the lead developer, I have done the app designing and coded various modules.",
-  		    "links": [
-    		    {
-    		      "link": "XDA",
-    		      "url": "http://forum.xda-developers.com/showthread.php?t=2403029",
-    		      "ironIcon": "pp-icons:android"
-  			    },
-  			    {
-    		      "link": "Report",
-    		      "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXN1R4ZUtUZXV5R2c/view?usp=sharing",
-    		      "ironIcon": "pp-icons:attachment"
-  			    },
-  		    	{
-    		      "link": "Presentation",
-    		      "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXMXRwY1VRcWJpT3M/view?usp=sharing",
-    		      "ironIcon": "pp-icons:attachment"
-  			    }
-  		    ]
-  	    },
-  	    {
-  	      "title": "Garden Company Website",
-  		    "subtitle": "",
-  	      "description": "A website portal of a company providing gardening products and services (The Garden Company) as a part of the summer training project at HCL Infosystems Ltd. It has been developed in ASP.NET technology. It has an attractive UI with support for ads and user login. It provides various tips, tricks and solutions to gardening related problems. It advertises and sells several gardening related products. It gives three levels of content control- Admin, Member and Guest.",
-  		    "links": [
-  		    ]
-  	    }
-  	  ]
-  	}
-  ],
-  "work": [
-    {
-	    "category": "Official",
-	    "data": [
-	      {
-	        "title": "Senoir Android Developer",
-		      "company": "Hyve Mobility",
-		      "duration": "December 2015 – Present",
-		      "place": "New Delhi, India",
-	        "description": "",
-		      "links": [
-  		      {
-    		      "link": "Website",
-    		      "url": "https://www.hyve.buzz",
-    		      "ironIcon": "pp-icons:public"
-  			    }
-		      ]
-	      },
-  		  {
-  	      "title": "Senoir Android Developer",
-  		    "company": "Flyrobe",
-  		    "duration": "September 2015 - December 2015",
-  		    "place": "Mumbai, India",
-  	      "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
-  		    "links": [
-    		    {
-    		      "link": "Website",
-    		      "url": "http://flyrobe.com",
-    		      "ironIcon": "pp-icons:public"
-  			    }
-  		    ]
-  	    }
-  	  ]
-  	},
-  	{
-  	  "category": "Freelancer (Self Employed)",
-  	  "data": [
-  	    {
-  	      "title": "Android Developer",
-  		    "company": "",
-  		    "duration": "July 2013 – Present",
-  		    "place": "New Delhi, India",
-  	      "description": "Developer, Programmer, UI/UX Designer and Publisher.",
-  		    "links": [
-    		    {
-    		      "link": "Google Play",
-    		      "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
-    		      "ironIcon": "pp-icons:shop"
-  			    }
-  		    ]
-  	    },
-  		  {
-  	      "title": "Web Developer",
-  		    "company": "",
-  		    "duration": "June 2015 – Present",
-  		    "place": "New Delhi, India",
-  	      "description": "Working on some websites using MySQL and PHP for backend (Database) and CSS/HTML and JavaScript for frontend (User Interface with the ability to perform dynamic operations).\nThis website is also written and designed by me using Polymer and Firebase.",
-  		    "links": [
-    		    {
-    		      "link": "Invoicerr",
-    		      "url": "http://www.invoicerr.com",
-    		      "ironIcon": "pp-icons:public"
-  			    }
-  		    ]
-  	    },
-  		  {
-  	      "title": "Recognized Developer",
-  		    "company": "XDA-Developers",
-  		    "duration": "March 2013 – Present",
-  		    "place": "New Delhi, India",
-  	      "description": "ROM Developer (ArcMini & xNXT), Ported lots of applications to older versions of Android using various concepts (smali) and hacks of reverse engineering.\nFirst to port Sony Small Apps API to Xperia™ 2011 MDPI devices.",
-  		    "links": [
-    		    {
-    		      "link": "Profile",
-    		      "url": "http://forum.xda-developers.com/member.php?u=3962236",
-    		      "ironIcon": "pp-icons:person"
-  			    }
-  		    ]
-  	    },
-  		  {
-  	      "title": "Recognized Themer",
-  		    "company": "XDA-Developers",
-  		    "duration": "August 2012 – Present",
-  		    "place": "New Delhi, India",
-  	      "description": "Designed colourful themes for CynogenMod and also for my own ROMs (Arcmini & xNXT).\nFixed various layout issues with Xperia™ apps on small screen devices (MDPI).",
-  		    "links": [
-    		    {
-    		      "link": "Profile",
-    		      "url": "http://forum.xda-developers.com/member.php?u=3962236",
-    		      "ironIcon": "pp-icons:person"
-  			    }
-  		    ]
-  	    }
-  	  ]
-  	},
-  	{
-  	  "category": "Training",
-  	  "data": [
-  	    {
-  	      "title": "Trainee",
-  		    "company": "HCL Infosystems Ltd.",
-  		    "duration": "June 2013 – July 2013",
-  		    "place": "Ghaziabad, India",
-  	      "description": "ASP.Net and C# with A+ grade.",
-  		    "links": [
-  		    ]
-  	    }
-  	  ]
-  	}
-  ]
+    "home": {
+        "title": "Welcome!",
+        "description": "My name is Pranav Pandey. I am a professional software developer and a little bit designer from India working on many technologies, especially from Google.",
+        "quote": "Nothing is perfect but can be better. Developing such better things !!!"
+    },
+    "about": [{
+        "category": "The Beginning...",
+        "data": [{
+            "title": "New Delhi, India",
+            "subtitle": "8th August 1992",
+            "description": "My name is Pranav Pandey. I was born on August 8th, 1992 in New Delhi, India to my mother Sudha Pandey (maiden name Upadhyay) and father Shrikant Pandey. I grew up with my mother, elder sister and grand parents as my father had expired in a road accident just before my birth. As I was growing up, my elders let me try many different things and provided me with the resources to try them and the major things that came out were playing outdoor games like cricket, bedminton, vollyball; interest in pc games and computer programming. You can serach my name on Google to know more about my contributions in software development, especially in Android.",
+            "links": [{
+                "link": "Google Search",
+                "url": "https://www.google.co.in/?gfe_rd=cr&ei=A_7uV7bYEKTG8AfhmJaACA#q=pranav+pandey+android",
+                "ironIcon": "pp-icons:search"
+            }]
+        }]
+    }, {
+        "category": "Background",
+        "data": [{
+            "title": "Qualification",
+            "subtitle": "Computer Science & Engineering",
+            "description": "I am an Engineer by Qualification (B. Tech. in Computer Science & Engineering) and a Programmer and UI/UX Designer by work. I have 3+ years of experience in Android development. I have also worked on some websites and can design some good graphics in Photoshop/Illustrator. Read below about some of my best things.",
+            "links": []
+        }, {
+            "title": "Android Themes, MODS and Custom ROMs",
+            "subtitle": "Reverse Engineering",
+            "description": "I have started custom ROM development by reading tutorials from website and forums like XDA. It helped me a lot in learning the basics and life cycle of Android. I have developed two ROMs (ArcMini and xNXT) which became very popular and also ported many latest (at that time) apps and APIs to 2011 Xperia™ devices. I was first to Port Sony Small Apps API and also released a most stable WALKMAN port for those devices. Then, I became Recognized Themer at XDA followed by Recognized Developer in 2013.",
+            "links": [{
+                "link": "xNXT ROM",
+                "url": "http://forum.xda-developers.com/showthread.php?t=2093511",
+                "ironIcon": "pp-icons:link"
+            }, {
+                "link": "ArcMini ROM",
+                "url": "http://forum.xda-developers.com/showthread.php?t=1225668",
+                "ironIcon": "pp-icons:link"
+            }]
+        }, {
+            "title": "Android Apps",
+            "subtitle": "Forward Engineering",
+            "description": "I have started developing apps in 2013. As I ported the Small App API so, I decided to develop Small Apps first which were featured on XDA and many other blogs. There was good response from users due to unique design and advanced features which I have implemented in those apps. Still they are the most advanced small apps for Sony devices. My apps has over 350K downloads on Google Play.",
+            "links": [{
+                "link": "Featured on XDA",
+                "url": "http://www.xda-developers.com/expand-your-sony-xperia-small-apps-collection",
+                "ironIcon": "pp-icons:link"
+            }]
+        }, {
+            "title": "Rotation",
+            "subtitle": "An Orientation Manager",
+            "description": "Switching orientation is always be a problem for people having big devices. So, I have designed a System independent framework to help those users and Rotation was born. Then, I have added all the modes and features on user requests. It has been featured on may blogs and has over 120K downloads on Google Play.",
+            "links": [{
+                "link": "XDA",
+                "url": "http://www.xda-developers.com/android/rotation-take-control-orientation-settings",
+                "ironIcon": "pp-icons:link"
+            }, {
+                "link": "PhoneArena",
+                "url": "http://www.phonearena.com/news/How-to-customize-your-Android-phones-screen-orientation-with-Rotation-manager_id63540",
+                "ironIcon": "pp-icons:link"
+            }, {
+                "link": "AddictiveTips",
+                "url": "http://www.addictivetips.com/android/per-app-control-over-your-devices-orientation",
+                "ironIcon": "pp-icons:link"
+            }]
+        }, {
+            "title": "Web development and Future plans",
+            "subtitle": "",
+            "description": "I have also worked on some websites so that I can improve my web skills. This website is also written & designed by me. Please reach me via this website if you have anything good for me.",
+            "links": []
+        }]
+    }, {
+        "category": "Education",
+        "data": [{
+            "title": "Uttar Pradesh Technical University",
+            "subtitle": "2010 – 2014",
+            "description": "Bachelor of Technology (B.Tech.), Computer Science and Engineering.",
+            "links": [{
+                "link": "Website",
+                "url": "http://aktu.ac.in",
+                "ironIcon": "pp-icons:public"
+            }]
+        }, {
+            "title": "Rajkiya Pratibha Vikas Vidyalaya (RPVV)",
+            "subtitle": "2007 – 2009",
+            "description": "All India Senior School Certificate Examination (Class XII), Physics, Chemistry, Maths (PCM).",
+            "links": [{
+                "link": "Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Rajkiya_Pratibha_Vikas_Vidyalaya",
+                "ironIcon": "pp-icons:public"
+            }]
+        }, {
+            "title": "Rajkiya Pratibha Vikas Vidyalaya (RPVV)",
+            "subtitle": "2003 – 2007",
+            "description": "Secondary School Certificate Examination (Class X), English, Hindi, Mathematics, Science, Socal Studies, Sanskrit.",
+            "links": [{
+                "link": "Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Rajkiya_Pratibha_Vikas_Vidyalaya",
+                "ironIcon": "pp-icons:public"
+            }]
+        }]
+    }],
+    "skills": [{
+        "category": "Skills",
+        "data": [{
+            "title": "Operating Systems",
+            "subtitle": "Android, Windows, Linux (Ubuntu), macOS (OS X)",
+            "description": "Familiar with all the major mobile and desktop operating systems.",
+            "links": []
+        }, {
+            "title": "Software Development",
+            "subtitle": "Java, C, C++, C#, XML",
+            "description": "Proficiency in JAVA and Object Oriented Concepts with sufficient knowledge of other similar languages.",
+            "links": []
+        }, {
+            "title": "Android Development",
+            "subtitle": "AOSP, Theming, Modding Custom ROM and App development",
+            "description": "I have already developed 14 apps for Android using JAVA, XML, Eclipse and Android Studio. As I am also an AOSP/Custom ROM developer so, I have some basic knowledge of C/Makefile, Python and Smali (assembly) languages.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }, {
+                "link": "XDA",
+                "url": "http://forum.xda-developers.com/member.php?u=3962236",
+                "ironIcon": "pp-icons:public"
+            }]
+        }, {
+            "title": "Web Development",
+            "subtitle": "HTML, CSS, JavaScript, PHP, MySQL, ASP.NET",
+            "description": "I have worked on some websites in the past. This website is also written and designed by me in Polymer and Firebase.",
+            "links": [{
+                "link": "Polymer",
+                "url": "https://www.polymer-project.org",
+                "ironIcon": "pp-icons:polymer"
+            }, {
+                "link": "Firebase",
+                "url": "https://firebase.google.com",
+                "ironIcon": "pp-icons:storage"
+            }]
+        }, {
+            "title": "Data Interchange",
+            "subtitle": "REST and JSON",
+            "description": "Working with REST APIs and designed the JSON architecture of this website to load all the data dynamically.",
+            "links": []
+        }, {
+            "title": "Integrated Development Environment (IDE)",
+            "subtitle": "Eclipse (with ADT), Android Studio, Visual Studio",
+            "description": "Familier with major software development IDEs out there.",
+            "links": []
+        }, {
+            "title": "Version Control",
+            "subtitle": "Git (GitHub, Bitbucket)",
+            "description": "Deep understanding of widely used version control system i.e; Git and managing my projects on GitHub and Bitbucket. I have also developed some open source projects. Please have a look to my GitHub profile.",
+            "links": [{
+                "link": "GitHub",
+                "url": "https://github.com/pranavpandey",
+                "ironIcon": "social-icons:github"
+            }]
+        }, {
+            "title": "Graphics Design",
+            "subtitle": "Photoshop, GIMP, Illustrator",
+            "description": "I can design some good graphics in Photoshop/Illustrator and have deep knowledge of Google Material Design. All of my app icons, graphics and banners are also designed by me.",
+            "links": [{
+                "link": "Material Design by Google",
+                "url": "https://material.google.com/",
+                "ironIcon": "pp-icons:public"
+            }]
+        }, {
+            "title": "Office Tools",
+            "subtitle": "Microsoft Office 2013/2010/2007/2003",
+            "description": "",
+            "links": []
+        }, {
+            "title": "Spoken Languages",
+            "subtitle": "Hindi and English",
+            "description": "",
+            "links": []
+        }, {
+            "title": "Others",
+            "subtitle": "",
+            "description": "Familiar with Unix/Linux environment with command line interface.\nGreat knowledge of computer hardware and can easily assemble and de-assemble it.",
+            "links": []
+        }]
+    }, {
+        "category": "Hobbies",
+        "data": [{
+            "title": "",
+            "subtitle": "",
+            "description": "Listening to music, Drawing, Playing Cricket, Volley ball, Badminton and PC games, Surfing the Internet.",
+            "links": []
+        }]
+    }],
+    "projects": [{
+        "category": "Open Source",
+        "data": [{
+            "title": "Small App Support",
+            "subtitle": "",
+            "description": "Small App Support is an easy to use library to build attractive small apps for Sony devices with native apps like functionality. I have divided it into different parts for easy understanding. As small app is a service there was a problem displaying a dialog from the small app. So, I have wrote a function to easily display a dialog from a small app. This library is a collection of such type of functions and classes to provide a good interface.",
+            "links": [{
+                "link": "GitHub",
+                "url": "https://github.com/pranavpandey/small-app-support",
+                "ironIcon": "social-icons:github"
+            }]
+        }]
+    }, {
+        "category": "Android Apps",
+        "data": [{
+            "title": "Rotation",
+            "subtitle": "An Orientation Manager",
+            "description": "A tool for Android to control device orientation with per app settings. In this, all the modes are supported including Reverse portrait and Full sensor. It has some unique features like Rotate on Demand, Notification Toggles, Shortcuts and Widgets. Automate Rotation (Locale/Tasker) plugin to switch orientation according to various contexts. It has been downloaded over 120K times on Google Play.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }, {
+            "title": "Files",
+            "subtitle": "Sony Small Apps Extension",
+            "description": "A complete file manager that can work on top of any task. Many features like App Manager, Bookmarks, Search, Set wallpaper/ringtone, Copy/replace, Compress/extract, Thumbnails for image/music/video/apk. It has over 25K downloads on Google Play.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.files.lite&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }, {
+            "title": "Stopwatch",
+            "subtitle": "Sony Small Apps Extension",
+            "description": "Stopwatch which can be launched from anywhere on top of any task. Features like Pause/Resume/Reset, Laps, Share time. Over 70K downloads on Google Play.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.stopwatch&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }, {
+            "title": "Torch",
+            "subtitle": "Sony Small Apps Extension",
+            "description": "Torch which can be launched from anywhere on top of any task. It has some unique features like Strobe, Morse code decoder(SOS), Battery indicator, Auto On/Off. It also works when screen is off to save battery. Over 50K downloads on Google Play.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.lite&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }, {
+            "title": "Launcher",
+            "subtitle": "Sony Small Apps Extension",
+            "description": "Launch apps quickly from anywhere on top of any task. Features like Favourites, Share apps as apk, App info, View in Play store and Uninstall. Over 25K downloads on Google Play.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.launcher&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }, {
+            "title": "Phone",
+            "subtitle": "Sony Small Apps Extension",
+            "description": "A complete Phone app to make calls from anywhere on top of any task. Many features including Contacts, Call logs, Dialer with cursor, Speed dial, View/Edit/Delete contacts/call logs. Other features like Send message, Copy to clipboard, etc. It has over 30K downloads on Google Play.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.phone&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }, {
+            "title": "Lock",
+            "subtitle": "Sony Small Apps Extension",
+            "description": "Lock is a simple small app to lock the device from anywhere. Just 2 clicks (or 1 click) to lock the device. It has been downloaded over 15K times on Google Play",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.lock&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }, {
+            "title": "Flyrobe",
+            "subtitle": "Android App | Fashion on Rent",
+            "description": "Re-designed the whole app by implementing Google Material Design guidelines. Integrated various APIs and SDKs as per the requirements and to provide user friendly UI.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.flyrobe.android&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }]
+    }, {
+        "category": "Other Projects",
+        "data": [{
+            "title": "xNXT ROM",
+            "subtitle": "",
+            "description": "A ROM for Xperia™ 2011 MDPI devices based on Sony official ICS (build No. 4.1.B.0.587) with latest apps and MODs to give a unique combination of pleasant design and performance. It has been downloaded over 50K times.",
+            "links": [{
+                "link": "XDA",
+                "url": "http://forum.xda-developers.com/showthread.php?t=2093511",
+                "ironIcon": "pp-icons:link"
+            }]
+        }, {
+            "title": "ArcMini ROM",
+            "subtitle": "",
+            "description": "One of my first project to start ROM development for Xperia™ 2010 MDPI devices. Based on Cyanogen MOD (2.3.7 and 4.0.4) with unique themes designed by me to give colorful experience. I have also fixed many layout related problems with small screen devices.",
+            "links": [{
+                "link": "XDA",
+                "url": "http://forum.xda-developers.com/showthread.php?t=1225668",
+                "ironIcon": "pp-icons:link"
+            }]
+        }, {
+            "title": "Invoicerr.com",
+            "subtitle": "",
+            "description": "A website to generate bills, invoices or receipts. Re-designed the whole UI and added ability to add or remove items dynamically. Used various concepts of CSS/HTML and JavaScript to create dynamic list with record of each entered row so that we can modify it also. Updated various Database tables and re-wrote the PHP queries to retrieve and save data according to the customer needs. Fixed various design issues with the final bill and have also implemented the Tax system. User can save upto 4 type of taxes (fully customisable) with per item control.",
+            "links": [{
+                "link": "Website",
+                "url": "http://www.invoicerr.com/",
+                "ironIcon": "pp-icons:public"
+            }]
+        }]
+    }, {
+        "category": "College Projects",
+        "data": [{
+            "title": "SensActions/SensLock",
+            "subtitle": "",
+            "description": "An app for all Android 2.2+ devices to perform various actions without using the key in a quicker and smarter way. It uses different sensors present on the device to perform different actions. SensActions can make any device able to respond your shakes and swipes/waves like any other flagship device and sometime for fun also.\n\nI was the lead developer, I have done the app designing and coded various modules.",
+            "links": [{
+                "link": "XDA",
+                "url": "http://forum.xda-developers.com/showthread.php?t=2403029",
+                "ironIcon": "pp-icons:android"
+            }, {
+                "link": "Report",
+                "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXN1R4ZUtUZXV5R2c/view?usp=sharing",
+                "ironIcon": "pp-icons:attachment"
+            }, {
+                "link": "Presentation",
+                "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXMXRwY1VRcWJpT3M/view?usp=sharing",
+                "ironIcon": "pp-icons:attachment"
+            }]
+        }, {
+            "title": "Garden Company Website",
+            "subtitle": "",
+            "description": "A website portal of a company providing gardening products and services (The Garden Company) as a part of the summer training project at HCL Infosystems Ltd. It has been developed in ASP.NET technology. It has an attractive UI with support for ads and user login. It provides various tips, tricks and solutions to gardening related problems. It advertises and sells several gardening related products. It gives three levels of content control- Admin, Member and Guest.",
+            "links": []
+        }]
+    }],
+    "work": [{
+        "category": "Official",
+        "data": [{
+            "title": "Senoir Android Developer",
+            "company": "Hyve Mobility",
+            "duration": "December 2015 – Present",
+            "place": "New Delhi, India",
+            "description": "",
+            "links": [{
+                "link": "Website",
+                "url": "https://www.hyve.buzz",
+                "ironIcon": "pp-icons:public"
+            }]
+        }, {
+            "title": "Senoir Android Developer",
+            "company": "Flyrobe",
+            "duration": "September 2015 - December 2015",
+            "place": "Mumbai, India",
+            "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
+            "links": [{
+                "link": "Website",
+                "url": "http://flyrobe.com",
+                "ironIcon": "pp-icons:public"
+            }]
+        }]
+    }, {
+        "category": "Freelancer (Self Employed)",
+        "data": [{
+            "title": "Android Developer",
+            "company": "",
+            "duration": "July 2013 – Present",
+            "place": "New Delhi, India",
+            "description": "Developer, Programmer, UI/UX Designer and Publisher.",
+            "links": [{
+                "link": "Google Play",
+                "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
+                "ironIcon": "pp-icons:shop"
+            }]
+        }, {
+            "title": "Web Developer",
+            "company": "",
+            "duration": "June 2015 – Present",
+            "place": "New Delhi, India",
+            "description": "Working on some websites using MySQL and PHP for backend (Database) and CSS/HTML and JavaScript for frontend (User Interface with the ability to perform dynamic operations).\nThis website is also written and designed by me using Polymer and Firebase.",
+            "links": [{
+                "link": "Invoicerr",
+                "url": "http://www.invoicerr.com",
+                "ironIcon": "pp-icons:public"
+            }]
+        }, {
+            "title": "Recognized Developer",
+            "company": "XDA-Developers",
+            "duration": "March 2013 – Present",
+            "place": "New Delhi, India",
+            "description": "ROM Developer (ArcMini & xNXT), Ported lots of applications to older versions of Android using various concepts (smali) and hacks of reverse engineering.\nFirst to port Sony Small Apps API to Xperia™ 2011 MDPI devices.",
+            "links": [{
+                "link": "Profile",
+                "url": "http://forum.xda-developers.com/member.php?u=3962236",
+                "ironIcon": "pp-icons:person"
+            }]
+        }, {
+            "title": "Recognized Themer",
+            "company": "XDA-Developers",
+            "duration": "August 2012 – Present",
+            "place": "New Delhi, India",
+            "description": "Designed colourful themes for CynogenMod and also for my own ROMs (Arcmini & xNXT).\nFixed various layout issues with Xperia™ apps on small screen devices (MDPI).",
+            "links": [{
+                "link": "Profile",
+                "url": "http://forum.xda-developers.com/member.php?u=3962236",
+                "ironIcon": "pp-icons:person"
+            }]
+        }]
+    }, {
+        "category": "Training",
+        "data": [{
+            "title": "Trainee",
+            "company": "HCL Infosystems Ltd.",
+            "duration": "June 2013 – July 2013",
+            "place": "Ghaziabad, India",
+            "description": "ASP.Net and C# with A+ grade.",
+            "links": []
+        }]
+    }]
 }

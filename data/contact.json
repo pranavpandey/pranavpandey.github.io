@@ -1,90 +1,71 @@
 {
-  "contact": [
-    {
-	    "category": "Contact",
-	    "data": [
-	      {
-	        "title": "Social",
-		      "subtitle": "",
-	        "description": "Circle, follow or connect with me on the various social networks.",
-		      "links": [
-            {
-		          "link": "Google+",
-    		      "url": "https://plus.google.com/+pranavpandeydev",
-    		      "ironIcon": "social-icons:gplus",
-              "accent": "#d34836"
-			      },
-            {
-		          "link": "Twitter",
-    		      "url": "https://twitter.com/intent/follow?screen_name=pranavpandeydev",
-    		      "ironIcon": "social-icons:twitter",
-              "accent": "#00aced"
-			      },
-            {
-		          "link": "Facebook",
-    		      "url": "https://www.facebook.com/pranavpandeydev",
-    		      "ironIcon": "social-icons:facebook",
-              "accent": "#3b5998"
-			      },
-            {
-		          "link": "Instagram",
-    		      "url": "https://www.instagram.com/pranavpande92",
-    		      "ironIcon": "social-icons:instagram",
-              "accent": "#517fa4"
-			      }
-		      ]
-	      },
-        {
-	        "title": "Developer",
-		      "subtitle": "",
-	        "description": "Some of my open source projects and invlovement in developer community.",
-		      "links": [
-            {
-		          "link": "Github",
-    		      "url": "https://github.com/pranavpandey",
-    		      "ironIcon": "social-icons:github",
-              "accent": "#000000"
-			      },
-            {
-		          "link": "XDA",
-    		      "url": "http://forum.xda-developers.com/member.php?u=3962236",
-    		      "ironIcon": "pp-icons:public",
-              "accent": "#f48002"
-			      },
-            {
-		          "link": "Stack Overflow",
-    		      "url": "http://stackexchange.com/users/6528964/pranav-pandey",
-    		      "ironIcon": "social-icons:so",
-              "accent": "#fe7a15"
-			      }
-		      ]
-	      },
-        {
-	        "title": "Professional",
-		      "subtitle": "",
-	        "description": "View my full profile on linkedin or contact me via email if you have have any better oppurtunity for me.",
-		      "links": [
-            {
-		          "link": "LinkedIn",
-    		      "url": "https://in.linkedin.com/in/pranav-pandey-09032974",
-    		      "ironIcon": "social-icons:linkedin",
-              "accent": "#007bb6"
-			      },
-            {
-		          "link": "Resume",
-    		      "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXeFR6X2s5aUxUQjg/view?usp=sharing",
-    		      "ironIcon": "pp-icons:attachment",
-              "accent": "#e91e63"
-			      },
-            {
-		          "link": "Email",
-    		      "url": "mailto:pranavpande92@gmail.com",
-    		      "ironIcon": "pp-icons:mail",
-              "accent": "#000000"
-			      }
-		      ]
-	      }
-	    ]
-  	}
-  ]
+    "contact": [{
+        "category": "Contact",
+        "data": [{
+            "title": "Social",
+            "subtitle": "",
+            "description": "Circle, follow or connect with me on the various social networks.",
+            "links": [{
+                "link": "Google+",
+                "url": "https://plus.google.com/+pranavpandeydev",
+                "ironIcon": "social-icons:gplus",
+                "accent": "#d34836"
+            }, {
+                "link": "Twitter",
+                "url": "https://twitter.com/intent/follow?screen_name=pranavpandeydev",
+                "ironIcon": "social-icons:twitter",
+                "accent": "#00aced"
+            }, {
+                "link": "Facebook",
+                "url": "https://www.facebook.com/pranavpandeydev",
+                "ironIcon": "social-icons:facebook",
+                "accent": "#3b5998"
+            }, {
+                "link": "Instagram",
+                "url": "https://www.instagram.com/pranavpande92",
+                "ironIcon": "social-icons:instagram",
+                "accent": "#517fa4"
+            }]
+        }, {
+            "title": "Developer",
+            "subtitle": "",
+            "description": "Some of my open source projects and invlovement in developer community.",
+            "links": [{
+                "link": "Github",
+                "url": "https://github.com/pranavpandey",
+                "ironIcon": "social-icons:github",
+                "accent": "#000000"
+            }, {
+                "link": "XDA",
+                "url": "http://forum.xda-developers.com/member.php?u=3962236",
+                "ironIcon": "pp-icons:public",
+                "accent": "#f48002"
+            }, {
+                "link": "Stack Overflow",
+                "url": "http://stackexchange.com/users/6528964/pranav-pandey",
+                "ironIcon": "social-icons:so",
+                "accent": "#fe7a15"
+            }]
+        }, {
+            "title": "Professional",
+            "subtitle": "",
+            "description": "View my full profile on linkedin or contact me via email if you have have any better oppurtunity for me.",
+            "links": [{
+                "link": "LinkedIn",
+                "url": "https://in.linkedin.com/in/pranav-pandey-09032974",
+                "ironIcon": "social-icons:linkedin",
+                "accent": "#007bb6"
+            }, {
+                "link": "Resume",
+                "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXeFR6X2s5aUxUQjg/view?usp=sharing",
+                "ironIcon": "pp-icons:attachment",
+                "accent": "#e91e63"
+            }, {
+                "link": "Email",
+                "url": "mailto:pranavpande92@gmail.com",
+                "ironIcon": "pp-icons:mail",
+                "accent": "#000000"
+            }]
+        }]
+    }]
 }
