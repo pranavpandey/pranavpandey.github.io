@@ -14,10 +14,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <style is="custom-style" include="iron-flex iron-flex-alignment">
       :host {
         display: block;
-	    --app-primary-color: #3F51B5;
+        --app-primary-color: #3F51B5;
         --app-secondary-color: #E91E63;
-		@apply(--paper-font-common-base);
-		@apply(--layout-flex);
+        @apply(--paper-font-common-base);
+        @apply(--layout-flex);
       }
 
       .content-frame {
@@ -26,10 +26,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         height: 100%;
       }
 
-	  .content {
+      .content {
         @apply(--layout-flex);
-		padding: 12px 24px;
-		padding-bottom: 48px;
+        padding: 12px 24px;
+        padding-bottom: 48px;
       }
 
       .overlay {
@@ -43,27 +43,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         top: 0px;
       }
 
-  	  p {
-  	    margin: 0;
+      p {
+        margin: 0;
         white-space: pre-wrap;
       }
 
-  	  h2.padding-horizontal {
-  		margin-top: 8px;
-  		margin-bottom: 8px;
+      h2.padding-horizontal {
+        margin-top: 8px;
+        margin-bottom: 8px;
       }
 
-  	  .color-white {
-  	    color: white;
+      .color-white {
+        color: white;
       }
 
-  	  .color-primary {
-  	    color: var(--app-primary-color);
+      .color-primary {
+        color: var(--app-primary-color);
       }
 
-  	  app-drawer {
-  		--app-drawer-width: 320px;
-  		--app-drawer-content-container: {
+      app-drawer {
+        --app-drawer-width: 320px;
+        --app-drawer-content-container: {
           box-shadow: 2px 0 4px 2px rgba(0,0,0,0.18);
         }
       }
@@ -112,40 +112,40 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: var(--app-secondary-color);
       }
 
-  	  .drawer-list {
+      .drawer-list {
         margin: 0px 16px;
       }
 
       .drawer-list a {
         display: block;
-  		position: relative;
+        position: relative;
         padding: 8px 24px;
         text-decoration: none;
-  		color: black;
+        color: black;
         line-height: 40px;
-  		background-color: transparent;
-  		outline: none;
+        background-color: transparent;
+        outline: none;
       }
 
-  	  .drawer-list a iron-icon {
-  	    margin-right: 32px;
-  		margin-bottom: 2px;
-  	  }
+      .drawer-list a iron-icon {
+        margin-right: 32px;
+        margin-bottom: 2px;
+      }
 
-  	  .drawer-list a.iron-selected {
-  	    background-color: #dedede;
+      .drawer-list a.iron-selected {
+        background-color: #dedede;
         color: var(--app-primary-color);
       }
 
-  	  .footer {
-  		padding: 24px;
+      .footer {
+        padding: 24px;
         padding-top: 12px;
-  		color: gray;
+        color: gray;
         font-size: 12px;
-  		vertical-align: bottom;
+        vertical-align: bottom;
       }
 
-  	  app-header {
+      app-header {
         color: #fff;
         background-color: var(--app-primary-color);
         --app-header-background-front-layer: {
@@ -157,38 +157,38 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       [main-title] {
         font-size: 2em;
-  		margin-left: 12px;
+        margin-left: 12px;
       }
 
-  	  [condensed-title] {
+      [condensed-title] {
         margin-left: 12px;
         text-overflow: ellipsis;
       }
 
-  	  paper-ripple.primary {
+      paper-ripple.primary {
         color: var(--app-primary-color);
       }
 
-  	  paper-card {
+      paper-card {
         width: 100%;
-  		margin-top: 12px;
-  		margin-bottom: 12px;
-  	  }
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
 
       paper-card.showcase {
         position: relative;
         width: 148px;
-  	  }
+      }
 
       paper-card.showcase div iron-icon {
         width: 100%;
         height: 100%;
-  	  }
+      }
 
       paper-card.showcase div iron-image {
         width: 100%;
         height: 112px;
-  	  }
+      }
 
       iron-image.card-header {
         width: 100%;
@@ -198,42 +198,42 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       .card-title {
         margin-top: 0px;
-  		margin-bottom: 16px;
-  		font-weight: normal;
+        margin-bottom: 16px;
+        font-weight: normal;
         font-size: 1.3em;
       }
 
       .showcase-title {
         margin-top: 0px;
-  		margin-bottom: 0px;
-  		font-weight: normal;
+        margin-bottom: 0px;
+        font-weight: normal;
         font-size: 1.3em;
       }
 
-  	  paper-card.primary {
-  	    --paper-card-background-color: var(--app-primary-color);
-  		--paper-card-header-color: white;
-  	  }
+      paper-card.primary {
+        --paper-card-background-color: var(--app-primary-color);
+        --paper-card-header-color: white;
+      }
 
-  	  iron-icon.small {
+      iron-icon.small {
         margin-right: 8px;
-  	    --iron-icon-height: 20px;
+        --iron-icon-height: 20px;
         --iron-icon-width: 20px;
-  	  }
+      }
 
-  	  .card-subtitle {
-  	    margin-top: 0px;
-  		margin-bottom: 4px;
-  		font-weight: normal;
+      .card-subtitle {
+        margin-top: 0px;
+        margin-bottom: 4px;
+        font-weight: normal;
         font-size: 1.1em;
-  	  }
+      }
 
-  	  paper-fab {
-  	    position: fixed;
+      paper-fab {
+        position: fixed;
         right: 24px;
         bottom: 28px;
-  		--paper-fab-background: var(--app-secondary-color);
-  		font-size: 20px;
+        --paper-fab-background: var(--app-secondary-color);
+        font-size: 20px;
       }
 
       .progress {
@@ -244,54 +244,54 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         justify-content: center;
       }
 
-  	  .inherit {
+      .inherit {
         color: inherit;
         background-color: inherit;
-  		text-decoration: none;
-  		display: block;
+        text-decoration: none;
+        display: block;
         padding: 8px 16px;
-  		color: black;
+        color: black;
         line-height: 40px;
       }
 
-  	  a.paper-button {
-  	    text-decoration: none;
-  		background-color: transparent;
-  		outline: none;
-  	  }
+      a.paper-button {
+        text-decoration: none;
+        background-color: transparent;
+        outline: none;
+      }
 
       a.showcase {
-  	    text-decoration: none;
-  		background-color: transparent;
-  		outline: none;
-  	  }
+        text-decoration: none;
+        background-color: transparent;
+        outline: none;
+      }
 
       paper-button.secondary {
-  	    color: var(--app-secondary-color);
-  	  }
+        color: var(--app-secondary-color);
+      }
 
-  	  @media (max-width: 639px) {
+      @media (max-width: 639px) {
         app-drawer {
-    	  --app-drawer-width: 304px;
+          --app-drawer-width: 304px;
         }
 
-  	    [main-title] {
+        [main-title] {
           font-size: 1.6em;
         }
 
-  		paper-card {
-  		  margin-top: 8px;
-  		  margin-bottom: 8px;
-  	    }
-
-        .content {
-  		  padding: 4px 12px;
-  		  padding-bottom: 48px;
+        paper-card {
+          margin-top: 8px;
+          margin-bottom: 8px;
         }
 
-  		h2.padding-horizontal {
-  		  padding-left: 16px;
-  		  padding-right: 16px;
+        .content {
+          padding: 4px 12px;
+          padding-bottom: 48px;
+        }
+
+        h2.padding-horizontal {
+          padding-left: 16px;
+          padding-right: 16px;
         }
 
         iron-image.card-header {

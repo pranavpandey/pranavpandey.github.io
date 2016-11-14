@@ -40,36 +40,36 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </a>
     </template>
 
-	<template is="dom-repeat" items="[[dataProjects.projects]]" as="projectCategory">
-	  <h2 class="padding-horizontal">{{projectCategory.category}}</h2>
-	    <template is="dom-repeat" items="[[projectCategory.data]]" as="categoryData">
-	      <paper-card>
-            <div hidden$="[[!categoryData.header]]">
-              <iron-image class="card-header"
-                sizing="cover" preload fade
-                style$="[[setBackgroundColor(categoryData.accent)]]"
-                placeholder="[[categoryData.header-placeholder]]"
-                src="[[categoryData.header]]">
-              </iron-image>
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">{{categoryData.title}}</h2>
-		      <h3 class="card-subtitle" hidden$="[[!categoryData.subtitle]]">{{categoryData.subtitle}}</h3>
-		      <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
-	        </div>
-		    <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
-		      <template is="dom-repeat" items="[[categoryData.links]]" as="linksProject">
-			    <a class="paper-button" href$="[[linksProject.url]]" target="_blank" tabindex="-1">
-                  <paper-button class="secondary" style$="[[setColor(categoryData.accent)]]">
-		            <iron-icon class="small" icon="[[linksProject.ironIcon]]"></iron-icon>
-				    {{linksProject.link}}
-			      </paper-button>
-			    </a>
-			  </template>
-            </div>
+    <template is="dom-repeat" items="[[dataProjects.projects]]" as="projectCategory">
+      <h2 class="padding-horizontal">{{projectCategory.category}}</h2>
+      <template is="dom-repeat" items="[[projectCategory.data]]" as="categoryData">
+        <paper-card>
+          <div hidden$="[[!categoryData.header]]">
+            <iron-image class="card-header"
+              sizing="cover" preload fade
+              style$="[[setBackgroundColor(categoryData.accent)]]"
+              placeholder="[[categoryData.header-placeholder]]"
+              src="[[categoryData.header]]">
+            </iron-image>
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">{{categoryData.title}}</h2>
+            <h3 class="card-subtitle" hidden$="[[!categoryData.subtitle]]">{{categoryData.subtitle}}</h3>
+            <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
+          </div>
+          <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
+            <template is="dom-repeat" items="[[categoryData.links]]" as="linksProject">
+              <a class="paper-button" href$="[[linksProject.url]]" target="_blank" tabindex="-1">
+                <paper-button class="secondary" style$="[[setColor(categoryData.accent)]]">
+                  <iron-icon class="small" icon="[[linksProject.ironIcon]]"></iron-icon>
+                  {{linksProject.link}}
+                </paper-button>
+              </a>
+            </template>
+          </div>
         </paper-card>
       </template>
-	</template>
+    </template>
   </template>
 
   <script>
@@ -82,11 +82,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           value: false,
           notify: true
         }
-	  },
+      },
 
       isJSONEmpty: function(obj) {
         return !obj.length ||
-           !obj.filter(function(a){return Object.keys(a).length;}).length;
+          !obj.filter(function(a) {
+            return Object.keys(a).length;
+          }).length;
+        }
       },
 
       setBackgroundColor: function(color) {

@@ -21,24 +21,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       last-response="{{dataWork}}">
     </iron-ajax>
 
-	<template is="dom-repeat" items="[[dataWork.work]]" as="workCategory">
-	  <h2 class="padding-horizontal">{{workCategory.category}}</h2>
-	  <template is="dom-repeat" items="[[workCategory.data]]" as="categoryData">
-	    <paper-card>
+    <template is="dom-repeat" items="[[dataWork.work]]" as="workCategory">
+      <h2 class="padding-horizontal">{{workCategory.category}}</h2>
+      <template is="dom-repeat" items="[[workCategory.data]]" as="categoryData">
+        <paper-card>
           <div class="card-content">
             <h2 class="card-title">{{concat2Strings(categoryData.title, categoryData.company, ' | ')}}</h2>
-		    <h3 class="card-subtitle" hidden$="[[!categoryData.duration]]">{{concat2Strings(categoryData.duration, categoryData.place, " | ")}}</h3>
-		    <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
-	      </div>
-		  <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
-		    <template is="dom-repeat" items="[[categoryData.links]]" as="linksWork">
-			  <a class="paper-button" href$="[[linksWork.url]]" target="_blank" tabindex="-1">
+            <h3 class="card-subtitle" hidden$="[[!categoryData.duration]]">{{concat2Strings(categoryData.duration, categoryData.place, " | ")}}</h3>
+            <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
+          </div>
+          <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
+            <template is="dom-repeat" items="[[categoryData.links]]" as="linksWork">
+              <a class="paper-button" href$="[[linksWork.url]]" target="_blank" tabindex="-1">
                 <paper-button class="secondary">
-		          <iron-icon class="small" icon="[[linksWork.ironIcon]]"></iron-icon>
-				  {{linksWork.link}}
-			    </paper-button>
-			  </a>
-			</template>
+                  <iron-icon class="small" icon="[[linksWork.ironIcon]]"></iron-icon>
+                  {{linksWork.link}}
+                </paper-button>
+              </a>
+            </template>
           </div>
         </paper-card>
       </template>
@@ -49,32 +49,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     Polymer({
       is: 'pp-work',
 
-	  properties: {
+      properties: {
         loading: {
           type: Boolean,
           value: false,
           notify: true
         }
-	  },
+      },
 
-	  concat2Strings: function(string1, string2, operator) {
-	    if (string1 && string2) {
-		  return string1 + operator + string2;
-		} else if (string1) {
-		  return string1;
-		} else if (string2) {
-		  return string2;
-		} else {
-		  return "";
-		}
+      concat2Strings: function(string1, string2, operator) {
+        if (string1 && string2) {
+          return string1 + operator + string2;
+        } else if (string1) {
+          return string1;
+        } else if (string2) {
+          return string2;
+        } else {
+          return "";
+        }
       },
 
       isJSONEmpty: function(obj) {
         return !obj.length ||
-           !obj.filter(function(a) {
-             return Object.keys(a).length;
-           }).length;
-      }
-    });
+          !obj.filter(function(a) {
+            return Object.keys(a).length;
+          }).length;
+        }
+      });
   </script>
 </dom-module>

@@ -22,22 +22,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </iron-ajax>
 
     <template is="dom-repeat" items="[[dataContact.contact]]" as="contactCategory">
-	  <h2 class="padding-horizontal">{{contactCategory.category}}</h2>
-	  <template is="dom-repeat" items="[[contactCategory.data]]" as="categoryData">
-	    <paper-card>
+      <h2 class="padding-horizontal">{{contactCategory.category}}</h2>
+      <template is="dom-repeat" items="[[contactCategory.data]]" as="categoryData">
+        <paper-card>
           <div class="card-content">
             <h2 class="card-title">{{categoryData.title}}</h2>
-		    <h3 class="card-subtitle" hidden$="[[!categoryData.subtitle]]">{{categoryData.subtitle}}</h3>
-		    <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
-	      </div>
-		  <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
-		    <template is="dom-repeat" items="[[categoryData.links]]" as="linksContact">
-		      <a class="paper-button" href$="[[linksContact.url]]" target="_blank" tabindex="-1">
+            <h3 class="card-subtitle" hidden$="[[!categoryData.subtitle]]">{{categoryData.subtitle}}</h3>
+            <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
+          </div>
+
+          <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
+            <template is="dom-repeat" items="[[categoryData.links]]" as="linksContact">
+              <a class="paper-button" href$="[[linksContact.url]]" target="_blank" tabindex="-1">
                 <paper-button style$="[[setColor(linksContact.accent)]]">
-		        <iron-icon class="small" icon="[[linksContact.ironIcon]]"></iron-icon>{{linksContact.link}}
-			    </paper-button>
-			  </a>
-		    </template>
+                  <iron-icon class="small" icon="[[linksContact.ironIcon]]"></iron-icon>
+                  {{linksContact.link}}
+                </paper-button>
+              </a>
+            </template>
           </div>
         </paper-card>
       </template>
@@ -54,11 +56,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           value: false,
           notify: true
         }
-	  },
+      },
 
       isJSONEmpty: function(obj) {
         return !obj.length ||
-           !obj.filter(function(a){return Object.keys(a).length;}).length;
+          !obj.filter(function(a) {
+            return Object.keys(a).length;
+          }).length;
+        }
       },
 
       setColor: function(color) {

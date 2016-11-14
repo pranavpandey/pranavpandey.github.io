@@ -21,17 +21,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       last-response="{{dataHome}}">
     </iron-ajax>
 
-	<h2 class="padding-horizontal">{{dataHome.home.title}}</h2>
-	<paper-card>
+    <h2 class="padding-horizontal">{{dataHome.home.title}}</h2>
+    <paper-card>
       <div class="card-content">
-	    <h3 class="card-subtitle">{{dataHome.home.description}}</h3>
-	  </div>
+        <h3 class="card-subtitle">{{dataHome.home.description}}</h3>
+      </div>
     </paper-card>
 
-	<paper-card class="primary">
+    <paper-card class="primary">
       <div class="card-content">
-	    <p class="color-white">{{dataHome.home.quote}}</p>
-	  </div>
+        <p class="color-white">{{dataHome.home.quote}}</p>
+      </div>
     </paper-card>
   </template>
 
@@ -49,7 +49,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       isJSONEmpty: function(obj) {
         return !obj.length ||
-           !obj.filter(function(a){return Object.keys(a).length;}).length;
+          !obj.filter(function(a) {
+            return Object.keys(a).length;
+          }).length;
+        }
       }
     });
   </script>

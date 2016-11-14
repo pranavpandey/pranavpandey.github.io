@@ -33,7 +33,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       pattern="/:page"
       data="{{routeData}}"
       tail="{{subroute}}">
-	  </app-route>
+    </app-route>
 
     <iron-ajax
       auto
@@ -42,11 +42,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       last-response="{{dataBase64}}">
     </iron-ajax>
 
-	<app-drawer-layout fullbleed drawer>
-	  <!-- Drawer content -->
+    <app-drawer-layout fullbleed drawer>
+      <!-- Drawer content -->
       <app-drawer swipe-open>
-  	    <div class="scrollable">
-  	      <app-toolbar class="drawer-header">
+        <div class="scrollable">
+          <app-toolbar class="drawer-header">
             <div class="horizontal layout">
               <div class="drawer-header-circle">
                 <iron-image class= "drawer-header-image"
@@ -60,55 +60,83 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p class="sub-title" hidden>Info</p>
               </div>
             </div>
-  		  </app-toolbar>
-		  
-          <iron-selector
-  		    selected="[[page]]"
-  		    attr-for-selected="name"
-  		    class="drawer-list"
-  		    role="navigation"
-  		    on-iron-activate="drawerSelected">
-            <a name="home" href="/home"><iron-icon icon="pp-icons:home"></iron-icon><paper-ripple class="primary"></paper-ripple>Home</a>
-  		    <a name="about" href="/about"><iron-icon icon="pp-icons:account-circle"></iron-icon><paper-ripple class="primary"></paper-ripple>About</a>
-  		    <a name="skills" href="/skills"><iron-icon icon="pp-icons:stars"></iron-icon><paper-ripple class="primary"></paper-ripple>Skills</a>
-            <a name="projects" href="/projects"><iron-icon icon="pp-icons:build"></iron-icon><paper-ripple class="primary"></paper-ripple>Projects</a>
-  		    <a name="work" href="/work"><iron-icon icon="pp-icons:work"></iron-icon><paper-ripple class="primary"></paper-ripple>Work</a>
-            <a name="contact" href="/contact"><iron-icon icon="pp-icons:feedback"></iron-icon><paper-ripple class="primary"></paper-ripple>Contact</a>
-          </iron-selector>
-  		  
-		  <div class="flex footer">
-            <p>&copy;2016 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia™ is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are properties of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
-          </div>
-  		</div>
-	  </app-drawer>
+          </app-toolbar>
 
-	  <!-- Main content -->
-	  <app-header-layout has-scrolling-region>
+          <iron-selector
+            selected="[[page]]"
+            attr-for-selected="name"
+            class="drawer-list"
+            role="navigation"
+            on-iron-activate="drawerSelected">
+            <a name="home" href="/home">
+              <iron-icon icon="pp-icons:home">
+              </iron-icon><paper-ripple class="primary">
+              </paper-ripple>Home
+            </a>
+            <a name="about" href="/about">
+              <iron-icon icon="pp-icons:account-circle">
+              </iron-icon><paper-ripple class="primary">
+              </paper-ripple>About
+            </a>
+            <a name="skills" href="/skills">
+              <iron-icon icon="pp-icons:stars">
+              </iron-icon><paper-ripple class="primary">
+              </paper-ripple>Skills
+            </a>
+            <a name="projects" href="/projects">
+              <iron-icon icon="pp-icons:build">
+              </iron-icon><paper-ripple class="primary">
+              </paper-ripple>Projects
+            </a>
+            <a name="work" href="/work">
+              <iron-icon icon="pp-icons:work">
+              </iron-icon><paper-ripple class="primary">
+              </paper-ripple>Work
+            </a>
+            <a name="contact" href="/contact">
+              <iron-icon icon="pp-icons:feedback">
+              </iron-icon><paper-ripple class="primary">
+              </paper-ripple>Contact
+            </a>
+          </iron-selector>
+
+          <div class="flex footer">
+            <p>&copy;2016 Pranav Pandey<br /><br />Android is a trademark of Google Inc.
+              <br />Xperia™ is a trademark or registered trademark of Sony Mobile Communications Inc.
+              <br />All other logos and trademarks are properties of their respective owners.
+              <br />Views expressed here are mine and not from my employers.
+            </p>
+          </div>
+        </div>
+      </app-drawer>
+
+      <!-- Main content -->
+      <app-header-layout has-scrolling-region>
         <app-header condenses fixed effects="material">
           <app-toolbar>
             <paper-icon-button icon="pp-icons:menu" drawer-toggle></paper-icon-button>
             <div condensed-title>Pranav Pandey</div>
           </app-toolbar>
           <app-toolbar></app-toolbar>
-		  <app-toolbar hidden$="[[smallLayout]]"></app-toolbar>
+          <app-toolbar hidden$="[[smallLayout]]"></app-toolbar>
           <app-toolbar>
             <div main-title>Pranav Pandey<br>Developer &amp; Designer</div>
           </app-toolbar>
-		  <app-toolbar></app-toolbar>
-		</app-header>
+          <app-toolbar></app-toolbar>
+        </app-header>
 
         <div class="content-frame">
           <div class="content-frame" hidden$="[[isLoading]]">
-    	    <iron-pages
+            <iron-pages
               class="content"
               role="main"
               selected="[[page]]"
               attr-for-selected="name">
-    		  <pp-home loading="{{isLoading}}" name="home"></pp-home>
+              <pp-home loading="{{isLoading}}" name="home"></pp-home>
               <pp-about loading="{{isLoading}}" name="about"></pp-about>
-    		  <pp-skills loading="{{isLoading}}" name="skills"></pp-skills>
+              <pp-skills loading="{{isLoading}}" name="skills"></pp-skills>
               <pp-projects loading="{{isLoading}}" name="projects"></pp-projects>
-    		  <pp-work loading="{{isLoading}}" name="work"></pp-work>
+              <pp-work loading="{{isLoading}}" name="work"></pp-work>
               <pp-contact loading="{{isLoading}}" name="contact"></pp-contact>
             </iron-pages>
           </div>
@@ -117,17 +145,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <paper-spinner active$="[[isLoading]]"> </paper-spinner>
           </div>
         </div>
-	  </app-header-layout>
+      </app-header-layout>
 
       <paper-fab
-	    icon="pp-icons:shop"
-	    title="Google Play"
-	    on-tap="openLink"
-	    link="https://play.google.com/store/search?q=pub%3APranav%20Pandey&c=apps&hl=en">
-	  </paper-fab>
+        icon="pp-icons:shop"
+        title="Google Play"
+        on-tap="openLink"
+        link="https://play.google.com/store/search?q=pub%3APranav%20Pandey&c=apps&hl=en">
+      </paper-fab>
 
       <div class="overlay" id="fireworks"></div>
-	</app-drawer-layout>
+    </app-drawer-layout>
 
     <iron-media-query query="(max-width:639px)"
       query-matches="{{smallLayout}}">
@@ -165,34 +193,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         // load page import on demand.
         var resolvedPageUrl = this.resolveUrl('./pages/pp-' + page + '.html');
         this.importHref(resolvedPageUrl, null, null, true);
-		this.fire('iron-signal', {
+        this.fire('iron-signal', {
           name: 'track-page', data: {
             path: resolvedPageUrl
           }
         });
 
-		var pageTitle;
-		switch (page) {
-		  case 'about':
-			pageTitle = 'About - ';
-			break;
-		  case 'skills':
-		    pageTitle = 'Skills - ';
-			break;
-		  case 'projects':
-			pageTitle = 'Projects - ';
-			break;
-		  case 'work':
-			pageTitle = 'Work - ';
-			break;
-		  case 'contact':
-			pageTitle = 'Contact - ';
-			break;
-		  default:
-			pageTitle = '';
-			break;
-		}
-		document.title = pageTitle + 'Pranav Pandey';
+        var pageTitle;
+        switch (page) {
+          case 'about':
+            pageTitle = 'About - ';
+            break;
+          case 'skills':
+            pageTitle = 'Skills - ';
+            break;
+          case 'projects':
+            pageTitle = 'Projects - ';
+            break;
+          case 'work':
+            pageTitle = 'Work - ';
+            break;
+          case 'contact':
+            pageTitle = 'Contact - ';
+            break;
+          default:
+            pageTitle = '';
+            break;
+        }
+        document.title = pageTitle + 'Pranav Pandey';
       },
 
       _lockScroll: function(isLoading) {
@@ -203,17 +231,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
       },
 
-	  drawerSelected: function() {
+      drawerSelected: function() {
         var drawer = this.$$('app-drawer')
         if(!drawer.persistent) drawer.toggle();
       },
 
-	  stringify: function(obj) {
+      stringify: function(obj) {
         return JSON.stringify(obj);
       },
 
       openLink: function(e) {
-	    var arg = e.target.getAttribute('link');
+        var arg = e.target.getAttribute('link');
         window.open(arg, '_blank');
       }
     });
