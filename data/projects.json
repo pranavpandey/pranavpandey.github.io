@@ -64,6 +64,18 @@
                 "url": "https://github.com/pranavpandey/small-app-support",
                 "ironIcon": "social-icons:github"
             }]
+        }, {
+            "title": "This Website",
+            "subtitle": "pranavpandey.com",
+            "description": "This is my personal website in which I am following the Material Design Guidelines by Google using Polymer and will keep experimenting with new elements and features. I have made it open source so that anyone can learn from my experiences. It is just a start as I am not a professional web developer but I will do my best to make it better.",
+            "accent": "#3F51B5",
+            "header": "",
+            "headerPlaceholder": "",
+            "links": [{
+                "link": "GitHub",
+                "url": "https://github.com/pranavpandey/pranavpandey.github.io",
+                "ironIcon": "social-icons:github"
+            }]
         }]
     }, {
         "category": "Android Apps",
