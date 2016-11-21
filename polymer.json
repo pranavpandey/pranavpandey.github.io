@@ -1,23 +1,23 @@
 {
-  "entrypoint": "index.html",
-  "shell": "src/pp-app.html",
-  "fragments": [
-    "src/pages/pp-home.html",
-	  "src/pages/pp-about.html",
-	  "src/pages/pp-skills.html",
-    "src/pages/pp-projects.html",
-	  "src/pages/pp-work.html",
-    "src/pages/pp-contact.html"
-  ],
-  "sourceGlobs": [
-    "src/**/*",
-    "images/**/*",
-    "assets/**/*",
-    "data/**/*",
-    "bower.json"
-  ],
-  "includeDependencies": [
-    "manifest.json",
-    "bower_components/webcomponentsjs/webcomponents-lite.min.js"
-  ]
+    "entrypoint": "index.html",
+    "shell": "src/pp-app.html",
+    "fragments": [
+        "src/pages/pp-home.html",
+        "src/pages/pp-about.html",
+        "src/pages/pp-skills.html",
+        "src/pages/pp-projects.html",
+        "src/pages/pp-work.html",
+        "src/pages/pp-contact.html"
+    ],
+    "sourceGlobs": [
+        "src/**/*",
+        "images/**/*",
+        "assets/**/*",
+        "data/**/*",
+        "bower.json"
+    ],
+    "includeDependencies": [
+        "manifest.json",
+        "bower_components/webcomponentsjs/webcomponents-lite.min.js"
+    ]
 }

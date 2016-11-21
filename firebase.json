@@ -1,12 +1,12 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
-  "hosting": {
-    "public": "build/unbundled",
-	"rewrites": [ {
-      "source": "**",
-      "destination": "/index.html"
-    } ]
-  }
+    "database": {
+        "rules": "database.rules.json"
+    },
+    "hosting": {
+        "public": "build/unbundled",
+        "rewrites": [{
+            "source": "**",
+            "destination": "/index.html"
+        }]
+    }
 }
