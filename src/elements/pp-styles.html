@@ -49,6 +49,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       h2.padding-horizontal {
+        padding-left: 4px;
+        padding-right: 4px;
         margin-top: 8px;
         margin-bottom: 8px;
       }
@@ -216,9 +218,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       iron-icon.small {
-        margin-right: 8px;
         --iron-icon-height: 20px;
         --iron-icon-width: 20px;
+        margin-right: 8px;
+        margin-bottom: 2px;
       }
 
       .card-subtitle {
@@ -229,10 +232,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       paper-fab {
+        --paper-fab-background: var(--app-secondary-color);
         position: fixed;
         right: 24px;
-        bottom: 28px;
-        --paper-fab-background: var(--app-secondary-color);
+        bottom: 24px;
         font-size: 20px;
       }
 
@@ -296,6 +299,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         iron-image.card-header {
           height: 240px;
+        }
+
+        paper-fab {
+          right: 16px;
+          bottom: 16px;
         }
       }
     </style>

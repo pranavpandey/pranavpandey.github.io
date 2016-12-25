@@ -100,6 +100,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </a>
           </iron-selector>
 
+          <!-- <iron-selector
+            class="drawer-list"
+            selectable="false"
+            on-iron-activate="drawerSelected">
+            <a href="" on-click="openLink" link="https://pranavpandey.com/privacy">
+              <iron-icon icon="pp-icons:security">
+              </iron-icon><paper-ripple class="primary">
+              </paper-ripple>Privacy Policy
+            </a>
+          </iron-selector> -->
+
           <div class="flex footer">
             <p>&copy;2016 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia™ is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
           </div>
@@ -107,7 +118,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </app-drawer>
 
       <!-- Main content -->
-      <app-header-layout has-scrolling-region>
+      <app-header-layout>
         <app-header condenses fixed effects="material">
           <app-toolbar>
             <paper-icon-button icon="pp-icons:menu" drawer-toggle></paper-icon-button>
@@ -239,6 +250,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       openLink: function(e) {
         var arg = e.target.getAttribute('link');
         window.open(arg, '_blank');
+        this.drawerSelected();
       }
     });
   </script>

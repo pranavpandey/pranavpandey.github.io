@@ -3,3 +3,8 @@ dist
 node_modules
 build
 *.log
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
