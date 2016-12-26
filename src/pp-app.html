@@ -239,8 +239,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       },
 
       drawerSelected: function() {
-        var drawer = this.$$('app-drawer')
-        if(!drawer.persistent) drawer.toggle();
+        var drawer = this.$$('app-drawer');
+        if(!drawer.persistent && drawer.opened) drawer.close();
       },
 
       stringify: function(obj) {
