@@ -45,7 +45,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <template is="dom-repeat" items="[[skillCategory.data]]" as="categoryData">
         <paper-card>
           <div class="card-content">
-            <h2 class="card-title">{{categoryData.title}}</h2>
+            <h2 class="card-title" hidden$="[[!categoryData.title]]">{{categoryData.title}}</h2>
             <h3 class="card-subtitle" hidden$="[[!categoryData.subtitle]]">{{categoryData.subtitle}}</h3>
             <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
           </div>

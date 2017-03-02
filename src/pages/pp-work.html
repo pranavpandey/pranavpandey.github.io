@@ -40,8 +40,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <template is="dom-repeat" items="[[workCategory.data]]" as="categoryData">
         <paper-card>
           <div class="card-content">
-            <h2 class="card-title">{{concat2Strings(categoryData.title, categoryData.company, ' | ')}}</h2>
-            <h3 class="card-subtitle" hidden$="[[!categoryData.duration]]">{{concat2Strings(categoryData.duration, categoryData.place, " | ")}}</h3>
+            <h2 class="card-title" hidden$="[[!categoryData.title]]">
+              {{concat2Strings(categoryData.title, categoryData.company, ' | ')}}
+            </h2>
+            <h3 class="card-subtitle" hidden$="[[!categoryData.duration]]">
+              {{concat2Strings(categoryData.duration, categoryData.place, " | ")}}
+            </h3>
             <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
           </div>
           <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
