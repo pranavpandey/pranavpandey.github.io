@@ -112,7 +112,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </iron-selector> -->
 
           <div class="flex footer">
-            <p>&copy;2016 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia™ is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
+            <p class="footer">&copy;2016 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperiaâ„¢ is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
           </div>
         </div>
       </app-drawer>
@@ -127,7 +127,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <app-toolbar></app-toolbar>
           <app-toolbar hidden$="[[smallLayout]]"></app-toolbar>
           <app-toolbar>
-            <div main-title>Pranav Pandey<br>Developer &amp; Designer</div>
+            <div main-title>Pranav Pandey<br>
+              <span class="main-subtitle">Developer &amp; Designer</span>
+            </div>
           </app-toolbar>
           <app-toolbar></app-toolbar>
         </app-header>
@@ -145,6 +147,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <pp-projects loading="{{isLoading}}" name="projects"></pp-projects>
               <pp-work loading="{{isLoading}}" name="work"></pp-work>
               <pp-contact loading="{{isLoading}}" name="contact"></pp-contact>
+              <pp-404 name="404"></pp-404>
             </iron-pages>
           </div>
 
@@ -199,7 +202,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       _pageChanged: function(page) {
         // load page import on demand.
         var resolvedPageUrl = this.resolveUrl('./pages/pp-' + page + '.html');
-        this.importHref(resolvedPageUrl, null, null, true);
+        this.importHref(resolvedPageUrl, null, this._showPage404, true);
         this.fire('iron-signal', {
           name: 'track-page', data: {
             path: resolvedPageUrl
@@ -230,6 +233,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         document.title = pageTitle + 'Pranav Pandey';
       },
 
+      _showPage404: function() {
+        this.page = '404';
+      },
+
       _lockScroll: function(isLoading) {
         if (isLoading) {
           document.body.style.overflow = 'hidden';
@@ -241,6 +248,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       drawerSelected: function() {
         var drawer = this.$$('app-drawer');
         if(!drawer.persistent && drawer.opened) drawer.close();
+        // this.startFireworks(false);
       },
 
       stringify: function(obj) {
@@ -251,6 +259,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         var arg = e.target.getAttribute('link');
         window.open(arg, '_blank');
         this.drawerSelected();
+      },
+
+      ready: function() {
+        // this.startFireworks(false);
+      },
+
+      startFireworks: function(isDestroy) {
+        this.async(function() {
+          if (isDestroy) {
+            $(this.$.fireworks).fireworks('destroy');
+          }
+          $(this.$.fireworks).fireworks();
+        }, 1);
       }
     });
   </script>
