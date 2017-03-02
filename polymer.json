@@ -7,7 +7,8 @@
         "src/pages/pp-skills.html",
         "src/pages/pp-projects.html",
         "src/pages/pp-work.html",
-        "src/pages/pp-contact.html"
+        "src/pages/pp-contact.html",
+        "src/pages/pp-404.html"
     ],
     "sourceGlobs": [
         "src/**/*",
