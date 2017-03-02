@@ -34,7 +34,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       .overlay {
         pointer-events: none;
-        position: absolute;
+        position: fixed;
         content: " ";
         z-index: 10;
         right: 0px;
@@ -166,6 +166,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin-left: 12px;
       }
 
+      .main-subtitle {
+        font-size: 0.8em;
+      }
+
       [condensed-title] {
         margin-left: 12px;
         text-overflow: ellipsis;
@@ -184,6 +188,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       paper-card.showcase {
         position: relative;
         width: 148px;
+      }
+
+      paper-card.weight-half {
+        position: relative;
+        width: 49.7%;
       }
 
       paper-card.showcase div iron-icon {
@@ -282,13 +291,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: var(--app-secondary-color);
       }
 
-      @media (max-width: 639px) {
+      google-map {
+        height: 352px;
+        width: 100%;
+        display: block;
+      }
+
+      @media (max-width: 1109px) {
+        paper-card.weight-half {
+          position: block;
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 659px) {
         app-drawer {
           --app-drawer-width: 304px;
         }
 
         [main-title] {
           font-size: 1.6em;
+        }
+
+        .main-subtitle {
+          font-size: 0.7em;
         }
 
         paper-card {

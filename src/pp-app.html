@@ -112,7 +112,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </iron-selector>
 
           <div class="flex footer">
-            <p class="footer">&copy;2017 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia&trade; is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
+            <p class="footer">&copy;2017 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia™ is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
           </div>
         </div>
       </app-drawer>
@@ -165,6 +165,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </paper-fab>
 
       <div class="overlay" id="fireworks"></div>
+      <paper-toast id="toast"></paper-toast>
     </app-drawer-layout>
 
     <iron-media-query query="(max-width:639px)"
@@ -194,6 +195,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         '_lockScroll(isLoading)'
       ],
+
+      listeners: {
+        'show-toast': '_showToast'
+      },
+
+      _showToast: function(event) {
+        var toast = this.$$('paper-toast');
+        toast.text = event.detail.text;
+        toast.toggle();
+      },
 
       _routePageChanged: function(page) {
         this.page = page || 'home';
