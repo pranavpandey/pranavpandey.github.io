@@ -167,7 +167,7 @@
             "title": "Flyrobe",
             "subtitle": "Android App | Fashion on Rent",
             "description": "Re-designed the whole app by implementing Google Material Design guidelines. Integrated various APIs and SDKs as per the requirements and to provide user friendly UI.",
-            "accent": "",
+            "accent": "#000000",
             "header": "",
             "headerPlaceholder": "",
             "links": [{
@@ -193,8 +193,8 @@
         }, {
             "title": "xNXT ROM",
             "subtitle": "",
-            "description": "A ROM for Xperiaâ„¢ 2011 MDPI devices based on Sony official ICS (build No. 4.1.B.0.587) with latest apps and MODs to give a unique combination of pleasant design and performance. It has been downloaded over 50K times.",
-            "accent": "",
+            "description": "A ROM for Xperia™ 2011 MDPI devices based on Sony official ICS (build No. 4.1.B.0.587) with latest apps and MODs to give a unique combination of pleasant design and performance. It has been downloaded over 50K times.",
+            "accent": "#f48002",
             "header": "",
             "headerPlaceholder": "",
             "links": [{
@@ -205,8 +205,8 @@
         }, {
             "title": "ArcMini ROM",
             "subtitle": "",
-            "description": "One of my first project to start ROM development for Xperiaâ„¢ 2010 MDPI devices. Based on Cyanogen MOD (2.3.7 and 4.0.4) with unique themes designed by me to give colorful experience. I have also fixed many layout related problems with small screen devices.",
-            "accent": "",
+            "description": "One of my first project to start ROM development for Xperia™ 2010 MDPI devices. Based on Cyanogen MOD (2.3.7 and 4.0.4) with unique themes designed by me to give colorful experience. I have also fixed many layout related problems with small screen devices.",
+            "accent": "#f48002",
             "header": "",
             "headerPlaceholder": "",
             "links": [{

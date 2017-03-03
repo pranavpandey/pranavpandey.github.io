@@ -175,7 +175,6 @@ Just add your verified email id on the `src/pages/pp-contact` page.
     on-iron-form-presubmit="_presubmit">
 
     ...
-
   </form>
 
   ...

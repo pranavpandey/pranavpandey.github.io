@@ -67,6 +67,7 @@
             "duration": "July 2013 - Present",
             "place": "New Delhi, India",
             "description": "Developer, Programmer, UI/UX Designer and Publisher.",
+            "accent": "#A4C439",
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
@@ -78,6 +79,7 @@
             "duration": "June 2015 - Present",
             "place": "New Delhi, India",
             "description": "Working on some websites using MySQL and PHP for backend (Database) and CSS/HTML and JavaScript for frontend (User Interface with the ability to perform dynamic operations).\nThis website is also written and designed by me using Polymer and Firebase.",
+            "accent": "",
             "links": [{
                 "link": "Invoicerr",
                 "url": "http://www.invoicerr.com",
