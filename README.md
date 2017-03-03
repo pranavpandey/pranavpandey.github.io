@@ -162,6 +162,50 @@ list of `fragments` in the included `polymer.json` file.  This will ensure
 those components and their dependencies are added to the list of pre-cached
 components (and will have bundles created in the fallback `bundled` build).
 
+### Contact form
+
+Contact form is very useful if someone wants to contact you on your official
+email id. It has built in support via [formspree.io](https://formspree.io/).
+Just add your verified email id on the `src/pages/pp-contact` page.
+
+```html
+<paper-card class="weight-half">
+  <form is="iron-form" id="presubmit"
+    action="https://formspree.io/YOUR_EMAIL_ID" method="post"
+    on-iron-form-presubmit="_presubmit">
+
+    ...
+
+  </form>
+
+  ...
+</paper-card>
+```
+
+### Google Maps
+
+It has Google Maps support to display your location on contact page. Just add
+your API Key on the `src/pages/pp-contact` page and modify the location.
+To generate an API Key, please follow the official documentation
+[here](https://developers.google.com/maps/documentation/javascript/get-api-key).
+
+```html
+<paper-card class="weight-half">
+  <google-map latitude="LATITUDE" longitude="LONGITUDE"
+     api-key="YOUR_API_KEY" zoom="13">
+    <google-map-marker latitude="LATITUDE" longitude="LONGITUDE"
+      title="TITLE" draggable="true">
+    </google-map-marker>
+  </google-map>
+
+  <div class="card-content">
+    <h3 class="card-subtitle no-vertical-margin">
+      YOUR_LOCATION_TEXT
+    </h3>
+  </div>
+</paper-card>
+```
+
 ---
 
 ## License
