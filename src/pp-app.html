@@ -274,8 +274,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         return JSON.stringify(obj);
       },
 
-      openLink: function(e) {
-        var arg = e.target.getAttribute('link');
+      openLink: function(event) {
+        var arg = event.currentTarget.getAttribute('link');
         window.open(arg, '_blank');
         this.drawerSelected();
       },
