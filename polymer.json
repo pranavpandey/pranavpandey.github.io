@@ -10,14 +10,14 @@
         "src/pages/pp-contact.html",
         "src/pages/pp-404.html"
     ],
-    "sourceGlobs": [
+    "sources": [
         "src/**/*",
         "images/**/*",
         "assets/**/*",
         "data/**/*",
         "bower.json"
     ],
-    "includeDependencies": [
+    "extraDependencies": [
         "manifest.json",
         "bower_components/webcomponentsjs/webcomponents-lite.min.js"
     ]
