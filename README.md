@@ -62,37 +62,76 @@ polymer serve
 
 ## Build
 
-This command performs HTML, CSS, and JS minification on the application
-dependencies, and generates a service-worker.js file with code to pre-cache the
-dependencies based on the entrypoint and fragments specified in `polymer.json`.
-The minified files are output to the `build/unbundled` folder, and are suitable
-for serving from a HTTP/2+Push compatible server.
+Build a Polymer application for production. This includes support for
+optimizations like code bundling, minification, and ES6 compilation to run
+on older browsers.
 
-In addition the command also creates a fallback `build/bundled` folder,
-generated using fragment bundling, suitable for serving from non
-H2/push-compatible servers or to clients that do not support H2/Push.
+Most optimizations are disabled by default. To make sure the correct build
+enhancements are always used, you can provide a set of build configurations via
+the ["builds"](https://www.polymer-project.org/2.0/docs/tools/polymer-json#builds)
+field of your `polymer.json` file:
+
+```json
+"builds": [{
+  "bundle": true,
+  "js": {"minify": true},
+  "css": {"minify": true},
+  "html": {"minify": true}
+}],
+```
+
+Run `polymer help build` for the full list of available options & optimizations.
+
+If you need support for something that is missing from the CLI, check out the
+[polymer-build](https://github.com/Polymer/polymer-build) library. Is the JS
+library that powers the CLI, and calling it directly gives you much greater
+control than the CLI can provide. Visit the repo for usage information and
+examples.
 
 ```
-polymer build
+polymer build [options...]
 ```
 
 ---
 
 ## Test the build
 
-This command serves the minified version of the app in an unbundled state,
-as it would be served by a push-compatible server.
+Start a development server designed for serving Polymer & Web Component
+projects. Applications are served as-is, while elements are served from a
+special route where it can properly reference its dependencies.
+
+By default, the server will automatically use [Babel](https://babeljs.io) to
+transpile any ES6 code down to ES5 for browsers that don't have native support
+for important ES6 features like classes. This behavior can be explicitly turned
+on/off for all browsers via the `--compile` option.
+
+Run `polymer help serve` for the full list of available options.
 
 ```
-polymer serve build/unbundled
+polymer serve [options...]
 ```
 
-This command serves the minified version of the app generated using fragment
-bundling.
+Lint your project for common errors. Specify a set of linting rules via
+the `--rules` command option or your `polymer.json` configuration. To make
+sure you always use the correct rule set, we recommend adding a "lint" section
+to your polymer.json like so:
+
+```json
+"lint": {
+  "rules": [
+    "polymer-2-hybrid"
+  ]
+},
+```
+
+Run `polymer help lint` for the full list of available options and rule sets.
 
 ```
-polymer serve build/bundled
+polymer lint [--rules RULE_SET] [options...]
 ```
+
+In case of any issue, please follow the official guidelines
+[here](https://github.com/Polymer/polymer-cli).
 
 ---
 
@@ -148,7 +187,7 @@ serve up index.html for any URL's that don't otherwise end in a file extension.
 
   The URL to your live site is listed in the output.
 
-In case of any issue, please follow official guidelines
+In case of any issue, please follow the official guidelines
 [here](https://www.polymer-project.org/1.0/start/toolbox/deploy).
 
 ---
