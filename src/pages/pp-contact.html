@@ -45,66 +45,73 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </template>
     </template>
 
-    <h2 class="padding-horizontal">Form</h2>
+    <div class="weight-half">
+      <h2 class="padding-horizontal">Form</h2>
 
-    <paper-card class="weight-half">
-      <form is="iron-form" id="presubmit"
-        action="https://formspree.io/YOUR_EMAIL_ID" method="post"
-        on-iron-form-presubmit="_presubmit">
-        <div id="captcha_container" class="card-content">
-          <h3 class="card-subtitle">If you have any queries or anything good for me, you can contact me via this form.</h3>
-          <input type="text" name="_gotcha" style="display:none" />
-          <paper-input type="text" name="name" label="Name"
-            floatingLabel required auto-validate
-            error-message="Name cannot be empty!">
-            <iron-icon class="small" icon="pp-icons:person" prefix></iron-icon>
-          </paper-input>
-          <paper-input name="_replyto" type="email" label="Email"
-            floatingLabel required auto-validate
-            error-message="Please enter your email id.">
-            <iron-icon class="small" icon="pp-icons:mail" prefix></iron-icon>
-          </paper-input>
-          <paper-input type="text" name="_subject" label="Subject" floatingLabel
-            required auto-validate error-message="Please enter subject.">
-            <iron-icon class="small" icon="pp-icons:create" prefix></iron-icon>
-          </paper-input>
-          <paper-textarea id="message" type="text" label="Message"
-            name="message" floatingLabel multiline rows="3" required
-            placeholder="Something about your subject..."
-            error-message="Message cannot be empty!">
-          </paper-textarea>
-          <br>
-          <!-- <div class="g-recaptcha"></div> -->
+      <paper-card>
+        <form is="iron-form" id="presubmit"
+          action="https://formspree.io/hello@pranavpandey.com" method="post"
+          on-iron-form-presubmit="_presubmit">
+          <div id="captcha_container" class="card-content">
+            <h3 class="card-subtitle">If you have any queries or anything good for me, you can contact me via this form.</h3>
+            <input type="text" name="_gotcha" style="display:none" />
+            <paper-input type="text" name="name" label="Name"
+              floatingLabel required auto-validate
+              error-message="Name cannot be empty!">
+              <iron-icon class="small" icon="pp-icons:person" prefix></iron-icon>
+            </paper-input>
+            <paper-input name="_replyto" type="email" label="Email"
+              floatingLabel required auto-validate
+              error-message="Please enter your email id.">
+              <iron-icon class="small" icon="pp-icons:mail" prefix></iron-icon>
+            </paper-input>
+            <paper-input type="text" name="_subject" label="Subject" floatingLabel
+              required auto-validate error-message="Please enter subject.">
+              <iron-icon class="small" icon="pp-icons:create" prefix></iron-icon>
+            </paper-input>
+            <paper-textarea id="message" type="text" label="Message"
+              name="message" floatingLabel multiline rows="3" required
+              placeholder="Something about your subject..."
+              error-message="Message cannot be empty!">
+            </paper-textarea>
+            <br>
+            <!-- <div class="g-recaptcha"></div> -->
+          </div>
+          <br/>
+          <div class="card-actions">
+            <paper-button id="btn_submit" type="submit"
+              class="secondary" on-tap="_submit" raised>
+              <iron-icon class="small" icon="pp-icons:submit"></iron-icon>
+              Submit
+            </paper-button>
+            <paper-button class="secondary" on-tap="_reset">
+              <iron-icon class="small" icon="pp-icons:reset"></iron-icon>
+              Reset
+            </paper-button>
+          </div>
+        </form>
+      </paper-card>
+    </div>
+
+    <div class="weight-half">
+      <h2 class="padding-horizontal">Map</h2>
+
+      <!-- api-key="AIzaSyA0bWOVyLoSaxSq176z-9k_C2AADn5V_p8" -->
+      <paper-card>
+        <google-map latitude="28.731691" longitude="77.134674"
+           api-key="AIzaSyA0bWOVyLoSaxSq176z-9k_C2AADn5V_p8" zoom="13">
+          <google-map-marker latitude="28.731691" longitude="77.134674"
+            title="Pranav Pandey" draggable="true">
+          </google-map-marker>
+        </google-map>
+
+        <div class="card-content">
+          <h3 class="card-subtitle no-vertical-margin">
+            21, Manav Vihar<br />Sector-15, Rohini<br />Delhi-110089<br />India
+          </h3>
         </div>
-        <br/>
-        <div class="card-actions">
-          <paper-button id="btn_submit" type="submit"
-            class="secondary" on-tap="_submit" raised>
-            <iron-icon class="small" icon="pp-icons:submit"></iron-icon>
-            Submit
-          </paper-button>
-          <paper-button class="secondary" on-tap="_reset">
-            <iron-icon class="small" icon="pp-icons:reset"></iron-icon>
-            Reset
-          </paper-button>
-        </div>
-      </form>
-    </paper-card>
-
-    <paper-card class="weight-half">
-      <google-map latitude="LATITUDE" longitude="LONGITUDE"
-         api-key="YOUR_API_KEY" zoom="13">
-        <google-map-marker latitude="LATITUDE" longitude="LONGITUDE"
-          title="TITLE" draggable="true">
-        </google-map-marker>
-      </google-map>
-
-      <div class="card-content">
-        <h3 class="card-subtitle no-vertical-margin">
-          YOUR_LOCATION
-        </h3>
-      </div>
-    </paper-card>
+      </paper-card>
+    </div>
 
     <paper-toast id="toast" text="Thanks for contacting me. I will get back to you soon!"></paper-toast>
   </template>
