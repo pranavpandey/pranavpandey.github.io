@@ -112,7 +112,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               class="drawer-list"
               selectable="false"
               on-iron-activate="drawerSelected">
-              <a href="" on-click="openLink" link="https://privacy.pranavpandey.com">
+              <a href="https://techtics.xyz" target="_blank" tabindex="-1">
+                <iron-icon icon="social-icons:techtics">
+                </iron-icon><paper-ripple class="primary">
+                </paper-ripple>Techtics
+              </a>
+              <a href="https://privacy.pranavpandey.com" target="_blank" tabindex="-1">
                 <iron-icon icon="pp-icons:security">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Privacy &amp; Terms
@@ -123,7 +128,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <paper-divider></paper-divider>
 
           <div class="flex footer">
-            <p class="footer">&copy; 2017 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperiaâ„¢ is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
+            <p class="footer">&copy; 2017 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia&trade; is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
           </div>
         </div>
       </app-drawer>
@@ -134,14 +139,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <app-toolbar>
             <paper-icon-button icon="pp-icons:menu" drawer-toggle></paper-icon-button>
             <div condensed-title>Pranav Pandey</div>
-            <paper-icon-button icon="social-icons:github"
-              on-tap="openLink"
-              link="https://github.com/pranavpandey">
-            </paper-icon-button>
-            <paper-icon-button icon="pp-icons:person"
-              on-tap="openLink"
-              link="https://plus.google.com/+pranavpandeydev">
-            </paper-icon-button>
+            <a class=".drawer-list a" href="https://github.com/pranavpandey"
+              target="_blank" tabindex="-1">
+              <paper-icon-button class="white" icon="social-icons:github" />
+            </a>
+            <a class=".drawer-list a" href="https://plus.google.com/+pranavpandeydev"
+              target="_blank" tabindex="-1">
+              <paper-icon-button class="white" icon="pp-icons:person" />
+            </a>
           </app-toolbar>
           <app-toolbar></app-toolbar>
           <app-toolbar hidden$="[[smallLayout]]"></app-toolbar>
@@ -176,12 +181,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </app-header-layout>
 
-      <paper-fab
-        icon="pp-icons:shop"
-        title="Google Play"
-        on-tap="openLink"
-        link="https://play.google.com/store/search?q=pub%3APranav%20Pandey&c=apps&hl=en">
-      </paper-fab>
+      <a class=".drawer-list a" href="https://play.google.com/store/apps/dev?id=6608630615059087491"
+        target="_blank" tabindex="-1">
+        <paper-fab icon="pp-icons:shop" title="Google Play" />
+      </a>
 
       <div class="overlay" id="fireworks"></div>
       <paper-toast id="toast"></paper-toast>
