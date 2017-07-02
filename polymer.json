@@ -20,5 +20,22 @@
     "extraDependencies": [
         "manifest.json",
         "bower_components/webcomponentsjs/webcomponents-lite.min.js"
-    ]
+    ],
+    "lint": {
+        "rules": [
+            "polymer-2-hybrid"
+        ]
+    },
+    "builds": [{
+        "bundle": true,
+        "js": {
+            "minify": true
+        },
+        "css": {
+            "minify": true
+        },
+        "html": {
+            "minify": true
+        }
+    }]
 }
