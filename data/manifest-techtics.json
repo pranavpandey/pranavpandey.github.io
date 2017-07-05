@@ -1,0 +1,13 @@
+{
+    "name": "Techtics",
+    "short_name": "Techtics",
+    "start_url": "/?homescreen=1",
+    "display": "standalone",
+    "theme_color": "#010101",
+    "background_color": "#010101",
+    "icons": [{
+        "src": "techtics.xyz/content/images/2017/07/icon-512x512-notext.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}
