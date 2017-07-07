@@ -52,7 +52,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
             <template is="dom-repeat" items="[[categoryData.links]]" as="linksSkill">
               <a class="paper-button" href$="[[linksSkill.url]]" target="_blank" tabindex="-1">
-                <paper-button class="secondary">
+                <paper-button class="secondary" style$="[[setColor(linksSkill.accent)]]">
                   <iron-icon class="small" icon="[[linksSkill.ironIcon]]"></iron-icon>
                   {{linksSkill.link}}
                 </paper-button>

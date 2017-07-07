@@ -144,11 +144,13 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#A4C639"
             }, {
                 "link": "XDA",
                 "url": "http://forum.xda-developers.com/member.php?u=3962236",
-                "ironIcon": "pp-icons:public"
+                "ironIcon": "pp-icons:public",
+                "accent": "#f48002"
             }]
         }, {
             "title": "Web Development",
@@ -161,7 +163,8 @@
             }, {
                 "link": "Firebase",
                 "url": "https://firebase.google.com",
-                "ironIcon": "pp-icons:storage"
+                "ironIcon": "pp-icons:storage",
+                "accent": "#F4B400"
             }]
         }, {
             "title": "Data Interchange",
@@ -180,7 +183,8 @@
             "links": [{
                 "link": "GitHub",
                 "url": "https://github.com/pranavpandey",
-                "ironIcon": "social-icons:github"
+                "ironIcon": "social-icons:github",
+                "accent": "#000000"
             }]
         }, {
             "title": "Graphics Design",
@@ -189,7 +193,8 @@
             "links": [{
                 "link": "Material Design by Google",
                 "url": "https://material.google.com/",
-                "ironIcon": "pp-icons:public"
+                "ironIcon": "pp-icons:public",
+                "accent": "#424242"
             }]
         }, {
             "title": "Office Tools",
@@ -213,149 +218,6 @@
             "title": "",
             "subtitle": "",
             "description": "Listening to music, Drawing, Playing Cricket, Volley ball, Badminton and PC games, Surfing the Internet.",
-            "links": []
-        }]
-    }],
-    "projects": [{
-        "category": "Open Source",
-        "data": [{
-            "title": "Small App Support",
-            "subtitle": "",
-            "description": "Small App Support is an easy to use library to build attractive small apps for Sony devices with native apps like functionality. I have divided it into different parts for easy understanding. As small app is a service there was a problem displaying a dialog from the small app. So, I have wrote a function to easily display a dialog from a small app. This library is a collection of such type of functions and classes to provide a good interface.",
-            "links": [{
-                "link": "GitHub",
-                "url": "https://github.com/pranavpandey/small-app-support",
-                "ironIcon": "social-icons:github"
-            }]
-        }]
-    }, {
-        "category": "Android Apps",
-        "data": [{
-            "title": "Rotation",
-            "subtitle": "An Orientation Manager",
-            "description": "A tool for Android to control device orientation with per app settings. In this, all the modes are supported including Reverse portrait and Full sensor. It has some unique features like Rotate on Demand, Notification Toggles, Shortcuts and Widgets. Automate Rotation (Locale/Tasker) plugin to switch orientation according to various contexts. It has been downloaded over 120K times on Google Play.",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation&hl=en",
-                "ironIcon": "pp-icons:shop"
-            }]
-        }, {
-            "title": "Files",
-            "subtitle": "Sony Small Apps Extension",
-            "description": "A complete file manager that can work on top of any task. Many features like App Manager, Bookmarks, Search, Set wallpaper/ringtone, Copy/replace, Compress/extract, Thumbnails for image/music/video/apk. It has over 25K downloads on Google Play.",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.files.lite&hl=en",
-                "ironIcon": "pp-icons:shop"
-            }]
-        }, {
-            "title": "Stopwatch",
-            "subtitle": "Sony Small Apps Extension",
-            "description": "Stopwatch which can be launched from anywhere on top of any task. Features like Pause/Resume/Reset, Laps, Share time. Over 70K downloads on Google Play.",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.stopwatch&hl=en",
-                "ironIcon": "pp-icons:shop"
-            }]
-        }, {
-            "title": "Torch",
-            "subtitle": "Sony Small Apps Extension",
-            "description": "Torch which can be launched from anywhere on top of any task. It has some unique features like Strobe, Morse code decoder(SOS), Battery indicator, Auto On/Off. It also works when screen is off to save battery. Over 50K downloads on Google Play.",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.lite&hl=en",
-                "ironIcon": "pp-icons:shop"
-            }]
-        }, {
-            "title": "Launcher",
-            "subtitle": "Sony Small Apps Extension",
-            "description": "Launch apps quickly from anywhere on top of any task. Features like Favourites, Share apps as apk, App info, View in Play store and Uninstall. Over 25K downloads on Google Play.",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.launcher&hl=en",
-                "ironIcon": "pp-icons:shop"
-            }]
-        }, {
-            "title": "Phone",
-            "subtitle": "Sony Small Apps Extension",
-            "description": "A complete Phone app to make calls from anywhere on top of any task. Many features including Contacts, Call logs, Dialer with cursor, Speed dial, View/Edit/Delete contacts/call logs. Other features like Send message, Copy to clipboard, etc. It has over 30K downloads on Google Play.",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.phone&hl=en",
-                "ironIcon": "pp-icons:shop"
-            }]
-        }, {
-            "title": "Lock",
-            "subtitle": "Sony Small Apps Extension",
-            "description": "Lock is a simple small app to lock the device from anywhere. Just 2 clicks (or 1 click) to lock the device. It has been downloaded over 15K times on Google Play",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.lock&hl=en",
-                "ironIcon": "pp-icons:shop"
-            }]
-        }, {
-            "title": "Flyrobe",
-            "subtitle": "Android App | Fashion on Rent",
-            "description": "Re-designed the whole app by implementing Google Material Design guidelines. Integrated various APIs and SDKs as per the requirements and to provide user friendly UI.",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/details?id=com.flyrobe.android&hl=en",
-                "ironIcon": "pp-icons:shop"
-            }]
-        }]
-    }, {
-        "category": "Other Projects",
-        "data": [{
-            "title": "xNXT ROM",
-            "subtitle": "",
-            "description": "A ROM for Xperia™ 2011 MDPI devices based on Sony official ICS (build No. 4.1.B.0.587) with latest apps and MODs to give a unique combination of pleasant design and performance. It has been downloaded over 50K times.",
-            "links": [{
-                "link": "XDA",
-                "url": "http://forum.xda-developers.com/showthread.php?t=2093511",
-                "ironIcon": "pp-icons:link"
-            }]
-        }, {
-            "title": "ArcMini ROM",
-            "subtitle": "",
-            "description": "One of my first project to start ROM development for Xperia™ 2010 MDPI devices. Based on Cyanogen MOD (2.3.7 and 4.0.4) with unique themes designed by me to give colorful experience. I have also fixed many layout related problems with small screen devices.",
-            "links": [{
-                "link": "XDA",
-                "url": "http://forum.xda-developers.com/showthread.php?t=1225668",
-                "ironIcon": "pp-icons:link"
-            }]
-        }, {
-            "title": "Invoicerr.com",
-            "subtitle": "",
-            "description": "A website to generate bills, invoices or receipts. Re-designed the whole UI and added ability to add or remove items dynamically. Used various concepts of CSS/HTML and JavaScript to create dynamic list with record of each entered row so that we can modify it also. Updated various Database tables and re-wrote the PHP queries to retrieve and save data according to the customer needs. Fixed various design issues with the final bill and have also implemented the Tax system. User can save upto 4 type of taxes (fully customisable) with per item control.",
-            "links": [{
-                "link": "Website",
-                "url": "http://www.invoicerr.com/",
-                "ironIcon": "pp-icons:public"
-            }]
-        }]
-    }, {
-        "category": "College Projects",
-        "data": [{
-            "title": "SensActions/SensLock",
-            "subtitle": "",
-            "description": "An app for all Android 2.2+ devices to perform various actions without using the key in a quicker and smarter way. It uses different sensors present on the device to perform different actions. SensActions can make any device able to respond your shakes and swipes/waves like any other flagship device and sometime for fun also.\n\nI was the lead developer, I have done the app designing and coded various modules.",
-            "links": [{
-                "link": "XDA",
-                "url": "http://forum.xda-developers.com/showthread.php?t=2403029",
-                "ironIcon": "pp-icons:android"
-            }, {
-                "link": "Report",
-                "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXN1R4ZUtUZXV5R2c/view?usp=sharing",
-                "ironIcon": "pp-icons:attachment"
-            }, {
-                "link": "Presentation",
-                "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXMXRwY1VRcWJpT3M/view?usp=sharing",
-                "ironIcon": "pp-icons:attachment"
-            }]
-        }, {
-            "title": "Garden Company Website",
-            "subtitle": "",
-            "description": "A website portal of a company providing gardening products and services (The Garden Company) as a part of the summer training project at HCL Infosystems Ltd. It has been developed in ASP.NET technology. It has an attractive UI with support for ads and user login. It provides various tips, tricks and solutions to gardening related problems. It advertises and sells several gardening related products. It gives three levels of content control- Admin, Member and Guest.",
             "links": []
         }]
     }]

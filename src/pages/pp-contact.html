@@ -34,7 +34,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
             <template is="dom-repeat" items="[[categoryData.links]]" as="linksContact">
               <a class="paper-button" href$="[[linksContact.url]]" target="_blank" tabindex="-1">
-                <paper-button style$="[[setColor(linksContact.accent)]]">
+                <paper-button class="secondary" style$="[[setColor(linksContact.accent)]]">
                   <iron-icon class="small" icon="[[linksContact.ironIcon]]"></iron-icon>
                   {{linksContact.link}}
                 </paper-button>

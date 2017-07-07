@@ -41,7 +41,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
             <template is="dom-repeat" items="[[categoryData.links]]" as="linksAbout">
               <a class="paper-button" href$="{{linksAbout.url}}" target="_blank" tabindex="-1">
-                <paper-button class="secondary">
+                <paper-button class="secondary" style$="[[setColor(linksAbout.accent)]]">
                   <iron-icon class="small" icon="[[linksAbout.ironIcon]]"></iron-icon>
                   {{linksAbout.link}}
                 </paper-button>
@@ -71,6 +71,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           value: false,
           notify: true
         }
+      },
+
+      setColor: function(color) {
+        var style = "color:" + color;
+        return style;
       },
 
       isJSONEmpty: function(obj) {
