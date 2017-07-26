@@ -1,9 +1,9 @@
 {
     "showcase": [{
-        "title": "HYVE",
+        "title": "4GM HYVE",
         "src": "",
         "accent": "#000000",
-        "url": "https://www.hyve.buzz"
+        "url": "https://www.4geniusminds.com"
     }, {
         "title": "XDA",
         "src": "",
@@ -24,26 +24,26 @@
         "category": "Official",
         "data": [{
             "title": "Head - Software Development",
-            "company": "Hyve Mobility",
+            "company": "4GM Hyve Mobility",
             "duration": "October 2016 - Present",
             "place": "New Delhi, India",
-            "description": "",
+            "description": "Lead the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM's software team in China to provide best user experience.",
             "accent": "#000000",
             "links": [{
                 "link": "Website",
-                "url": "https://www.hyve.buzz",
+                "url": "https://www.4geniusminds.com",
                 "ironIcon": "pp-icons:public"
             }]
         }, {
             "title": "Senoir Android Developer",
-            "company": "Hyve Mobility",
+            "company": "4GM Hyve Mobility",
             "duration": "December 2015 - September 2016",
             "place": "New Delhi, India",
             "description": "",
             "accent": "#000000",
             "links": [{
                 "link": "Website",
-                "url": "https://www.hyve.buzz",
+                "url": "https://www.4geniusminds.com",
                 "ironIcon": "pp-icons:public"
             }]
         }, {
