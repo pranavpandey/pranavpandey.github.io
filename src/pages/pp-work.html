@@ -23,16 +23,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <h2 class="padding-horizontal">Organisations</h2>
     <template is="dom-repeat" items="[[dataWork.showcase]]" as="showcaseData">
-      <a class="showcase"
-        href$="[[showcaseData.url]]" target$="[[setTarget(showcaseData.url)]]" tabindex="-1">
-        <paper-card class="showcase">
-          <div class="card-actions">
-            <h2 class="showcase-title"
-              style$="[[setColor(showcaseData.accent)]]">{{showcaseData.title}}</h2>
-          </div>
-          <paper-ripple style$="[[setShowcaseColor(showcaseData.accent, showcaseData.url)]]"></paper-ripple>
-        </paper-card>
-      </a>
+      <paper-card class="showcase">
+        <div class="card-actions">
+          <h2 class="showcase-title"
+            style$="[[setColor(showcaseData.accent)]]">{{showcaseData.title}}</h2>
+        </div>
+        <paper-ripple style$="[[setShowcaseColor(showcaseData.accent, showcaseData.url)]]"></paper-ripple>
+      </paper-card>
     </template>
 
     <template is="dom-repeat" items="[[dataWork.work]]" as="workCategory">

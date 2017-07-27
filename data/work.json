@@ -3,22 +3,22 @@
         "title": "4GM HYVE",
         "src": "",
         "accent": "#000000",
-        "url": "https://www.4geniusminds.com"
+        "url": ""
     }, {
         "title": "XDA",
         "src": "",
         "accent": "#f48002",
-        "url": "http://forum.xda-developers.com/member.php?u=3962236"
+        "url": ""
     }, {
         "title": "FLYROBE",
         "src": "",
         "accent": "#000000",
-        "url": "http://flyrobe.com"
+        "url": ""
     }, {
         "title": "HCL",
         "src": "",
         "accent": "#016bb5",
-        "url": "http://www.hcl.com/hcl-infosystems"
+        "url": ""
     }],
     "work": [{
         "category": "Official",
@@ -29,11 +29,7 @@
             "place": "New Delhi, India",
             "description": "Lead the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM's software team in China to provide best user experience.",
             "accent": "#000000",
-            "links": [{
-                "link": "Website",
-                "url": "https://www.4geniusminds.com",
-                "ironIcon": "pp-icons:public"
-            }]
+            "links": []
         }, {
             "title": "Senoir Android Developer",
             "company": "4GM Hyve Mobility",
@@ -41,11 +37,7 @@
             "place": "New Delhi, India",
             "description": "",
             "accent": "#000000",
-            "links": [{
-                "link": "Website",
-                "url": "https://www.4geniusminds.com",
-                "ironIcon": "pp-icons:public"
-            }]
+            "links": []
         }, {
             "title": "Senoir Android Developer",
             "company": "Flyrobe",
@@ -53,11 +45,7 @@
             "place": "Mumbai, India",
             "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
             "accent": "#000000",
-            "links": [{
-                "link": "Website",
-                "url": "http://flyrobe.com",
-                "ironIcon": "pp-icons:public"
-            }]
+            "links": []
         }]
     }, {
         "category": "Freelancer (Self Employed)",
@@ -80,11 +68,7 @@
             "place": "New Delhi, India",
             "description": "Working on some websites using MySQL and PHP for backend (Database) and CSS/HTML and JavaScript for frontend (User Interface with the ability to perform dynamic operations).\nThis website is also written and designed by me using Polymer and Firebase.",
             "accent": "",
-            "links": [{
-                "link": "Invoicerr",
-                "url": "http://www.invoicerr.com",
-                "ironIcon": "pp-icons:public"
-            }]
+            "links": []
         }, {
             "title": "Recognized Developer",
             "company": "XDA-Developers",
