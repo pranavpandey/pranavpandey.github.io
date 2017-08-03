@@ -201,10 +201,26 @@ list of `fragments` in the included `polymer.json` file.  This will ensure
 those components and their dependencies are added to the list of pre-cached
 components (and will have bundles created in the fallback `bundled` build).
 
+### Google Analytics
+
+It has [Google Analytics](https://www.google.co.in/analytics/#?modal_active=none)
+support to monitor the website traffic. Just add your tracking id in the
+`index.html` page.
+
+```html
+<body fullbleed layout vertical unresolved>
+  <start-google-analytics-tracker
+    code="YOUR-TRACKING-ID">
+  </start-google-analytics-tracker>
+
+  ...
+</body>
+```
+
 ### Twitter widgets
 
 Home screen has an option to display twitter widgets. Just add your profile
-link on the `src/pages/pp-home.html` page. For loading twitter widgets, I am using
+link in the `src/pages/pp-home.html` page. For loading twitter widgets, I am using
 [this polymer element](https://github.com/joaovieira/twitter-widgets). You can
 also add multiple widgets.
 
@@ -225,7 +241,7 @@ also add multiple widgets.
 
 Contact form is very useful if someone wants to contact you on your official
 email id. It has built in support via [formspree.io](https://formspree.io/).
-Just add your verified email id on the `src/pages/pp-contact.html` page.
+Just add your verified email id in the `src/pages/pp-contact.html` page.
 
 ```html
 <paper-card class="weight-half">
@@ -243,7 +259,7 @@ Just add your verified email id on the `src/pages/pp-contact.html` page.
 ### Google Maps
 
 It has Google Maps support to display your location on contact page. Just add
-your API Key on the `src/pages/pp-contact.html` page and modify the location.
+your API Key in the `src/pages/pp-contact.html` page and modify the location.
 To generate an API Key, please follow the official documentation
 [here](https://developers.google.com/maps/documentation/javascript/get-api-key).
 

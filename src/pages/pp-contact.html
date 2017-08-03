@@ -48,9 +48,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="weight-half">
       <h2 class="padding-horizontal">Form</h2>
 
+      <!-- Contact Form-->
       <paper-card>
         <form is="iron-form" id="presubmit"
-          action="https://formspree.io/hello@pranavpandey.com" method="post"
+          action="https://formspree.io/YOUR_EMAIL_ID" method="post"
           on-iron-form-presubmit="_presubmit">
           <div id="captcha_container" class="card-content">
             <h3 class="card-subtitle">If you have any queries or anything good for me, you can contact me via this form.</h3>
@@ -96,18 +97,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="weight-half">
       <h2 class="padding-horizontal">Map</h2>
 
-      <!-- api-key="AIzaSyA0bWOVyLoSaxSq176z-9k_C2AADn5V_p8" -->
+      <!-- Google Maps -->
       <paper-card>
-        <google-map latitude="28.731691" longitude="77.134674"
-           api-key="AIzaSyA0bWOVyLoSaxSq176z-9k_C2AADn5V_p8" zoom="13">
+        <google-map latitude="LATITUDE" longitude="LONGITUDE"
+           api-key="YOUR_API_KEY" zoom="13">
           <google-map-marker latitude="28.731691" longitude="77.134674"
-            title="Pranav Pandey" draggable="true">
+            title="TITLE" draggable="true">
           </google-map-marker>
         </google-map>
 
         <div class="card-content">
           <h3 class="card-subtitle no-vertical-margin">
-            21, Manav Vihar<br />Sector-15, Rohini<br />Delhi-110089<br />India
+            YOUR_LOCATION_TEXT
           </h3>
         </div>
       </paper-card>
