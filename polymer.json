@@ -27,6 +27,7 @@
         ]
     },
     "builds": [{
+        "addServiceWorker": true,
         "bundle": true,
         "js": {
             "minify": true
