@@ -42,7 +42,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       last-response="{{dataBase64}}">
     </iron-ajax>
 
-    <app-drawer-layout fullbleed drawer>
+    <app-drawer-layout responsive-width="700px" fullbleed drawer>
       <!-- Drawer content -->
       <app-drawer swipe-open>
         <div class="scrollable">
@@ -190,7 +190,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <paper-toast id="toast"></paper-toast>
     </app-drawer-layout>
 
-    <iron-media-query query="(max-width:639px)"
+    <iron-media-query query="(max-width:700px)"
       query-matches="{{smallLayout}}">
     </iron-media-query>
   </template>
