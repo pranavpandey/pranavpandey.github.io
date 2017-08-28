@@ -11,65 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <dom-module id="pp-projects">
   <template>
-    <style include="pp-styles"></style>
-
-    <iron-ajax
-      auto
-      url="../../data/projects.json"
-      handle-as="json"
-      loading={{loading}}
-      last-response="{{dataProjects}}">
-    </iron-ajax>
-
-    <h2 class="padding-horizontal">Showcase</h2>
-    <template is="dom-repeat" items="[[dataProjects.showcase]]" as="showcaseData">
-      <a class="showcase"
-        href$="[[showcaseData.url]]" target$="[[setTarget(showcaseData.url)]]" tabindex="-1">
-        <paper-card class="showcase">
-          <div class="card-content">
-            <iron-icon icon$="[[showcaseData.icon]]" src$="[[showcaseData.src]]"
-              style$="[[setColor(showcaseData.accent)]]">
-            </iron-icon>
-          </div>
-          <div class="card-actions">
-            <h2 class="showcase-title"
-              style$="[[setColor(showcaseData.accent)]]">{{showcaseData.title}}</h2>
-          </div>
-          <paper-ripple style$="[[setShowcaseColor(showcaseData.accent, showcaseData.url)]]"></paper-ripple>
-        </paper-card>
-      </a>
-    </template>
-
-    <template is="dom-repeat" items="[[dataProjects.projects]]" as="projectCategory">
-      <h2 class="padding-horizontal">{{projectCategory.category}}</h2>
-      <template is="dom-repeat" items="[[projectCategory.data]]" as="categoryData">
-        <paper-card>
-          <div hidden$="[[!categoryData.header]]">
-            <iron-image class="card-header"
-              sizing="cover" preload fade
-              style$="[[setBackgroundColor(categoryData.accent)]]"
-              placeholder="[[categoryData.headerPlaceholder]]"
-              src="[[categoryData.header]]">
-            </iron-image>
-          </div>
-          <div class="card-content">
-            <h2 class="card-title" hidden$="[[!categoryData.title]]">{{categoryData.title}}</h2>
-            <h3 class="card-subtitle" hidden$="[[!categoryData.subtitle]]">{{categoryData.subtitle}}</h3>
-            <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
-          </div>
-          <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
-            <template is="dom-repeat" items="[[categoryData.links]]" as="linksProject">
-              <a class="paper-button" href$="[[linksProject.url]]" target="_blank" tabindex="-1">
-                <paper-button class="secondary" style$="[[setColor(categoryData.accent)]]">
-                  <iron-icon class="small" icon="[[linksProject.ironIcon]]"></iron-icon>
-                  {{linksProject.link}}
-                </paper-button>
-              </a>
-            </template>
-          </div>
-        </paper-card>
-      </template>
-    </template>
+    <pp-content url="../../data/projects.json" loading="{{loading}}"></pp-content>
   </template>
 
   <script>
@@ -82,30 +24,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           value: false,
           notify: true
         }
-      },
-
-      isJSONEmpty: function(obj) {
-        return !obj.length ||
-          !obj.filter(function(a){return Object.keys(a).length;}).length;
-      },
-
-      setBackgroundColor: function(color) {
-        var style = "background-color:" + color;
-        return style;
-      },
-
-      setColor: function(color) {
-        var style = "color:" + color;
-        return style;
-      },
-
-      setShowcaseColor: function(color, url) {
-        var style = "color:" + (url ? color : "transparent");
-        return style;
-      },
-
-      setTarget: function(href) {
-        return href ? "_blank" : "";
       }
     });
   </script>

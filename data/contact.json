@@ -1,5 +1,5 @@
 {
-    "contact": [{
+    "categories": [{
         "category": "Contact",
         "data": [{
             "title": "Social",
@@ -9,22 +9,22 @@
                 "link": "Google+",
                 "url": "https://plus.google.com/+pranavpandeydev",
                 "ironIcon": "social-icons:gplus",
-                "accent": "#d34836"
+                "accent": "#D34836"
             }, {
                 "link": "Twitter",
                 "url": "https://twitter.com/pranavpandeydev",
                 "ironIcon": "social-icons:twitter",
-                "accent": "#00aced"
+                "accent": "#00ACED"
             }, {
                 "link": "Facebook",
                 "url": "https://www.facebook.com/pranavpandeydev",
                 "ironIcon": "social-icons:facebook",
-                "accent": "#3b5998"
+                "accent": "#3B5998"
             }, {
                 "link": "Instagram",
                 "url": "https://www.instagram.com/pranavpandeydev",
                 "ironIcon": "social-icons:instagram",
-                "accent": "#517fa4"
+                "accent": "#517FA4"
             }]
         }, {
             "title": "Developer",
@@ -39,12 +39,12 @@
                 "link": "XDA",
                 "url": "http://forum.xda-developers.com/member.php?u=3962236",
                 "ironIcon": "pp-icons:public",
-                "accent": "#f48002"
+                "accent": "#F48002"
             }, {
                 "link": "Stack Overflow",
                 "url": "http://stackexchange.com/users/6528964/pranav-pandey",
                 "ironIcon": "social-icons:so",
-                "accent": "#fe7a15"
+                "accent": "#FE7A15"
             }]
         }, {
             "title": "Professional",
@@ -54,12 +54,12 @@
                 "link": "LinkedIn",
                 "url": "https://in.linkedin.com/in/pranav-pandey-09032974",
                 "ironIcon": "social-icons:linkedin",
-                "accent": "#007bb6"
+                "accent": "#007BB6"
             }, {
                 "link": "Resume",
                 "url": "https://github.com/pranavpandey/pranavpandey.github.io/raw/master/data/resume.pdf",
                 "ironIcon": "pp-icons:attachment",
-                "accent": "#e91e63"
+                "accent": "#E91E63"
             }, {
                 "link": "Email",
                 "url": "mailto:pranavpande92@gmail.com",

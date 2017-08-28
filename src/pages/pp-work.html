@@ -11,53 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <dom-module id="pp-work">
   <template>
-    <style include="pp-styles"></style>
-
-    <iron-ajax
-      auto
-      url="../../data/work.json"
-      handle-as="json"
-      loading={{loading}}
-      last-response="{{dataWork}}">
-    </iron-ajax>
-
-    <h2 class="padding-horizontal">Organisations</h2>
-    <template is="dom-repeat" items="[[dataWork.showcase]]" as="showcaseData">
-      <paper-card class="showcase">
-        <div class="card-actions">
-          <h2 class="showcase-title"
-            style$="[[setColor(showcaseData.accent)]]">{{showcaseData.title}}</h2>
-        </div>
-        <paper-ripple style$="[[setShowcaseColor(showcaseData.accent, showcaseData.url)]]"></paper-ripple>
-      </paper-card>
-    </template>
-
-    <template is="dom-repeat" items="[[dataWork.work]]" as="workCategory">
-      <h2 class="padding-horizontal">{{workCategory.category}}</h2>
-      <template is="dom-repeat" items="[[workCategory.data]]" as="categoryData">
-        <paper-card>
-          <div class="card-content">
-            <h2 class="card-title" hidden$="[[!categoryData.title]]">
-              {{concat2Strings(categoryData.title, categoryData.company, ' | ')}}
-            </h2>
-            <h3 class="card-subtitle" hidden$="[[!categoryData.duration]]">
-              {{concat2Strings(categoryData.duration, categoryData.place, " | ")}}
-            </h3>
-            <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
-          </div>
-          <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
-            <template is="dom-repeat" items="[[categoryData.links]]" as="linksWork">
-              <a class="paper-button" href$="[[linksWork.url]]" target="_blank" tabindex="-1">
-                <paper-button class="secondary" style$="[[setColor(categoryData.accent)]]">
-                  <iron-icon class="small" icon="[[linksWork.ironIcon]]"></iron-icon>
-                  {{linksWork.link}}
-                </paper-button>
-              </a>
-            </template>
-          </div>
-        </paper-card>
-      </template>
-    </template>
+    <pp-content url="../../data/work.json" hide-showcase-icon loading="{{loading}}"></pp-content>
   </template>
 
   <script>
@@ -70,37 +24,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           value: false,
           notify: true
         }
-      },
-
-      concat2Strings: function(string1, string2, operator) {
-        if (string1 && string2) {
-          return string1 + operator + string2;
-        } else if (string1) {
-          return string1;
-        } else if (string2) {
-          return string2;
-        } else {
-          return "";
-        }
-      },
-
-      isJSONEmpty: function(obj) {
-        return !obj.length ||
-          !obj.filter(function(a){return Object.keys(a).length;}).length;
-      },
-
-      setColor: function(color) {
-        var style = "color:" + color;
-        return style;
-      },
-
-      setShowcaseColor: function(color, url) {
-        var style = "color:" + (url ? color : "transparent");
-        return style;
-      },
-
-      setTarget: function(href) {
-        return href ? "_blank" : "";
       }
     });
   </script>

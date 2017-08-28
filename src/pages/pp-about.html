@@ -9,48 +9,9 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
-<dom-module id="pp-about" is="auto-binding">
- <template>
-    <style include="pp-styles"></style>
-
-    <!-- <firebase-document
-      id="documentAbout"
-      app-name="PROJECT-NAME"
-      path="PATH"
-      data="{{dataAbout}}">
-    </firebase-document> -->
-
-    <iron-ajax
-      auto
-      url="../../data/about.json"
-      handle-as="json"
-      loading={{loading}}
-      last-response="{{dataAbout}}">
-    </iron-ajax>
-
-    <template is="dom-repeat" items="[[dataAbout.about]]" as="aboutCategory">
-      <h2 class="padding-horizontal">{{aboutCategory.category}}</h2>
-      <template is="dom-repeat" items="[[aboutCategory.data]]" as="categoryData">
-        <paper-card>
-          <div class="card-content">
-            <h2 class="card-title" hidden$="[[!categoryData.title]]">{{categoryData.title}}</h2>
-            <h3 class="card-subtitle" hidden$="[[!categoryData.subtitle]]">{{categoryData.subtitle}}</h3>
-            <p hidden$="[[!categoryData.description]]">{{categoryData.description}}</p>
-          </div>
-
-          <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
-            <template is="dom-repeat" items="[[categoryData.links]]" as="linksAbout">
-              <a class="paper-button" href$="{{linksAbout.url}}" target="_blank" tabindex="-1">
-                <paper-button class="secondary" style$="[[setColor(linksAbout.accent)]]">
-                  <iron-icon class="small" icon="[[linksAbout.ironIcon]]"></iron-icon>
-                  {{linksAbout.link}}
-                </paper-button>
-              </a>
-            </template>
-          </div>
-        </paper-card>
-      </template>
-    </template>
+<dom-module id="pp-about">
+  <template>
+    <pp-content url="../../data/about.json" loading="{{loading}}"></pp-content>
   </template>
 
   <script>
@@ -58,29 +19,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       is: 'pp-about',
 
       properties: {
-        // dataAbout: {
-        //   type: Array,
-        //   notify: true,
-        //   value: function() {
-        //     return [];
-        //   }
-        // },
-
         loading: {
           type: Boolean,
           value: false,
           notify: true
         }
-      },
-
-      setColor: function(color) {
-        var style = "color:" + color;
-        return style;
-      },
-
-      isJSONEmpty: function(obj) {
-        return !obj.length ||
-          !obj.filter(function(a){return Object.keys(a).length;}).length;
       }
     });
   </script>

@@ -1,48 +1,38 @@
 {
     "showcase": [{
         "title": "4GM HYVE",
-        "src": "",
         "accent": "#000000",
         "url": ""
     }, {
         "title": "XDA",
-        "src": "",
-        "accent": "#f48002",
+        "accent": "#F48002",
         "url": ""
     }, {
         "title": "FLYROBE",
-        "src": "",
         "accent": "#000000",
         "url": ""
     }, {
         "title": "HCL",
-        "src": "",
-        "accent": "#016bb5",
+        "accent": "#016BB5",
         "url": ""
     }],
-    "work": [{
+    "categories": [{
         "category": "Official",
         "data": [{
-            "title": "Head - Software Development",
-            "company": "4GM Hyve Mobility",
-            "duration": "October 2016 - Present",
-            "place": "New Delhi, India",
+            "title": "Head - Software Development | 4GM Hyve Mobility",
+            "subtitle": "October 2016 - Present | New Delhi, India",
             "description": "Lead the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM's software team in China to provide best user experience.",
             "accent": "#000000",
             "links": []
         }, {
-            "title": "Senoir Android Developer",
-            "company": "4GM Hyve Mobility",
-            "duration": "December 2015 - September 2016",
-            "place": "New Delhi, India",
-            "description": "",
+            "title": "Senoir Android Developer | 4GM Hyve Mobility",
+            "subtitle": "December 2015 - September 2016 | New Delhi, India",
+            "description": "Attended Google OEM Summit 2016.\nBuilt various customised features for our devices.",
             "accent": "#000000",
             "links": []
         }, {
-            "title": "Senoir Android Developer",
-            "company": "Flyrobe",
-            "duration": "September 2015 - December 2015",
-            "place": "Mumbai, India",
+            "title": "Senoir Android Developer | Flyrobe",
+            "subtitle": "September 2015 - December 2015 | Mumbai, India",
             "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
             "accent": "#000000",
             "links": []
@@ -51,62 +41,56 @@
         "category": "Freelancer (Self Employed)",
         "data": [{
             "title": "Android Developer",
-            "company": "",
-            "duration": "July 2013 - Present",
-            "place": "New Delhi, India",
-            "description": "Developer, Programmer, UI/UX Designer and Publisher.",
+            "subtitle": "July 2013 - Present | New Delhi, India",
+            "description": "Developer, Programmer, UI/UX Designer and Publisher.\nAttended Google Play App Excellence Summit 2017.\n Over 500K downloads on Google Play.",
             "accent": "#A4C639",
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#A4C639"
             }]
         }, {
             "title": "Web Developer",
-            "company": "",
-            "duration": "June 2015 - Present",
-            "place": "New Delhi, India",
+            "subtitle": "June 2015 - Present | New Delhi, India",
             "description": "Working on some websites using MySQL and PHP for backend (Database) and CSS/HTML and JavaScript for frontend (User Interface with the ability to perform dynamic operations).\nThis website is also written and designed by me using Polymer and Firebase.",
             "accent": "",
             "links": []
         }, {
-            "title": "Recognized Developer",
-            "company": "XDA-Developers",
-            "duration": "March 2013 - Present",
-            "place": "New Delhi, India",
+            "title": "Recognized Developer | XDA-Developers",
+            "subtitle": "March 2013 - Present | New Delhi, India",
             "description": "ROM Developer (ArcMini & xNXT), Ported lots of applications to older versions of Android using various concepts (smali) and hacks of reverse engineering.\nFirst to port Sony Small Apps API to Xperia™ 2011 MDPI devices.",
-            "accent": "#f48002",
+            "accent": "#F48002",
             "links": [{
                 "link": "Profile",
                 "url": "http://forum.xda-developers.com/member.php?u=3962236",
-                "ironIcon": "pp-icons:person"
+                "ironIcon": "pp-icons:person",
+                "accent": "#F48002"
             }]
         }, {
-            "title": "Recognized Themer",
-            "company": "XDA-Developers",
-            "duration": "August 2012 - Present",
-            "place": "New Delhi, India",
+            "title": "Recognized Themer | XDA-Developers",
+            "subtitle": "August 2012 - Present | New Delhi, India",
             "description": "Designed colourful themes for CynogenMod and also for my own ROMs (Arcmini & xNXT).\nFixed various layout issues with Xperia™ apps on small screen devices (MDPI).",
-            "accent": "#f48002",
+            "accent": "#F48002",
             "links": [{
                 "link": "Profile",
                 "url": "http://forum.xda-developers.com/member.php?u=3962236",
-                "ironIcon": "pp-icons:person"
+                "ironIcon": "pp-icons:person",
+                "accent": "#F48002"
             }]
         }]
     }, {
         "category": "Training",
         "data": [{
-            "title": "Trainee",
-            "company": "HCL Infosystems Ltd.",
-            "duration": "June 2013 - July 2013",
-            "place": "Ghaziabad, India",
+            "title": "Trainee | HCL Infosystems Ltd.",
+            "subtitle": "June 2013 - July 2013 | Ghaziabad, U.P., India",
             "description": "ASP.Net and C# with A+ grade.",
-            "accent": "#016bb5",
+            "accent": "#016BB5",
             "links": [{
                 "link": "Website",
                 "url": "http://www.hcl.com/hcl-infosystems",
-                "ironIcon": "pp-icons:public"
+                "ironIcon": "pp-icons:public",
+                "accent": "#016BB5"
             }]
         }]
     }]

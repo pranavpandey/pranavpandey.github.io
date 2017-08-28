@@ -75,7 +75,7 @@
         "accent": "#000000",
         "url": "https://techtics.xyz"
     }],
-    "projects": [{
+    "categories": [{
         "category": "Open Source",
         "data": [{
             "title": "Small App Support",
@@ -87,7 +87,8 @@
             "links": [{
                 "link": "GitHub",
                 "url": "https://github.com/pranavpandey/small-app-support",
-                "ironIcon": "social-icons:github"
+                "ironIcon": "social-icons:github",
+                "accent": "#688491"
             }]
         }, {
             "title": "Dynamic Utils",
@@ -99,7 +100,8 @@
             "links": [{
                 "link": "GitHub",
                 "url": "https://github.com/pranavpandey/dynamic-utils",
-                "ironIcon": "social-icons:github"
+                "ironIcon": "social-icons:github",
+                "accent": "#688491"
             }]
         }, {
             "title": "Dynamic Toasts",
@@ -111,7 +113,8 @@
             "links": [{
                 "link": "GitHub",
                 "url": "https://github.com/pranavpandey/dynamic-toasts",
-                "ironIcon": "social-icons:github"
+                "ironIcon": "social-icons:github",
+                "accent": "#F44336"
             }]
         }, {
             "title": "Dynamic Engine",
@@ -123,7 +126,8 @@
             "links": [{
                 "link": "GitHub",
                 "url": "https://github.com/pranavpandey/dynamic-engine",
-                "ironIcon": "social-icons:github"
+                "ironIcon": "social-icons:github",
+                "accent": "#2196F3"
             }]
         }, {
             "title": "Dynamic Dialogs",
@@ -135,7 +139,8 @@
             "links": [{
                 "link": "GitHub",
                 "url": "https://github.com/pranavpandey/dynamic-dialogs",
-                "ironIcon": "social-icons:github"
+                "ironIcon": "social-icons:github",
+                "accent": "#673AB7"
             }]
         }, {
             "title": "This Website",
@@ -147,7 +152,8 @@
             "links": [{
                 "link": "GitHub",
                 "url": "https://github.com/pranavpandey/pranavpandey.github.io",
-                "ironIcon": "social-icons:github"
+                "ironIcon": "social-icons:github",
+                "accent": "#3F51B5"
             }]
         }]
     }, {
@@ -162,7 +168,8 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#6586BC"
             }]
         }, {
             "title": "Files",
@@ -174,7 +181,8 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.files.lite",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#E49164"
             }]
         }, {
             "title": "Stopwatch",
@@ -186,7 +194,8 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.stopwatch",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#7D87C0"
             }]
         }, {
             "title": "Torch",
@@ -198,7 +207,8 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.lite",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#26A69A"
             }]
         }, {
             "title": "Launcher",
@@ -210,7 +220,8 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.launcher",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#669DF8"
             }]
         }, {
             "title": "Phone",
@@ -222,7 +233,8 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.phone",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#66BB6A"
             }]
         }, {
             "title": "Lock",
@@ -234,7 +246,8 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.lock",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#688491"
             }]
         }, {
             "title": "Flyrobe",
@@ -246,7 +259,8 @@
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=com.flyrobe.android&hl=en",
-                "ironIcon": "pp-icons:shop"
+                "ironIcon": "pp-icons:shop",
+                "accent": "#000000"
             }]
         }]
     }, {
@@ -255,37 +269,40 @@
             "title": "Google Pixel Live Wallpapers",
             "subtitle": "",
             "description": "Google has introduced Earth and Data live wallpapers in their Pixel devices. I have successfully ported them to Android 6.0+ devices and they can be installed as normal apps. Please visit XDA link below to get the instructions and download link.",
-            "accent": "#20475f",
+            "accent": "#20475F",
             "header": "../../images/projects/pixel-wallpapers.jpg",
             "headerPlaceholder": "data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAeAAD/4QMzaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzEzMiA3OS4xNTkyODQsIDIwMTYvMDQvMTktMTM6MTM6NDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1LjUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6N0RFNzA2NzJDMzIwMTFFNjk4ODFFNEY1MDRBMjJBNkYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6N0RFNzA2NzNDMzIwMTFFNjk4ODFFNEY1MDRBMjJBNkYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3REU3MDY3MEMzMjAxMUU2OTg4MUU0RjUwNEEyMkE2RiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3REU3MDY3MUMzMjAxMUU2OTg4MUU0RjUwNEEyMkE2RiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv/uAA5BZG9iZQBkwAAAAAH/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoXHh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoaJjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/AABEIAAYACgMBIgACEQEDEQH/xABbAAEBAAAAAAAAAAAAAAAAAAAABQEBAAAAAAAAAAAAAAAAAAAAAxAAAAQGAwAAAAAAAAAAAAAAAAECEhEhUaEDBDHR0hEAAgMAAAAAAAAAAAAAAAAAACGBQhP/2gAMAwEAAhEDEQA/AI+U9o9fM5KSNs3QM29VESKqJ5t5sABVoDST/9k=",
             "links": [{
                 "link": "XDA",
                 "url": "http://forum.xda-developers.com/android/apps-games/port-live-earth-wallpapers-t3481640",
-                "ironIcon": "pp-icons:file-download"
+                "ironIcon": "pp-icons:file-download",
+                "accent": "#20475F"
             }]
         }, {
             "title": "xNXT ROM",
             "subtitle": "",
             "description": "A ROM for Xperia™ 2011 MDPI devices based on Sony official ICS (build No. 4.1.B.0.587) with latest apps and MODs to give a unique combination of pleasant design and performance. It has been downloaded over 50K times.",
-            "accent": "#f48002",
+            "accent": "#F48002",
             "header": "",
             "headerPlaceholder": "",
             "links": [{
                 "link": "XDA",
                 "url": "http://forum.xda-developers.com/showthread.php?t=2093511",
-                "ironIcon": "pp-icons:link"
+                "ironIcon": "pp-icons:link",
+                "accent": "#F48002"
             }]
         }, {
             "title": "ArcMini ROM",
             "subtitle": "",
             "description": "One of my first project to start ROM development for Xperia™ 2010 MDPI devices. Based on Cyanogen MOD (2.3.7 and 4.0.4) with unique themes designed by me to give colorful experience. I have also fixed many layout related problems with small screen devices.",
-            "accent": "#f48002",
+            "accent": "#F48002",
             "header": "",
             "headerPlaceholder": "",
             "links": [{
                 "link": "XDA",
                 "url": "http://forum.xda-developers.com/showthread.php?t=1225668",
-                "ironIcon": "pp-icons:link"
+                "ironIcon": "pp-icons:link",
+                "accent": "#F48002"
             }]
         }, {
             "title": "Invoicerr.com",
@@ -294,11 +311,7 @@
             "accent": "",
             "header": "",
             "headerPlaceholder": "",
-            "links": [{
-                "link": "Website",
-                "url": "http://www.invoicerr.com/",
-                "ironIcon": "pp-icons:public"
-            }]
+            "links": []
         }]
     }, {
         "category": "College Projects",
@@ -312,15 +325,18 @@
             "links": [{
                 "link": "XDA",
                 "url": "http://forum.xda-developers.com/showthread.php?t=2403029",
-                "ironIcon": "pp-icons:android"
+                "ironIcon": "pp-icons:android",
+                "accent": "#7FAE65"
             }, {
                 "link": "Report",
                 "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXN1R4ZUtUZXV5R2c/view?usp=sharing",
-                "ironIcon": "pp-icons:attachment"
+                "ironIcon": "pp-icons:attachment",
+                "accent": "#7FAE65"
             }, {
                 "link": "Presentation",
                 "url": "https://drive.google.com/file/d/0B29Dh2QdbmxXMXRwY1VRcWJpT3M/view?usp=sharing",
-                "ironIcon": "pp-icons:attachment"
+                "ironIcon": "pp-icons:attachment",
+                "accent": "#7FAE65"
             }]
         }, {
             "title": "Garden Company Website",

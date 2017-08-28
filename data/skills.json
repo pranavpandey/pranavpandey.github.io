@@ -125,7 +125,7 @@
         "accent": "#000000",
         "url": "http://www.apple.com/macos"
     }],
-    "skills": [{
+    "categories": [{
         "category": "Skills",
         "data": [{
             "title": "Operating Systems",
@@ -209,7 +209,7 @@
         }, {
             "title": "Others",
             "subtitle": "",
-            "description": "Familiar with Unix/Linux environment with command line interface.\nGreat knowledge of computer hardware and can easily assemble and de-assemble it.",
+            "description": "Familiar with Unix/Linux environment with command line interface.\nGood knowledge of computer hardware and can easily assemble and de-assemble it.",
             "links": []
         }]
     }, {
