@@ -9,6 +9,10 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<!-- Twitter widgets -->
+<link rel="import" href="../../bower_components/twitter-widgets/twitter-widgets.html">
+
 <dom-module id="pp-home">
   <template>
     <style include="pp-styles"></style>
@@ -34,6 +38,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </div>
     </paper-card>
 
+    <!-- Un-comment for the Google/IO video -->
     <!-- <h2 class="padding-horizontal">Google I/O 2017</h2>
     <paper-card>
       <iframe src="https://events.google.com/io/embed"
@@ -43,7 +48,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </iframe>
     </paper-card> -->
 
-    <!-- Twitter Widget -->
+    <!-- Add your user name to show Twitter feeds -->
     <twitter-widgets>
       <paper-card>
         <a class="twitter-timeline" href="https://twitter.com/YOUR_USER_NAME"
@@ -55,21 +60,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </template>
 
   <script>
-    Polymer({
-      is: 'pp-home',
-
-      properties: {
-        loading: {
-          type: Boolean,
-          value: false,
-          notify: true
-        }
-      },
-
-      isJSONEmpty: function(obj) {
-        return !obj.length ||
-          !obj.filter(function(a){return Object.keys(a).length;}).length;
+    class PPHome extends Polymer.Element {
+      static get is() {
+        return 'pp-home';
       }
-    });
+
+      static get properties() {
+        return {
+          loading: {
+            type: Boolean,
+            value: false,
+            notify: true,
+          },
+        };
+      }
+
+      isJSONEmpty(jsonObject) {
+        return jsonObject == null || !jsonObject.length ||
+          !jsonObject.filter(function(a) {
+            return Object.keys(a).length;
+          }).length;
+      }
+    }
+
+    window.customElements.define(PPHome.is, PPHome);
   </script>
 </dom-module>

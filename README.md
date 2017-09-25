@@ -4,7 +4,7 @@
 
 This is my personal website in which I am following the
 [Material Design Guidelines](https://material.io/) by Google using
-[Polymer](https://www.polymer-project.org/1.0/) and will keep experimenting
+[Polymer](https://www.polymer-project.org/2.0/) and will keep experimenting
 with new elements and features. I have made it open source so that anyone can
 learn from my experiences. It is just a start as I am not a professional web
 developer but I will do my best to make it better.

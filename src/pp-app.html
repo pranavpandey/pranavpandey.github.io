@@ -9,13 +9,8 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
-<link rel="import" href="./elements/pp-elements.html">
-<link rel="import" href="../bower_components/app-route/app-location.html">
-<link rel="import" href="../bower_components/app-route/app-route.html">
-<link rel="import" href="../bower_components/polymerfire/polymerfire.html">
-
-<link rel="import" href="./elements/pp-styles.html">
-
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="elements/pp-elements.html">
 <!-- Import Google Analytics -->
 <link rel="import" href="../bower_components/start-google-analytics-tracker/start-google-analytics-tracker.html">
 
@@ -27,24 +22,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <app-location route="{{route}}"></app-location>
+    <app-location route="{{route}}" url-space-regex="^[[rootPath]]"></app-location>
     <app-route
       route="{{route}}"
-      pattern="/:page"
+      pattern="[[rootPath]]:page"
       data="{{routeData}}"
       tail="{{subroute}}">
     </app-route>
 
     <iron-ajax
       auto
-      url="../../data/base64.json"
+      url="../data/base64.json"
       handle-as="json"
       last-response="{{dataBase64}}">
     </iron-ajax>
 
-    <app-drawer-layout responsive-width="700px" fullbleed drawer>
+    <app-drawer-layout responsive-width="700px" fullbleed narrow="{{narrow}}">
       <!-- Drawer content -->
-      <app-drawer swipe-open>
+      <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
         <div class="scrollable">
           <app-toolbar class="drawer-header">
             <div class="horizontal layout">
@@ -71,32 +66,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               class="drawer-list"
               role="navigation"
               on-iron-activate="drawerSelected">
-              <a name="home" href="/home">
+              <a name="home" href="[[rootPath]]home">
                 <iron-icon icon="pp-icons:home">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Home
               </a>
-              <a name="about" href="/about">
+              <a name="about" href="[[rootPath]]about">
                 <iron-icon icon="pp-icons:account-circle">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>About
               </a>
-              <a name="skills" href="/skills">
+              <a name="skills" href="[[rootPath]]skills">
                 <iron-icon icon="pp-icons:stars">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Skills
               </a>
-              <a name="projects" href="/projects">
+              <a name="projects" href="[[rootPath]]projects">
                 <iron-icon icon="pp-icons:build">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Projects
               </a>
-              <a name="work" href="/work">
+              <a name="work" href="[[rootPath]]work">
                 <iron-icon icon="pp-icons:work">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Work
               </a>
-              <a name="contact" href="/contact">
+              <a name="contact" href="[[rootPath]]contact">
                 <iron-icon icon="pp-icons:feedback">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Contact
@@ -112,12 +107,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               class="drawer-list"
               selectable="false"
               on-iron-activate="drawerSelected">
-              <a href="https://techtics.xyz" target="_blank" tabindex="-1">
+              <a href="https://techtics.xyz" target="_blank" rel="noopener" tabindex="-1">
                 <iron-icon icon="social-icons:techtics">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Techtics
               </a>
-              <a href="https://privacy.pranavpandey.com" target="_blank" tabindex="-1">
+              <a href="https://privacy.pranavpandey.com" target="_blank" rel="noopener" tabindex="-1">
                 <iron-icon icon="pp-icons:security">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Privacy &amp; Terms
@@ -128,23 +123,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <paper-divider></paper-divider>
 
           <div class="flex footer">
-            <p class="footer">&copy; 2017 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia&trade; is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
+            <p class="footer">&copy; 2017 Pranav Pandey<br /><br />Android is a trademark of Google Inc.<br />Xperia™ is a trademark or registered trademark of Sony Mobile Communications Inc.<br />All other logos and trademarks are the property of their respective owners.<br />Views expressed here are mine and not from my employers.</p>
           </div>
         </div>
       </app-drawer>
 
       <!-- Main content -->
       <app-header-layout>
-        <app-header condenses fixed effects="material">
+        <app-header slot="header" condenses fixed effects="material">
           <app-toolbar>
             <paper-icon-button icon="pp-icons:menu" drawer-toggle></paper-icon-button>
             <div condensed-title>Pranav Pandey</div>
             <a class=".drawer-list a" href="https://github.com/pranavpandey"
-              target="_blank" tabindex="-1">
+              target="_blank" rel="noopener" tabindex="-1">
               <paper-icon-button class="color-white" icon="social-icons:github" />
             </a>
             <a class=".drawer-list a" href="https://plus.google.com/+pranavpandeydev"
-              target="_blank" tabindex="-1">
+              target="_blank" rel="noopener" tabindex="-1">
               <paper-icon-button class="color-white" icon="pp-icons:person" />
             </a>
           </app-toolbar>
@@ -158,13 +153,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <app-toolbar></app-toolbar>
         </app-header>
 
-        <div class="content-frame">
+        <div>
           <div class="content-frame" hidden$="[[isLoading]]">
             <iron-pages
               class="content"
               role="main"
               selected="[[page]]"
-              attr-for-selected="name">
+              attr-for-selected="name"
+              fallback-selection="404">
               <pp-home loading="{{isLoading}}" name="home"></pp-home>
               <pp-about loading="{{isLoading}}" name="about"></pp-about>
               <pp-skills loading="{{isLoading}}" name="skills"></pp-skills>
@@ -182,13 +178,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </app-header-layout>
 
       <a class=".drawer-list a" href="https://play.google.com/store/apps/dev?id=6608630615059087491"
-        target="_blank" tabindex="-1">
+        target="_blank" rel="noopener" tabindex="-1">
         <paper-fab icon="pp-icons:shop" title="Google Play" />
       </a>
-
-      <div class="overlay" id="fireworks"></div>
-      <paper-toast id="toast"></paper-toast>
     </app-drawer-layout>
+
+    <paper-toast id="toast"></paper-toast>
 
     <iron-media-query query="(max-width:700px)"
       query-matches="{{smallLayout}}">
@@ -196,116 +191,123 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </template>
 
   <script>
-    Polymer({
-      is: 'pp-app',
+    class PPApp extends Polymer.Element {
+      static get is() { return 'pp-app'; }
 
-      properties: {
-        page: {
-          type: String,
-          reflectToAttribute: true,
-          observer: '_pageChanged'
-        },
+      static get properties() {
+        return {
+          page: {
+            type: String,
+            reflectToAttribute: true,
+            observer: '_pageChanged',
+          },
+          routeData: Object,
+          subroute: String,
+          // This shouldn't be neccessary, but the Analyzer isn't picking up
+          // Polymer.Element#rootPath
+          rootPath: String,
+          smallLayout: {
+            type: Boolean,
+            value: false
+          },
+        };
+      }
 
-        smallLayout: {
-          type: Boolean,
-          value: false
+      static get observers() {
+        return [
+          '_routePageChanged(routeData.page)',
+          '_lockScroll(isLoading)',
+        ];
+      }
+
+      ready() {
+        super.ready();
+
+        window.addEventListener('show-toast', e => this._showToast(e));
+      }
+
+      _routePageChanged(page) {
+        // If no page was found in the route data, page will be an empty string.
+        // Default to 'home' in that case.
+        if (page != null && page.indexOf(`index.html`) !== -1) {
+          this.page = `home`
+        } else {
+          this.page = page || 'home';
         }
-      },
 
-      observers: [
-        '_routePageChanged(routeData.page)',
+        // Close a non-persistent drawer when the page & route are changed.
+        this.drawerSelected();
+      }
 
-        '_lockScroll(isLoading)'
-      ],
+      _pageChanged(page) {
+        // Load page import on demand. Show 404 page if fails
+        var resolvedPageUrl = this.resolveUrl('pages/pp-' + page + '.html');
 
-      listeners: {
-        'show-toast': '_showToast'
-      },
+        Polymer.importHref(
+            resolvedPageUrl,
+            null,
+            this._showPage404.bind(this),
+            true);
 
-      _showToast: function(event) {
-        var toast = this.$$('paper-toast');
+            var pageTitle;
+            switch (page) {
+              case 'about':
+                pageTitle = 'About - ';
+                break;
+              case 'skills':
+                pageTitle = 'Skills - ';
+                break;
+              case 'projects':
+                pageTitle = 'Projects - ';
+                break;
+              case 'work':
+                pageTitle = 'Work - ';
+                break;
+              case 'contact':
+                pageTitle = 'Contact - ';
+                break;
+              default:
+                pageTitle = '';
+                break;
+            }
+
+            document.title = pageTitle + 'Pranav Pandey';
+      }
+
+      _showPage404() {
+        this.page = '404';
+      }
+
+      _showToast(event) {
+        var toast = this.shadowRoot.querySelector('paper-toast');
         toast.text = event.detail.text;
         toast.toggle();
-      },
+      }
 
-      _routePageChanged: function(page) {
-        this.page = page || 'home';
-      },
-
-      _pageChanged: function(page) {
-        // load page import on demand.
-        var resolvedPageUrl = this.resolveUrl('./pages/pp-' + page + '.html');
-        this.importHref(resolvedPageUrl, null, this._showPage404, true);
-        this.fire('iron-signal', {
-          name: 'track-page', data: {
-            path: resolvedPageUrl
-          }
-        });
-
-        var pageTitle;
-        switch (page) {
-          case 'about':
-            pageTitle = 'About - ';
-            break;
-          case 'skills':
-            pageTitle = 'Skills - ';
-            break;
-          case 'projects':
-            pageTitle = 'Projects - ';
-            break;
-          case 'work':
-            pageTitle = 'Work - ';
-            break;
-          case 'contact':
-            pageTitle = 'Contact - ';
-            break;
-          default:
-            pageTitle = '';
-            break;
-        }
-        document.title = pageTitle + 'Pranav Pandey';
-      },
-
-      _showPage404: function() {
-        this.page = '404';
-      },
-
-      _lockScroll: function(isLoading) {
+      _lockScroll(isLoading) {
         if (isLoading) {
           document.body.style.overflow = 'hidden';
         } else {
           document.body.style.overflow = 'visible';
         }
-      },
+      }
 
-      drawerSelected: function() {
-        var drawer = this.$$('app-drawer');
-        if(!drawer.persistent && drawer.opened) drawer.close();
-        // this.startFireworks(false);
-      },
+      drawerSelected() {
+        var drawer = this.shadowRoot.querySelector('app-drawer');
+        if (!drawer.persistent && drawer.opened) drawer.close();
+      }
 
-      stringify: function(obj) {
+      stringify(obj) {
         return JSON.stringify(obj);
-      },
+      }
 
-      openLink: function(event) {
+      openLink(event) {
         var arg = event.currentTarget.getAttribute('link');
         window.open(arg, '_blank');
         this.drawerSelected();
-      },
-
-      ready: function() {
-        // this.startFireworks(false);
-      },
-
-      startFireworks: function(isDestroy) {
-        this.async(function() {
-          if (isDestroy) {
-            $(this.$.fireworks).fireworks('destroy');
-          }
-          $(this.$.fireworks).fireworks();
-        }, 1);
       }
-    });
+    }
+
+    window.customElements.define(PPApp.is, PPApp);
   </script>
 </dom-module>

@@ -1,7 +1,7 @@
 {
     "name": "Pranav Pandey",
     "short_name": "Pranav",
-    "start_url": "/?homescreen=1",
+    "start_url": "./index.html",
     "display": "standalone",
     "theme_color": "#3F51B5",
     "background_color": "#3F51B5",

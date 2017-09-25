@@ -9,22 +9,30 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
 <dom-module id="pp-about">
   <template>
     <pp-content url="../../data/about.json" loading="{{loading}}"></pp-content>
   </template>
 
   <script>
-    Polymer({
-      is: 'pp-about',
-
-      properties: {
-        loading: {
-          type: Boolean,
-          value: false,
-          notify: true
-        }
+    class PPAbout extends Polymer.Element {
+      static get is() {
+        return 'pp-about';
       }
-    });
+
+      static get properties() {
+        return {
+          loading: {
+            type: Boolean,
+            value: false,
+            notify: true,
+          },
+        };
+      }
+    }
+
+    window.customElements.define(PPAbout.is, PPAbout);
   </script>
 </dom-module>

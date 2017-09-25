@@ -19,7 +19,7 @@
     ],
     "extraDependencies": [
         "manifest.json",
-        "bower_components/webcomponentsjs/webcomponents-lite.min.js"
+        "bower_components/webcomponentsjs/*.js"
     ],
     "lint": {
         "rules": [
@@ -27,6 +27,7 @@
         ]
     },
     "builds": [{
+        "preset": "es5-bundled",
         "addServiceWorker": true,
         "bundle": true,
         "js": {
@@ -38,5 +39,20 @@
         "html": {
             "minify": true
         }
+    }, {
+        "preset": "es6-bundled",
+        "addServiceWorker": true,
+        "bundle": true,
+        "js": {
+            "minify": true
+        },
+        "css": {
+            "minify": true
+        },
+        "html": {
+            "minify": true
+        }
+    }, {
+        "preset": "es6-unbundled"
     }]
 }

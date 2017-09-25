@@ -1,0 +1,57 @@
+{
+  "updated": "31st December 2016",
+  "apps": [{
+    "category": "Applicable Apps",
+    "data": [{
+      "title": "Torch",
+      "subtitle": "Small Apps extension for Sony products",
+      "src": "../../images/projects/icon-torch.png",
+      "accent": "#26A69A",
+      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.license"
+    }, {
+      "title": "Torch Lite",
+      "subtitle": "Small Apps extension for Sony products",
+      "src": "../../images/projects/icon-torch-lite.png",
+      "accent": "#26A69A",
+      "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.lite"
+    }]
+  }],
+  "permissions": [{
+    "category": "Android Permissions",
+    "data": [{
+      "title": "Camera",
+      "subtitle": "- Take pictures and videos",
+      "icon": "permission-icons:camera",
+      "description": "To open camera to turn on the flashlight. It can be done without this permission but some legacy devices does not function properly without it. So, it is used to avoid any failure."
+    }, {
+      "title": "Others",
+      "subtitle": "- Control flashlight\n- Small application overlay",
+      "icon": "permission-icons:unknown",
+      "description": ""
+    }]
+  }],
+  "others": [{
+    "category": "Privacy Policy",
+    "data": [{
+      "title": "",
+      "subtitle": "",
+      "description": "Our Privacy Policy explains how we and some of the companies we work with collect, use, share and protect information in relation to our mobile services, web site, and any software provided on or in connection with Pranav Pandey services (collectively, the \"Service\"), and your choices about the collection and use of your information.\n\nBy using our Service you understand and agree that we are providing a platform for you to post content, including photos, comments and other materials (\"User Content\"), to the Service and to share User Content publicly. This means that other Users may search for, see, use, or share any of your User Content that you make publicly available through the Service, consistent with the terms and conditions of this Privacy Policy and our Terms of Use (which can be found at http://privacy.pranavpandey.com/torch).\n\nOur Policy applies to all visitors, users, and others who access the Service (\"Users\")."
+    }, {
+      "title": "1. Third Party Services",
+      "subtitle": "",
+      "description": "No third party apps or services has been used yet.\n\nWe are not responsible for the practices employed by any websites or services linked to or from our Service, including the information or content contained within them. Please remember that when you use a link to go from our Service to another website or service, our Privacy Policy does not apply to those third-party websites or services. Your browsing and interaction on any third-party website or service, including those that have a link on our website, are subject to that third party's own rules and policies. In addition, you agree that we are not responsible and do not have control over any third-parties that you authorize to access your User Content. If you are using a third-party website or service and you allow them to access your User Content you do so at your own risk."
+    }, {
+      "title": "2. Information we collect",
+      "subtitle": "",
+      "description": "No personal information has been collected yet."
+    }, {
+      "title": "",
+      "subtitle": "Cookies and similar technologies",
+      "description": "When you visit the Service, we may use cookies and similar technologies like pixels, web beacons, and local storage to collect information about how you use apps or services developed by Pranav Pandey and provide features to you.\n\nWe may ask advertisers or other partners to serve ads or services to your devices, which may use cookies or similar technologies placed by us or the third party."
+    }, {
+      "title": "3. Changes to our Privacy Policy",
+      "subtitle": "",
+      "description": "Pranav Pandey may modify or update this Privacy Policy from time to time, so please review it periodically. We may provide you additional forms of notice of modifications or updates as appropriate under the circumstances. Your continued use of app or the Service after any modification to this Privacy Policy will constitute your acceptance of such modification."
+    }]
+  }]
+}

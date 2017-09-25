@@ -3,10 +3,20 @@
         "rules": "database.rules.json"
     },
     "hosting": {
-        "public": "build/unbundled",
+        "public": "build/es5-bundled",
+        "redirects": [{
+            "source": "/privacy",
+            "destination": "https://privacy.pranavpandey.com",
+            "type": 302
+        }, {
+            "source": "/privacy/:page",
+            "destination": "https://privacy.pranavpandey.com/:page",
+            "type": 302
+        }],
         "rewrites": [{
-            "source": "**",
+            "source": "**/!(*.js|*.html|*.css|*.json|*.svg|*.png|*.jpg|*.jpeg)",
             "destination": "/index.html"
-        }]
+        }],
+        "trailingSlash": false
     }
 }
