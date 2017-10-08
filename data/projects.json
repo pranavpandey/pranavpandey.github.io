@@ -1,79 +1,82 @@
 {
-    "showcase": [{
-        "title": "Small App Support",
-        "src": "../../images/projects/icon-sas.png",
-        "accent": "#688491",
-        "url": "https://github.com/pranavpandey/small-app-support"
-    }, {
-        "title": "Dynamic Utils",
-        "src": "../../images/projects/icon-dynamic-utils.png",
-        "accent": "#688491",
-        "url": "https://github.com/pranavpandey/dynamic-utils"
-    }, {
-        "title": "Dynamic Toasts",
-        "src": "../../images/projects/icon-dynamic-toasts.png",
-        "accent": "#F44336",
-        "url": "https://github.com/pranavpandey/dynamic-toasts"
-    }, {
-        "title": "Dynamic Engine",
-        "src": "../../images/projects/icon-dynamic-engine.png",
-        "accent": "#2196F3",
-        "url": "https://github.com/pranavpandey/dynamic-engine"
-    }, {
-        "title": "Dynamic Dialogs",
-        "src": "../../images/projects/icon-dynamic-dialogs.png",
-        "accent": "#673AB7",
-        "url": "https://github.com/pranavpandey/dynamic-dialogs"
-    }, {
-        "title": "Rotation",
-        "src": "../../images/projects/icon-rotation.png",
-        "accent": "#6586BC",
-        "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation"
-    }, {
-        "title": "Files",
-        "src": "../../images/projects/icon-files.png",
-        "accent": "#E49164",
-        "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.files.lite"
-    }, {
-        "title": "Stopwatch",
-        "src": "../../images/projects/icon-stopwatch.png",
-        "accent": "#7D87C0",
-        "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.stopwatch"
-    }, {
-        "title": "Torch",
-        "src": "../../images/projects/icon-torch.png",
-        "accent": "#26A69A",
-        "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.lite"
-    }, {
-        "title": "Launcher",
-        "src": "../../images/projects/icon-launcher.png",
-        "accent": "#669DF8",
-        "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.launcher"
-    }, {
-        "title": "Phone",
-        "src": "../../images/projects/icon-phone.png",
-        "accent": "#66BB6A",
-        "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.phone"
-    }, {
-        "title": "Lock",
-        "src": "../../images/projects/icon-lock.png",
-        "accent": "#688491",
-        "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.lock"
-    }, {
-        "title": "SensActions",
-        "src": "../../images/projects/icon-sa.png",
-        "accent": "#7FAE65",
-        "url": "http://forum.xda-developers.com/showthread.php?t=2403029"
-    }, {
-        "title": "Website",
-        "src": "../../images/manifest/icon-192x192.png",
-        "accent": "#3F51B5",
-        "url": "https://github.com/pranavpandey/pranavpandey.github.io"
-    }, {
-        "title": "Techtics",
-        "src": "../../images/projects/icon-techtics.png",
-        "accent": "#000000",
-        "url": "https://techtics.xyz"
+    "showcases": [{
+        "category": "Showcase",
+        "data": [{
+            "title": "Small App Support",
+            "src": "../../images/projects/icon-sas.png",
+            "accent": "#688491",
+            "url": "https://github.com/pranavpandey/small-app-support"
+        }, {
+            "title": "Dynamic Utils",
+            "src": "../../images/projects/icon-dynamic-utils.png",
+            "accent": "#688491",
+            "url": "https://github.com/pranavpandey/dynamic-utils"
+        }, {
+            "title": "Dynamic Toasts",
+            "src": "../../images/projects/icon-dynamic-toasts.png",
+            "accent": "#F44336",
+            "url": "https://github.com/pranavpandey/dynamic-toasts"
+        }, {
+            "title": "Dynamic Engine",
+            "src": "../../images/projects/icon-dynamic-engine.png",
+            "accent": "#2196F3",
+            "url": "https://github.com/pranavpandey/dynamic-engine"
+        }, {
+            "title": "Dynamic Dialogs",
+            "src": "../../images/projects/icon-dynamic-dialogs.png",
+            "accent": "#673AB7",
+            "url": "https://github.com/pranavpandey/dynamic-dialogs"
+        }, {
+            "title": "Rotation",
+            "src": "../../images/projects/icon-rotation.png",
+            "accent": "#6586BC",
+            "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation"
+        }, {
+            "title": "Files",
+            "src": "../../images/projects/icon-files.png",
+            "accent": "#E49164",
+            "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.files.lite"
+        }, {
+            "title": "Stopwatch",
+            "src": "../../images/projects/icon-stopwatch.png",
+            "accent": "#7D87C0",
+            "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.stopwatch"
+        }, {
+            "title": "Torch",
+            "src": "../../images/projects/icon-torch.png",
+            "accent": "#26A69A",
+            "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.lite"
+        }, {
+            "title": "Launcher",
+            "src": "../../images/projects/icon-launcher.png",
+            "accent": "#669DF8",
+            "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.launcher"
+        }, {
+            "title": "Phone",
+            "src": "../../images/projects/icon-phone.png",
+            "accent": "#66BB6A",
+            "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.phone"
+        }, {
+            "title": "Lock",
+            "src": "../../images/projects/icon-lock.png",
+            "accent": "#688491",
+            "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.lock"
+        }, {
+            "title": "SensActions",
+            "src": "../../images/projects/icon-sa.png",
+            "accent": "#7FAE65",
+            "url": "http://forum.xda-developers.com/showthread.php?t=2403029"
+        }, {
+            "title": "Website",
+            "src": "../../images/manifest/icon-192x192.png",
+            "accent": "#3F51B5",
+            "url": "https://github.com/pranavpandey/pranavpandey.github.io"
+        }, {
+            "title": "Techtics",
+            "src": "../../images/projects/icon-techtics.png",
+            "accent": "#000000",
+            "url": "https://techtics.xyz"
+        }]
     }],
     "categories": [{
         "category": "Open Source",
