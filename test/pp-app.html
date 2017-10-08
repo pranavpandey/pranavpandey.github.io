@@ -38,9 +38,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           home = fixture('basic');
         });
 
-        test('Match the drawer quote', function() {
+        test('Drawer quote must not be null', function() {
           var quote = Polymer.dom(home.root).querySelector('.drawer-quote');
-          assert.isNotNaN(quote.textContent, 'Drawer quote is not null.');
+          assert.isNotNull(quote.textContent);
         });
       });
     </script>
