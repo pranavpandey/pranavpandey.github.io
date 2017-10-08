@@ -1,20 +1,23 @@
 {
-    "showcase": [{
-        "title": "4GM HYVE",
-        "accent": "#000000",
-        "url": ""
-    }, {
-        "title": "XDA",
-        "accent": "#F48002",
-        "url": ""
-    }, {
-        "title": "FLYROBE",
-        "accent": "#000000",
-        "url": ""
-    }, {
-        "title": "HCL",
-        "accent": "#016BB5",
-        "url": ""
+    "showcases": [{
+        "category": "Organisations",
+        "data": [{
+            "title": "4GM HYVE",
+            "accent": "#000000",
+            "url": ""
+        }, {
+            "title": "XDA",
+            "accent": "#F48002",
+            "url": ""
+        }, {
+            "title": "FLYROBE",
+            "accent": "#000000",
+            "url": ""
+        }, {
+            "title": "HCL",
+            "accent": "#016BB5",
+            "url": ""
+        }]
     }],
     "categories": [{
         "category": "Official",
