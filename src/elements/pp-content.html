@@ -10,6 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="pp-elements.html">
 
 <dom-module id="pp-content">
   <template>
@@ -98,11 +99,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             value: false,
             notify: true,
           },
-          loading: {
-            type: Boolean,
-            value: false,
-            notify: true,
-          },
         };
       }
 
@@ -114,22 +110,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       setBackgroundColor(color) {
-        var style = "background-color:" + color;
+        var style = 'background-color:' + color;
         return style;
       }
 
       setColor(color) {
-        var style = "color:" + color;
+        var style = 'color:' + color;
         return style;
       }
 
       setShowcaseColor(color, url) {
-        var style = "color:" + (url ? color : "transparent");
+        var style = 'color:' + (url ? color : 'transparent');
         return style;
       }
 
       setTarget(href) {
-        return href ? "_blank" : "";
+        return href ? '_blank' : '';
       }
     }
 

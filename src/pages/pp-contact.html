@@ -10,8 +10,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../elements/pp-content.html">
 <!-- Form and Google Map -->
 <link rel="import" href="../../bower_components/iron-form/iron-form.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input-container.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input-error.html">
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
 <link rel="import" href="../../bower_components/google-map/google-map.html">
 <link rel="import" href="../../bower_components/google-map/google-map-marker.html">
 
@@ -112,13 +117,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         this.$.contactform.addEventListener(
           'iron-form-submit', function(event) {
-            this.fire('show-toast', { "text": "Thanks for contacting me. I will get back to you soon!" });
-            console.log('SubmitData', JSON.stringify(event.detail));
+            event.target.fire('show-toast', {
+              'text': 'Thanks for contacting me. I will get back to you soon!',
+            });
         });
 
         this.$.contactform.addEventListener(
           'iron-form-presubmit', function(event) {
-            this.reset();
+            event.target.reset();
         });
       }
 

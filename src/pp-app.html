@@ -14,6 +14,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <!-- Import Google Analytics -->
 <link rel="import" href="../bower_components/start-google-analytics-tracker/start-google-analytics-tracker.html">
 
+<!-- Lazy loading all the fragments -->
+<link rel="lazy-import" href="pages/pp-home.html">
+<link rel="lazy-import" href="pages/pp-about.html">
+<link rel="lazy-import" href="pages/pp-skills.html">
+<link rel="lazy-import" href="pages/pp-projects.html">
+<link rel="lazy-import" href="pages/pp-work.html">
+<link rel="lazy-import" href="pages/pp-contact.html">
+<link rel="lazy-import" href="pages/pp-404.html">
+
 <dom-module id="pp-app">
   <template>
     <style include="pp-styles">
@@ -208,7 +217,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           rootPath: String,
           smallLayout: {
             type: Boolean,
-            value: false
+            value: false,
           },
         };
       }
@@ -223,14 +232,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       ready() {
         super.ready();
 
-        window.addEventListener('show-toast', e => this._showToast(e));
+        window.addEventListener('show-toast', (e) => {
+          this._showToast(e);
+        });
       }
 
       _routePageChanged(page) {
         // If no page was found in the route data, page will be an empty string.
         // Default to 'home' in that case.
         if (page != null && page.indexOf(`index.html`) !== -1) {
-          this.page = `home`
+          this.page = `home`;
         } else {
           this.page = page || 'home';
         }
