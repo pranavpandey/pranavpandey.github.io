@@ -36,18 +36,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <paper-card class="showcase">
             <div class="card-content" hidden$="[[hideShowcaseIcon]]">
               <iron-icon icon$="[[showcaseData.icon]]" src$="[[showcaseData.src]]"
-                style$="[[setColor(showcaseData.accent)]]">
-              </iron-icon>
-            </div>
-            <div class="card-actions">
-              <h2 class="showcase-title"
-                style$="[[setColor(showcaseData.accent)]]">{{showcaseData.title}}</h2>
-            </div>
-            <paper-ripple style$="[[setShowcaseColor(showcaseData.accent, showcaseData.url)]]"></paper-ripple>
-          </paper-card>
-        </a>
-      </template>
-    </template>
+               style$="[[setColor(showcaseData.accent)]]">
+             </iron-icon>
+           </div>
+           <div class="card-actions">
+             <h2 class="showcase-title"
+               style$="[[setColor(showcaseData.accent)]]">{{showcaseData.title}}</h2>
+           </div>
+           <paper-ripple style$="[[setShowcaseColor(showcaseData.accent, showcaseData.url)]]"></paper-ripple>
+         </paper-card>
+       </a>
+     </template>
+   </template>
 
     <template is="dom-repeat" items="[[dataContent.categories]]" as="contentCategory">
       <h2 class="padding-horizontal" hidden$="[[!contentCategory.category]]">{{contentCategory.category}}</h2>
