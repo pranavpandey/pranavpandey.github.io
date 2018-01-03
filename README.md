@@ -1,6 +1,6 @@
 # My Personal Website
 
-[![Build Status](https://travis-ci.org/pranavpandey/pranavpandey.github.io.svg?branch=master)](https://travis-ci.org/pranavpandey/pranavpandey.github.io)
+[![Build Status](https://travis-ci.org/pranavpandey/pranavpandey.github.io.svg?branch=polymer-2.x-hybrid)](https://travis-ci.org/pranavpandey/pranavpandey.github.io)
 
 This is my personal website in which I am following the
 [Material Design Guidelines](https://material.io/) by Google using
@@ -205,7 +205,7 @@ components (and will have bundles created in the fallback `bundled` build).
 
 Almost all the website data is generated via `json` files stored in the `data`
 folder. Modify all the data files to display your own data. Please do not break
-the `json` schema otherwise, it will not display the data. 
+the `json` schema otherwise, it will not display the data.
 
 ### Google Analytics
 
