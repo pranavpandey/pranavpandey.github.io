@@ -20,27 +20,6 @@
         }]
     }],
     "categories": [{
-        "category": "Official",
-        "data": [{
-            "title": "Head - Software Development | 4GM Hyve Mobility",
-            "subtitle": "October 2016 - Present | New Delhi, India",
-            "description": "Lead the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM's software team in China to provide best user experience.",
-            "accent": "#000000",
-            "links": []
-        }, {
-            "title": "Senoir Android Developer | 4GM Hyve Mobility",
-            "subtitle": "December 2015 - September 2016 | New Delhi, India",
-            "description": "Attended Google OEM Summit 2016.\nBuilt various customised features for our devices.",
-            "accent": "#000000",
-            "links": []
-        }, {
-            "title": "Senoir Android Developer | Flyrobe",
-            "subtitle": "September 2015 - December 2015 | Mumbai, India",
-            "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
-            "accent": "#000000",
-            "links": []
-        }]
-    }, {
         "category": "Freelancer (Self Employed)",
         "data": [{
             "title": "Android Developer",
@@ -81,6 +60,27 @@
                 "ironIcon": "pp-icons:person",
                 "accent": "#F48002"
             }]
+        }]
+    }, {
+        "category": "Official",
+        "data": [{
+            "title": "Head - Software Development | 4GM Hyve Mobility",
+            "subtitle": "October 2016 - 2017 | New Delhi, India",
+            "description": "Lead the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM's software team in China to provide best user experience.",
+            "accent": "#000000",
+            "links": []
+        }, {
+            "title": "Senior Android Developer | 4GM Hyve Mobility",
+            "subtitle": "December 2015 - September 2016 | New Delhi, India",
+            "description": "Attended Google OEM Summit 2016.\nBuilt various customised features for our devices.",
+            "accent": "#000000",
+            "links": []
+        }, {
+            "title": "Senior Android Developer | Flyrobe",
+            "subtitle": "September 2015 - December 2015 | Mumbai, India",
+            "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
+            "accent": "#000000",
+            "links": []
         }]
     }, {
         "category": "Training",

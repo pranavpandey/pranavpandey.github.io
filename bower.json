@@ -31,7 +31,7 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
     "start-google-analytics-tracker": "StartPolymer/start-google-analytics-tracker#^1.1.1",
     "re-captcha": "cbalit/re-captcha#^1.1.3",
-    "twitter-widgets": "joaovieira/twitter-widgets#^0.0.1"
+    "twitter-widgets": "pranavpandey/twitter-widgets#polymer-2.x"
   },
   "resolutions": {
     "polymer": "^2.3.1",

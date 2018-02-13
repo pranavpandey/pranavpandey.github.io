@@ -4,7 +4,7 @@
         "data": [{
             "title": "New Delhi, India",
             "subtitle": "8th August 1992",
-            "description": "My name is Pranav Pandey. I was born on August 8th, 1992 in New Delhi, India to my mother Sudha Pandey (maiden name Upadhyay) and father Shrikant Pandey. I grew up with my mother, elder sister and grand parents as my father had expired in a road accident just before my birth. As I was growing up, my elders let me try many different things and provided me with the resources to try them and the major things that came out were playing outdoor games like cricket, bedminton, vollyball; interest in pc games and computer programming. You can serach my name on Google to know more about my contributions in software development, especially in Android.",
+            "description": "My name is Pranav Pandey. I was born on August 8th, 1992 in New Delhi, India to my mother Sudha Pandey (maiden name Upadhyay) and father Shrikant Pandey. I grew up with my mother, elder sister and grand parents as my father had expired in a road accident just before my birth. As I was growing up, my elders let me try many different things and provided me with the resources to try them and the major things that came out were playing outdoor games like cricket, bedminton, vollyball, interest in pc games and computer programming. You can serach my name on Google to know more about my contributions in software development, especially in Android.",
             "links": [{
                 "link": "Google Search",
                 "url": "https://www.google.co.in/?gfe_rd=cr&ei=A_7uV7bYEKTG8AfhmJaACA#q=pranav+pandey+android",
@@ -17,7 +17,7 @@
         "data": [{
             "title": "Qualification",
             "subtitle": "Computer Science & Engineering",
-            "description": "I am an Engineer by Qualification (B. Tech. in Computer Science & Engineering) and a Programmer and UI/UX Designer by work. I have 3+ years of experience in Android development. I have also worked on some websites and can design some good graphics in Photoshop/Illustrator. Read below about some of my best things.",
+            "description": "I am an Engineer by Qualification (B. Tech. in Computer Science & Engineering) and a Programmer and UI/UX Designer by work. I have 4+ years of experience in Android development. I have also worked on some websites and can design some good graphics in Photoshop/Illustrator. Read below about some of my best things.",
             "links": []
         }, {
             "title": "Android Themes, MODS and Custom ROMs",
@@ -37,7 +37,7 @@
         }, {
             "title": "Android Apps",
             "subtitle": "Forward Engineering",
-            "description": "I have started developing apps in 2013. As I ported the Small App API so, I decided to develop Small Apps first which were featured on XDA and many other blogs. There was good response from users due to unique design and advanced features which I have implemented in those apps. Still they are the most advanced small apps for Sony devices. My apps has over 350K downloads on Google Play.",
+            "description": "I have started developing apps in 2013. As I ported the Small App API so, I decided to develop Small Apps first which were featured on XDA and many other blogs. There was good response from users due to unique design and advanced features which I have implemented in those apps. Still, they are the most advanced small apps for Sony devices. My apps have over 500K downloads on Google Play.",
             "links": [{
                 "link": "Featured on XDA",
                 "url": "http://www.xda-developers.com/expand-your-sony-xperia-small-apps-collection",
@@ -47,7 +47,7 @@
         }, {
             "title": "Rotation",
             "subtitle": "An Orientation Manager",
-            "description": "Switching orientation is always be a problem for people having big devices. So, I have designed a System independent framework to help those users and Rotation was born. Then, I have added all the modes and features on user requests. It has been featured on may blogs and has over 120K downloads on Google Play.",
+            "description": "Switching orientation is always be a problem for people having big devices. So, I have designed a system independent framework to help those users and Rotation was born. Then, I have added all the modes and features on users request. It has been featured on many blogs and has over 200K downloads on Google Play.",
             "links": [{
                 "link": "XDA",
                 "url": "http://www.xda-developers.com/android/rotation-take-control-orientation-settings",
