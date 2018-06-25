@@ -1,6 +1,7 @@
 language: node_js
 sudo: required
 dist: trusty
+
 addons:
   firefox: latest
   apt:
@@ -8,16 +9,19 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
+
 node_js:
-  - "node"
-  - "6"
+  - "8"
+
 cache:
   directories:
     - node_modules
+
 install:
   - npm install -g polymer-cli
   - npm install
   - polymer install
+
 script:
   - xvfb-run npm run test
   - xvfb-run npm run test:integration
