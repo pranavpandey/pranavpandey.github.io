@@ -1,9 +1,9 @@
 bower_components
-dist
 node_modules
+.firebase
+dist
 build
 *.log
-package-lock.json
 
 ### OSX ###
 .DS_Store

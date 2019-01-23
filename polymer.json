@@ -15,7 +15,8 @@
         "images/**/*",
         "assets/**/*",
         "data/**/*",
-        "bower.json"
+        "bower.json",
+        "robots.txt"
     ],
     "extraDependencies": [
         "manifest.json",

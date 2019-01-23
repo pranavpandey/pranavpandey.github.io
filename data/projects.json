@@ -17,15 +17,20 @@
             "accent": "#F44336",
             "url": "https://github.com/pranavpandey/dynamic-toasts"
         }, {
+            "title": "Dynamic Dialogs",
+            "src": "../../images/projects/icon-dynamic-dialogs.png",
+            "accent": "#673AB7",
+            "url": "https://github.com/pranavpandey/dynamic-dialogs"
+        }, {
             "title": "Dynamic Engine",
             "src": "../../images/projects/icon-dynamic-engine.png",
             "accent": "#2196F3",
             "url": "https://github.com/pranavpandey/dynamic-engine"
         }, {
-            "title": "Dynamic Dialogs",
-            "src": "../../images/projects/icon-dynamic-dialogs.png",
-            "accent": "#673AB7",
-            "url": "https://github.com/pranavpandey/dynamic-dialogs"
+            "title": "Dynamic Motion",
+            "src": "../../images/projects/icon-dynamic-motion.png",
+            "accent": "#CDDC39",
+            "url": "https://github.com/pranavpandey/dynamic-motion"
         }, {
             "title": "Small App Support",
             "src": "../../images/projects/icon-sas.png",
@@ -73,14 +78,9 @@
             "url": "http://forum.xda-developers.com/showthread.php?t=2403029"
         }, {
             "title": "Website",
-            "src": "../../images/manifest/icon-192x192.png",
+            "src": "../../images/projects/icon-pp.png",
             "accent": "#3F51B5",
             "url": "https://github.com/pranavpandey/pranavpandey.github.io"
-        }, {
-            "title": "Techtics",
-            "src": "../../images/projects/icon-techtics.png",
-            "accent": "#000000",
-            "url": "https://techtics.xyz"
         }]
     }],
     "categories": [{
