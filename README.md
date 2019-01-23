@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/pranavpandey/pranavpandey.github.io/master/images/projects/icon-pp.png" width="160" height="160" align="right" hspace="20">
+
 # My Personal Website
 
 [![Build Status](https://travis-ci.org/pranavpandey/pranavpandey.github.io.svg?branch=polymer-2.x-hybrid)](https://travis-ci.org/pranavpandey/pranavpandey.github.io)
