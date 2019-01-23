@@ -82,16 +82,6 @@
             "accent": "#F34F29",
             "url": "https://git-scm.com/"
         }, {
-            "title": "Bower",
-            "icon": "skill-icons:bower",
-            "accent": "#EF5734",
-            "url": "https://bower.io/"
-        }, {
-            "title": "Atom",
-            "icon": "skill-icons:atom",
-            "accent": "#67595D",
-            "url": "https://atom.io/"
-        }, {
             "title": "Gimp",
             "icon": "skill-icons:gimp",
             "accent": "#2E3436",
@@ -143,7 +133,7 @@
         }, {
             "title": "Android Development",
             "subtitle": "AOSP, Theming, Modding Custom ROM and App development",
-            "description": "I have already developed 14 apps for Android using JAVA, XML, Eclipse and Android Studio. As I am also an AOSP/Custom ROM developer so, I have some basic knowledge of C/Makefile, Python and Smali (assembly) languages.",
+            "description": "I have already developed various apps for Android using JAVA, Kotlin, XML, Eclipse and Android Studio. As I am also an AOSP/Custom ROM developer so, I have some basic knowledge of C/Makefile, Python and Smali (assembly) languages.",
             "links": [{
                 "link": "Google Play",
                 "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
@@ -220,7 +210,7 @@
         "data": [{
             "title": "",
             "subtitle": "",
-            "description": "Listening to music, Drawing, Playing Cricket, Volley ball, Badminton and PC games, Surfing the Internet.",
+            "description": "Listening to music, Drawing, Playing Cricket, Volleyball, Badminton, PC games and Surfing the Internet.",
             "links": []
         }]
     }]

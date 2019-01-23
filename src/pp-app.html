@@ -117,7 +117,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Techtics
               </a> -->
-              <a href="https://privacy.pranavpandey.com" target="_blank" tabindex="-1">
+              <a href="https://privacy.pranavpandey.com" target="_blank" rel="noopener" tabindex="-1">
                 <iron-icon icon="pp-icons:security">
                 </iron-icon><paper-ripple class="primary">
                 </paper-ripple>Privacy &amp; Terms
@@ -138,15 +138,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <app-header-layout>
         <app-header condenses fixed effects="material">
           <app-toolbar>
-            <paper-icon-button icon="pp-icons:menu" drawer-toggle></paper-icon-button>
+            <paper-icon-button icon="pp-icons:menu" aria-hidden="true" drawer-toggle></paper-icon-button>
             <div condensed-title>Pranav Pandey</div>
             <a class=".drawer-list a" href="https://github.com/pranavpandey"
-              target="_blank" tabindex="-1">
-              <paper-icon-button class="color-white" icon="social-icons:github" />
+              target="_blank" rel="noopener" tabindex="-1" aria-label="GitHub">
+              <paper-icon-button class="color-white" icon="social-icons:github" aria-hidden="true" />
             </a>
-            <a class=".drawer-list a" href="https://plus.google.com/+pranavpandeydev"
-              target="_blank" tabindex="-1">
-              <paper-icon-button class="color-white" icon="pp-icons:person" />
+            <a class=".drawer-list a" href="https://twitter.com/pranavpandeydev"
+              target="_blank" rel="noopener" tabindex="-1" aria-label="Twitter">
+              <paper-icon-button class="color-white" icon="pp-icons:person" aria-hidden="true" />
             </a>
           </app-toolbar>
           <app-toolbar></app-toolbar>
@@ -183,7 +183,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </app-header-layout>
 
       <a class=".drawer-list a" href="https://play.google.com/store/apps/dev?id=6608630615059087491"
-        target="_blank" tabindex="-1">
+        target="_blank" rel="noopener" tabindex="-1">
         <paper-fab icon="pp-icons:shop" title="Google Play" />
       </a>
 

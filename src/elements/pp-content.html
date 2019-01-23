@@ -31,12 +31,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <template is="dom-repeat" items="[[dataContent.showcases]]" as="showcaseCategory">
       <h2 hidden$="[[!showcaseCategory.category]]" class="padding-horizontal">{{showcaseCategory.category}}</h2>
       <template is="dom-repeat" items="[[showcaseCategory.data]]" as="showcaseData">
-        <a class="showcase"
-          href$="[[showcaseData.url]]" target$="[[setTarget(showcaseData.url)]]" rel="noopener" tabindex="-1">
+        <a class="showcase" href$="[[showcaseData.url]]" 
+          target$="[[setTarget(showcaseData.url)]]" rel="noopener" tabindex="-1">
           <paper-card class="showcase">
             <div class="card-content" hidden$="[[hideShowcaseIcon]]">
               <iron-icon icon$="[[showcaseData.icon]]" src$="[[showcaseData.src]]"
-               style$="[[setColor(showcaseData.accent)]]">
+               style$="[[setColor(showcaseData.accent)]]" aria-hidden="true">
              </iron-icon>
            </div>
            <div class="card-actions">
@@ -68,7 +68,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </div>
           <div class="card-actions" hidden$="[[isJSONEmpty(categoryData.links)]]">
             <template is="dom-repeat" items="[[categoryData.links]]" as="linkData">
-              <a class="paper-button" href$="[[linkData.url]]" target="_blank" tabindex="-1">
+              <a class="paper-button" href$="[[linkData.url]]" target="_blank" rel="noopener" tabindex="-1">
                 <paper-button class="secondary" style$="[[setColor(linkData.accent)]]">
                   <iron-icon class="small" icon="[[linkData.ironIcon]]"></iron-icon>
                   {{linkData.link}}
