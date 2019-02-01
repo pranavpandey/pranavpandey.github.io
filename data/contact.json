@@ -4,13 +4,8 @@
         "data": [{
             "title": "Social",
             "subtitle": "",
-            "description": "Circle, follow or connect with me on the various social networks.",
+            "description": "Follow or connect with me on the various social networks.",
             "links": [{
-                "link": "Google+",
-                "url": "https://plus.google.com/+pranavpandeydev",
-                "ironIcon": "social-icons:gplus",
-                "accent": "#D34836"
-            }, {
                 "link": "Twitter",
                 "url": "https://twitter.com/pranavpandeydev",
                 "ironIcon": "social-icons:twitter",
