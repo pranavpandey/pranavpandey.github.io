@@ -16,18 +16,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         display: block;
         --app-primary-color: #3F51B5;
         --app-secondary-color: #E91E63;
-        @apply(--paper-font-common-base);
-        @apply(--layout-flex);
+        @apply --paper-font-common-base;
+        @apply --layout-flex;
       }
 
       .content-frame {
-        @apply(--layout-flex);
-        @apply(--layout-vertical);
+        @apply --layout-flex;
+        @apply --layout-vertical;
         height: 100%;
       }
 
       .content {
-        @apply(--layout-flex);
+        @apply --layout-flex;
         padding: 12px 24px;
         padding-bottom: 48px;
       }
@@ -125,9 +125,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .drawer-list-container {
         padding-top: 12px;
         padding-bottom: 12px;
-      }
-
-      .drawer-list {
       }
 
       .drawer-list a {
