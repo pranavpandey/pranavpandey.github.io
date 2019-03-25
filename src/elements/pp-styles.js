@@ -1,18 +1,20 @@
-<!--
-@license
-Copyright 2016 Pranav Pandey
-Copyright 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
+/**
+ * @license
+ * Copyright (c) 2019 Pranav Pandey.
+ * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+ * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+ * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+ * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+ * Code distributed by Google as part of the polymer project is also
+ * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+ */
 
-<link rel="import" href="../../bower_components/polymer/polymer-element.html">
-<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+import '@polymer/polymer/polymer-element.js';
+import '@polymer/iron-flex-layout/iron-flex-layout-classes.js';
+const $_documentContainer = document.createElement('template');
 
-<dom-module id="pp-styles">
+$_documentContainer.innerHTML = 
+`<dom-module id="pp-styles">
   <template>
     <custom-style>
       <style is="custom-style" include="iron-flex iron-flex-alignment">
@@ -22,6 +24,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           --app-secondary-color: #E91E63;
           @apply --paper-font-common-base;
           @apply --layout-flex;
+        }
+
+        .flex {
+          flex: 1 1 auto;
         }
 
         .content-frame {
@@ -78,6 +84,30 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           display: none;
         }
 
+        app-header {
+          color: #fff;
+          background-color: var(--app-primary-color);
+          --app-header-background-front-layer: {
+            background-image: url(../../images/header.jpg);
+            background-position: center;
+            background-size: cover;
+          };
+        }
+
+        [main-title] {
+          font-size: 2em;
+          margin-left: 12px;
+        }
+
+        .main-subtitle {
+          font-size: 0.8em;
+        }
+
+        [condensed-title] {
+          margin-left: 12px;
+          text-overflow: ellipsis;
+        }
+
         div.scrollable {
           height: 100%;
           overflow: auto;
@@ -85,26 +115,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         app-toolbar.drawer-header {
           margin-top: 24px;
-          margin-bottom: 20px;
-          margin-left: 8px;
-          margin-right: 12px;
-        }
-
-        iron-image.drawer-header-image {
-          width: 72px;
-          height: 72px;
-          margin-right: 16px;
-          border-radius: 50%;
-          border-collapse: separate;
-          background-color: var(--app-primary-color);
+          margin-bottom: 24px;
+          margin-left: 4px;
+          margin-right: 8px;
         }
 
         div.drawer-header-circle {
           width: 72px;
           height: 72px;
-          margin-right: 16px;
+          border-collapse: separate;
+        }
+
+        div.drawer-quote {
+          margin-left: 16px;
+        }
+
+        iron-image.drawer-header-image {
+          width: 72px;
+          height: 72px;
           border-radius: 50%;
           border-collapse: separate;
+          background-color: var(--app-primary-color);
         }
 
         p.drawer-quote {
@@ -164,30 +195,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           padding: 12px;
           padding-top: 8px;
           vertical-align: bottom;
-        }
-
-        app-header {
-          color: #fff;
-          background-color: var(--app-primary-color);
-          --app-header-background-front-layer: {
-            background-image: url(../../images/header.jpg);
-            background-position: center;
-            background-size: cover;
-          };
-        }
-
-        [main-title] {
-          font-size: 2em;
-          margin-left: 12px;
-        }
-
-        .main-subtitle {
-          font-size: 0.8em;
-        }
-
-        [condensed-title] {
-          margin-left: 12px;
-          text-overflow: ellipsis;
         }
 
         paper-ripple.primary {
@@ -341,9 +348,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }
 
         @media (max-width: 700px) {
-		  :host {
-            --app-drawer-width: 304px;
-		  }
+          :host {
+                --app-drawer-width: 304px;
+          }
 
           paper-card {
             margin-top: 8px;
@@ -372,4 +379,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       </style>
     </custom-style>
   </template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);

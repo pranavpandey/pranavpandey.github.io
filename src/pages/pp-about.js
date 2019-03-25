@@ -1,5 +1,6 @@
 /**
  * @license
+ * Copyright (c) 2019 Pranav Pandey.
  * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
  * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
  * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
@@ -8,21 +9,25 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-/* eslint-env node */
+import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import '../elements/pp-content.js';
 
-module.exports = {
-  staticFileGlobs: [
-    'src/**/*',
-    'manifest.json',
-    'data/*',
-    'images/*'
-  ],
-  runtimeCaching: [
-    {
-      urlPattern: /\/@webcomponents\/webcomponentsjs\//,
-      handler: 'fastest'
-    }
-  ],
-  navigateFallback: 'index.html',
-  navigateFallbackWhitelist: [/^(?!.*\.html$|\/data\/).*/]
-};
+class PPAbout extends PolymerElement {
+  static get template() {
+    return html`
+      <pp-content url="../../data/about.json" loading="{{loading}}"></pp-content>
+    `;
+  }
+
+  static get properties() {
+    return {
+      loading: {
+        type: Boolean,
+        value: false,
+        notify: true
+      }
+    };
+  }
+}
+
+window.customElements.define('pp-about', PPAbout);

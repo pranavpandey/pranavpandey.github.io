@@ -1,7 +1,7 @@
 <!--
 @license
-Copyright 2016 Pranav Pandey
-Copyright 2016 The Polymer Project Authors. All rights reserved.
+Copyright (c) 2016 Pranav Pandey.
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
 This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
 The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
@@ -9,37 +9,48 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
-<!doctype html>
+!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>my-view1</title>
+    <title>pp-app</title>
 
-    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-    <script src="../bower_components/web-component-tester/browser.js"></script>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script src="../node_modules/wct-browser-legacy/browser.js"></script>
+
+    <script>
+      /**
+      * [polymer-root-path]
+      *
+      * Leave this line unchanged if you intend to serve your app from the root
+      * path (e.g., with URLs like `my.domain/` and `my.domain/view1`).
+      *
+      * If you intend to serve your app from a non-root path (e.g., with URLs
+      * like `my.domain/my-app/` and `my.domain/my-app/view1`), edit this line
+      * to indicate the path from which you'll be serving, including leading
+      * and trailing slashes (e.g., `/my-app/`).
+      */
+      window.PPAppGlobals = { rootPath: '/' };
+    </script>
 
     <!-- Import the element to test -->
-    <link rel="import" href="../src/pp-app.html">
+    <script type="module" src="../src/pp-app.js"></script>
   </head>
   <body>
-    <test-fixture id="basic">
+    <test-fixture id="AppView">
       <template>
         <pp-app></pp-app>
       </template>
     </test-fixture>
 
-    <script>
+    <script type="module">
       suite('pp-app tests', function() {
-        var home;
-
-        setup(function() {
-          home = fixture('basic');
-        });
-
         test('Drawer quote must not be null', function() {
-          var quote = Polymer.dom(home.root).querySelector('.drawer-quote');
+          var appView = fixture('AppView');
+          var quote = appView.shadowRoot.querySelector('.drawer-quote');
+
           assert.isNotNull(quote.textContent);
         });
       });

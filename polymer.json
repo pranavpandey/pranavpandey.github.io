@@ -1,59 +1,77 @@
 {
     "entrypoint": "index.html",
-    "shell": "src/pp-app.html",
-    "fragments": [
-        "src/pages/pp-home.html",
-        "src/pages/pp-about.html",
-        "src/pages/pp-skills.html",
-        "src/pages/pp-projects.html",
-        "src/pages/pp-work.html",
-        "src/pages/pp-contact.html",
-        "src/pages/pp-404.html"
-    ],
+    "shell": "src/pp-app.js",
     "sources": [
-        "src/**/*",
         "images/**/*",
         "assets/**/*",
         "data/**/*",
-        "bower.json",
         "robots.txt"
     ],
     "extraDependencies": [
         "manifest.json",
-        "bower_components/webcomponentsjs/*.js"
+        "node_modules/@webcomponents/webcomponentsjs/*.js",
+        "!node_modules/@webcomponents/webcomponentsjs/gulpfile.js",
+        "node_modules/@webcomponents/webcomponentsjs/bundles/*.js"
     ],
+    "builds": [
+        {
+          "name": "esm-bundled",
+          "browserCapabilities": [
+            "es2015",
+            "modules"
+          ],
+          "js": {
+            "minify": true
+          },
+          "css": {
+            "minify": true
+          },
+          "html": {
+            "minify": true
+          },
+          "bundle": true,
+          "addServiceWorker": true
+        },
+        {
+          "name": "es6-bundled",
+          "browserCapabilities": [
+            "es2015"
+          ],
+          "js": {
+            "minify": true,
+            "transformModulesToAmd": true
+          },
+          "css": {
+            "minify": true
+          },
+          "html": {
+            "minify": true
+          },
+          "bundle": true,
+          "addServiceWorker": true
+        },
+        {
+          "name": "es5-bundled",
+          "js": {
+            "minify": false,
+            "compile": true,
+            "transformModulesToAmd": true
+          },
+          "css": {
+            "minify": true
+          },
+          "html": {
+            "minify": true
+          },
+          "bundle": true,
+          "addServiceWorker": true
+        }
+    ],
+    "moduleResolution": "node",
+    "npm": true,
     "lint": {
         "rules": [
-            "polymer-2-hybrid"
+            "polymer-3"
         ]
-    },
-    "builds": [{
-        "preset": "es5-bundled",
-        "addServiceWorker": true,
-        "bundle": true,
-        "js": {
-            "minify": true
-        },
-        "css": {
-            "minify": true
-        },
-        "html": {
-            "minify": true
-        }
-    }, {
-        "preset": "es6-bundled",
-        "addServiceWorker": true,
-        "bundle": true,
-        "js": {
-            "minify": true
-        },
-        "css": {
-            "minify": true
-        },
-        "html": {
-            "minify": true
-        }
-    }, {
-        "preset": "es6-unbundled"
-    }]
+    }
 }

@@ -1,217 +1,306 @@
 {
-    "showcases": [{
-        "category": "Showcase",
-        "data": [{
-            "title": "Android",
-            "icon": "skill-icons:android",
-            "accent": "#A4C439",
-            "url": "https://www.android.com/"
-        }, {
-            "title": "Java",
-            "icon": "skill-icons:java",
-            "accent": "#EA2D2E",
-            "url": "https://www.java.com/"
-        }, {
-            "title": "C",
-            "icon": "skill-icons:c",
-            "accent": "#03599C",
-            "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
-        }, {
-            "title": "C++",
-            "icon": "skill-icons:c++",
-            "accent": "#9C033A",
-            "url": "https://isocpp.org/"
-        }, {
-            "title": "HTML",
-            "icon": "skill-icons:html",
-            "accent": "#E44D26",
-            "url": "http://www.w3.org/html/"
-        }, {
-            "title": "CSS",
-            "icon": "skill-icons:css",
-            "accent": "#1572B6",
-            "url": "http://www.w3.org/Style/CSS/"
-        }, {
-            "title": "JavaScript",
-            "icon": "skill-icons:javascript",
-            "accent": "#F0DB4F",
-            "url": "https://en.wikipedia.org/wiki/JavaScript"
-        }, {
-            "title": "Node",
-            "icon": "skill-icons:node",
-            "accent": "#83CD29",
-            "url": "https://nodejs.org/"
-        }, {
-            "title": "Angular",
-            "icon": "skill-icons:angular",
-            "accent": "#C4473A",
-            "url": "https://angularjs.org/"
-        }, {
-            "title": "Polymer",
-            "icon": "pp-icons:polymer",
-            "accent": "#E91E63",
-            "url": "https://www.polymer-project.org/"
-        }, {
-            "title": "Firebase",
-            "icon": "social-icons:firebase",
-            "accent": "#F4B400",
-            "url": "https://firebase.google.com/"
-        }, {
-            "title": "PHP",
-            "icon": "skill-icons:php",
-            "accent": "#00618A",
-            "url": "https://secure.php.net/"
-        }, {
-            "title": "MySQL",
-            "icon": "skill-icons:mysql",
-            "accent": "#6181B6",
-            "url": "https://www.mysql.com/"
-        }, {
-            "title": ".NET",
-            "icon": "skill-icons:dot-net",
-            "accent": "#1384C8",
-            "url": "https://www.microsoft.com/net"
-        }, {
-            "title": "C#",
-            "icon": "skill-icons:c#",
-            "accent": "#9B4F96",
-            "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-        }, {
-            "title": "GIT",
-            "icon": "skill-icons:git",
-            "accent": "#F34F29",
-            "url": "https://git-scm.com/"
-        }, {
-            "title": "Gimp",
-            "icon": "skill-icons:gimp",
-            "accent": "#2E3436",
-            "url": "https://www.gimp.org/"
-        }, {
-            "title": "Photoshop",
-            "icon": "skill-icons:photoshop",
-            "accent": "#80B5E2",
-            "url": "http://www.adobe.com/in/products/photoshop.html"
-        }, {
-            "title": "Illustrator",
-            "icon": "skill-icons:illustrator",
-            "accent": "#FAA625",
-            "url": "http://www.adobe.com/products/illustrator.html"
-        }, {
-            "title": "Linux",
-            "icon": "skill-icons:linux",
-            "accent": "#000000",
-            "url": "https://en.wikipedia.org/wiki/Linux"
-        }, {
-            "title": "Ubuntu",
-            "icon": "skill-icons:ubuntu",
-            "accent": "#DD4814",
-            "url": "https://www.ubuntu.com/"
-        }, {
-            "title": "Windows",
-            "icon": "skill-icons:windows",
-            "accent": "#00ADEF",
-            "url": "http://windows.microsoft.com"
-        }, {
-            "title": "macOS",
-            "icon": "skill-icons:apple",
-            "accent": "#000000",
-            "url": "http://www.apple.com/macos"
-        }]
-    }],
-    "categories": [{
-        "category": "Skills",
-        "data": [{
-            "title": "Operating Systems",
-            "subtitle": "Android, Windows, Linux (Ubuntu), macOS (OS X)",
-            "description": "Familiar with all the major mobile and desktop operating systems.",
-            "links": []
-        }, {
-            "title": "Software Development",
-            "subtitle": "Java, C, C++, C#, XML",
-            "description": "Proficiency in JAVA and Object Oriented Concepts with sufficient knowledge of other similar languages.",
-            "links": []
-        }, {
-            "title": "Android Development",
-            "subtitle": "AOSP, Theming, Modding Custom ROM and App development",
-            "description": "I have already developed various apps for Android using JAVA, Kotlin, XML, Eclipse and Android Studio. As I am also an AOSP/Custom ROM developer so, I have some basic knowledge of C/Makefile, Python and Smali (assembly) languages.",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
-                "ironIcon": "pp-icons:shop",
-                "accent": "#A4C639"
-            }, {
-                "link": "XDA",
-                "url": "http://forum.xda-developers.com/member.php?u=3962236",
-                "ironIcon": "pp-icons:public",
-                "accent": "#f48002"
-            }]
-        }, {
-            "title": "Web Development",
-            "subtitle": "HTML, CSS, JavaScript, PHP, MySQL, ASP.NET",
-            "description": "I have worked on some websites in the past. This website is also written and designed by me in Polymer and Firebase.",
-            "links": [{
-                "link": "Polymer",
-                "url": "https://www.polymer-project.org",
-                "ironIcon": "pp-icons:polymer"
-            }, {
-                "link": "Firebase",
-                "url": "https://firebase.google.com",
-                "ironIcon": "pp-icons:storage",
-                "accent": "#F4B400"
-            }]
-        }, {
-            "title": "Data Interchange",
-            "subtitle": "REST and JSON",
-            "description": "Working with REST APIs and designed the JSON architecture of this website to load all the data dynamically.",
-            "links": []
-        }, {
-            "title": "Integrated Development Environment (IDE)",
-            "subtitle": "Eclipse (with ADT), Android Studio, Visual Studio",
-            "description": "Familier with major software development IDEs out there.",
-            "links": []
-        }, {
-            "title": "Version Control",
-            "subtitle": "Git (GitHub, Bitbucket)",
-            "description": "Deep understanding of widely used version control system i.e; Git and managing my projects on GitHub and Bitbucket. I have also developed some open source projects. Please have a look to my GitHub profile.",
-            "links": [{
-                "link": "GitHub",
-                "url": "https://github.com/pranavpandey",
-                "ironIcon": "social-icons:github",
-                "accent": "#000000"
-            }]
-        }, {
-            "title": "Graphics Design",
-            "subtitle": "Photoshop, GIMP, Illustrator",
-            "description": "I can design some good graphics in Photoshop/Illustrator and have deep knowledge of Google Material Design. All of my app icons, graphics and banners are also designed by me.",
-            "links": [{
-                "link": "Material Design by Google",
-                "url": "https://material.google.com/",
-                "ironIcon": "pp-icons:public",
-                "accent": "#424242"
-            }]
-        }, {
-            "title": "Office Tools",
-            "subtitle": "Microsoft Office, Google Docs, etc.",
-            "description": "",
-            "links": []
-        }, {
-            "title": "Spoken Languages",
-            "subtitle": "Hindi and English",
-            "description": "",
-            "links": []
-        }, {
-            "title": "Others",
-            "subtitle": "",
-            "description": "Familiar with Unix/Linux environment with command line interface.\nGood knowledge of computer hardware and can easily assemble and de-assemble it.",
-            "links": []
-        }]
-    }, {
-        "category": "Hobbies",
-        "data": [{
-            "title": "",
-            "subtitle": "",
-            "description": "Listening to music, Drawing, Playing Cricket, Volleyball, Badminton, PC games and Surfing the Internet.",
-            "links": []
-        }]
-    }]
+  "showcases": [
+    {
+      "category": "Showcase",
+      "data": [
+        {
+          "title": "Android",
+          "icon": "pp-icons:android",
+          "accent": "#A4C439",
+          "url": "https://www.android.com/"
+        },
+        {
+          "title": "Java",
+          "icon": "skill-icons:java",
+          "accent": "#EA2D2E",
+          "url": "https://www.java.com/"
+        },
+        {
+          "title": "C",
+          "icon": "skill-icons:c",
+          "accent": "#03599C",
+          "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
+        },
+        {
+          "title": "C++",
+          "icon": "skill-icons:c++",
+          "accent": "#9C033A",
+          "url": "https://isocpp.org/"
+        },
+        {
+          "title": "HTML",
+          "icon": "skill-icons:html",
+          "accent": "#E44D26",
+          "url": "http://www.w3.org/html/"
+        },
+        {
+          "title": "CSS",
+          "icon": "skill-icons:css",
+          "accent": "#1572B6",
+          "url": "http://www.w3.org/Style/CSS/"
+        },
+        {
+          "title": "JavaScript",
+          "icon": "skill-icons:javascript",
+          "accent": "#F0DB4F",
+          "url": "https://en.wikipedia.org/wiki/JavaScript"
+        },
+        {
+          "title": "Node",
+          "icon": "skill-icons:node",
+          "accent": "#83CD29",
+          "url": "https://nodejs.org/"
+        },
+        {
+          "title": "Angular",
+          "icon": "skill-icons:angular",
+          "accent": "#C4473A",
+          "url": "https://angularjs.org/"
+        },
+        {
+          "title": "Polymer",
+          "icon": "pp-icons:polymer",
+          "accent": "#E91E63",
+          "url": "https://www.polymer-project.org/"
+        },
+        {
+          "title": "Firebase",
+          "icon": "social-icons:firebase",
+          "accent": "#F4B400",
+          "url": "https://firebase.google.com/"
+        },
+        {
+          "title": "PHP",
+          "icon": "skill-icons:php",
+          "accent": "#00618A",
+          "url": "https://secure.php.net/"
+        },
+        {
+          "title": "MySQL",
+          "icon": "skill-icons:mysql",
+          "accent": "#6181B6",
+          "url": "https://www.mysql.com/"
+        },
+        {
+          "title": ".NET",
+          "icon": "skill-icons:dot-net",
+          "accent": "#1384C8",
+          "url": "https://www.microsoft.com/net"
+        },
+        {
+          "title": "C#",
+          "icon": "skill-icons:c#",
+          "accent": "#9B4F96",
+          "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
+          "title": "GIT",
+          "icon": "skill-icons:git",
+          "accent": "#F34F29",
+          "url": "https://git-scm.com/"
+        },
+        {
+          "title": "Gimp",
+          "icon": "skill-icons:gimp",
+          "accent": "#2E3436",
+          "url": "https://www.gimp.org/"
+        },
+        {
+          "title": "Photoshop",
+          "icon": "skill-icons:photoshop",
+          "accent": "#80B5E2",
+          "url": "http://www.adobe.com/in/products/photoshop.html"
+        },
+        {
+          "title": "Illustrator",
+          "icon": "skill-icons:illustrator",
+          "accent": "#FAA625",
+          "url": "http://www.adobe.com/products/illustrator.html"
+        },
+        {
+          "title": "Linux",
+          "icon": "skill-icons:linux",
+          "accent": "#000000",
+          "url": "https://en.wikipedia.org/wiki/Linux"
+        },
+        {
+          "title": "Ubuntu",
+          "icon": "skill-icons:ubuntu",
+          "accent": "#DD4814",
+          "url": "https://www.ubuntu.com/"
+        },
+        {
+          "title": "Windows",
+          "icon": "skill-icons:windows",
+          "accent": "#00ADEF",
+          "url": "http://windows.microsoft.com"
+        },
+        {
+          "title": "macOS",
+          "icon": "skill-icons:apple",
+          "accent": "#000000",
+          "url": "http://www.apple.com/macos"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "Skills",
+      "data": [
+        {
+          "title": "Operating Systems",
+          "subtitle": "Android, Windows, Linux (Ubuntu), macOS (OS X)",
+          "description": "Familiar with all the major mobile and desktop operating systems.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Software Development",
+          "subtitle": "Java, C, C++, C#, XML",
+          "description": "Proficiency in JAVA and Object Oriented Concepts with sufficient knowledge of other similar languages.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Android Development",
+          "subtitle": "AOSP, Theming, Modding Custom ROM and App development",
+          "description": "I have already developed various apps for Android using JAVA, Kotlin, XML, Eclipse and Android Studio. As I am also an AOSP/Custom ROM developer so, I have some basic knowledge of C/Makefile, Python and Smali (assembly) languages.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Google Play",
+              "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
+              "ironIcon": "pp-icons:shop",
+              "accent": "#A4C639"
+            },
+            {
+              "link": "XDA",
+              "url": "http://forum.xda-developers.com/member.php?u=3962236",
+              "ironIcon": "pp-icons:public",
+              "accent": "#f48002"
+            }
+          ]
+        },
+        {
+          "title": "Web Development",
+          "subtitle": "HTML, CSS, JavaScript, PHP, MySQL, ASP.NET",
+          "description": "I have worked on some websites in the past. This website is also written and designed by me in Polymer and Firebase.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Polymer",
+              "url": "https://www.polymer-project.org",
+              "ironIcon": "pp-icons:polymer"
+            },
+            {
+              "link": "Firebase",
+              "url": "https://firebase.google.com",
+              "ironIcon": "pp-icons:storage",
+              "accent": "#F4B400"
+            }
+          ]
+        },
+        {
+          "title": "Data Interchange",
+          "subtitle": "REST and JSON",
+          "description": "Working with REST APIs and designed the JSON architecture of this website to load all the data dynamically.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Integrated Development Environment (IDE)",
+          "subtitle": "Eclipse (with ADT), Android Studio, Visual Studio",
+          "description": "Familier with major software development IDEs out there.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Version Control",
+          "subtitle": "Git (GitHub, Bitbucket)",
+          "description": "Deep understanding of widely used version control system i.e; Git and managing my projects on GitHub and Bitbucket. I have also developed some open source projects. Please have a look to my GitHub profile.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "GitHub",
+              "url": "https://github.com/pranavpandey",
+              "ironIcon": "social-icons:github",
+              "accent": "#000000"
+            }
+          ]
+        },
+        {
+          "title": "Graphics Design",
+          "subtitle": "Photoshop, GIMP, Illustrator",
+          "description": "I can design some good graphics in Photoshop/Illustrator and have deep knowledge of Google Material Design. All of my app icons, graphics and banners are also designed by me.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Material Design by Google",
+              "url": "https://material.google.com/",
+              "ironIcon": "pp-icons:public",
+              "accent": "#424242"
+            }
+          ]
+        },
+        {
+          "title": "Office Tools",
+          "subtitle": "Microsoft Office, Google Docs, etc.",
+          "description": "",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Spoken Languages",
+          "subtitle": "Hindi and English",
+          "description": "",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Others",
+          "subtitle": "",
+          "description": "Familiar with Unix/Linux environment with command line interface.\nGood knowledge of computer hardware and can easily assemble and de-assemble it.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        }
+      ]
+    },
+    {
+      "category": "Hobbies",
+      "data": [
+        {
+          "title": "",
+          "subtitle": "",
+          "description": "Listening to music, Drawing, Playing Cricket, Volleyball, Badminton, PC games and Surfing the Internet.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        }
+      ]
+    }
+  ]
 }

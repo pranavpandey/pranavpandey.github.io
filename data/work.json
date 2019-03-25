@@ -1,100 +1,146 @@
 {
-    "showcases": [{
-        "category": "Organisations",
-        "data": [{
-            "title": "4GM HYVE",
-            "accent": "#000000",
-            "url": ""
-        }, {
-            "title": "XDA",
-            "accent": "#F48002",
-            "url": ""
-        }, {
-            "title": "FLYROBE",
-            "accent": "#000000",
-            "url": ""
-        }, {
-            "title": "HCL",
-            "accent": "#016BB5",
-            "url": ""
-        }]
-    }],
-    "categories": [{
-        "category": "Freelancer (Self Employed)",
-        "data": [{
-            "title": "Android Developer",
-            "subtitle": "July 2013 - Present | New Delhi, India",
-            "description": "Developer, Programmer, UI/UX Designer and Publisher.\nAttended Google Play App Excellence Summit 2017.\nOver 500K downloads on Google Play.",
-            "accent": "#A4C639",
-            "links": [{
-                "link": "Google Play",
-                "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
-                "ironIcon": "pp-icons:shop",
-                "accent": "#A4C639"
-            }]
-        }, {
-            "title": "Web Developer",
-            "subtitle": "June 2015 - Present | New Delhi, India",
-            "description": "Working on some websites using MySQL and PHP for backend (Database) and CSS/HTML and JavaScript for frontend (User Interface with the ability to perform dynamic operations).\nThis website is also written and designed by me using Polymer and Firebase.",
-            "accent": "",
-            "links": []
-        }, {
-            "title": "Recognized Developer | XDA-Developers",
-            "subtitle": "March 2013 - Present | New Delhi, India",
-            "description": "ROM Developer (ArcMini & xNXT), Ported lots of applications to older versions of Android using various concepts (smali) and hacks of reverse engineering.\nFirst to port Sony Small Apps API to Xperia™ 2011 MDPI devices.",
-            "accent": "#F48002",
-            "links": [{
-                "link": "Profile",
-                "url": "http://forum.xda-developers.com/member.php?u=3962236",
-                "ironIcon": "pp-icons:person",
-                "accent": "#F48002"
-            }]
-        }, {
-            "title": "Recognized Themer | XDA-Developers",
-            "subtitle": "August 2012 - September 2018 | New Delhi, India",
-            "description": "Designed colourful themes for CynogenMod and also for my own ROMs (Arcmini & xNXT).\nFixed various layout issues with Xperia™ apps on small screen devices (MDPI).",
-            "accent": "#F48002",
-            "links": [{
-                "link": "Profile",
-                "url": "http://forum.xda-developers.com/member.php?u=3962236",
-                "ironIcon": "pp-icons:person",
-                "accent": "#F48002"
-            }]
-        }]
-    }, {
-        "category": "Official",
-        "data": [{
-            "title": "Head - Software Development | 4GM Hyve Mobility",
-            "subtitle": "October 2016 - 2017 | New Delhi, India",
-            "description": "Lead the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM's software team in China to provide best user experience.",
-            "accent": "#000000",
-            "links": []
-        }, {
-            "title": "Senior Android Developer | 4GM Hyve Mobility",
-            "subtitle": "December 2015 - September 2016 | New Delhi, India",
-            "description": "Attended Google OEM Summit 2016.\nBuilt various customised features for our devices.",
-            "accent": "#000000",
-            "links": []
-        }, {
-            "title": "Senior Android Developer | Flyrobe",
-            "subtitle": "September 2015 - December 2015 | Mumbai, India",
-            "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
-            "accent": "#000000",
-            "links": []
-        }]
-    }, {
-        "category": "Training",
-        "data": [{
-            "title": "Trainee | HCL Infosystems Ltd.",
-            "subtitle": "June 2013 - July 2013 | Ghaziabad, U.P., India",
-            "description": "ASP.Net and C# with A+ grade.",
-            "accent": "#016BB5",
-            "links": [{
-                "link": "Website",
-                "url": "http://www.hcl.com/hcl-infosystems",
-                "ironIcon": "pp-icons:public",
-                "accent": "#016BB5"
-            }]
-        }]
-    }]
+  "showcases": [
+    {
+      "category": "Organisations",
+      "data": [
+        {
+          "title": "4GM HYVE",
+          "accent": "#000000",
+          "url": ""
+        },
+        {
+          "title": "XDA",
+          "accent": "#F48002",
+          "url": ""
+        },
+        {
+          "title": "FLYROBE",
+          "accent": "#000000",
+          "url": ""
+        },
+        {
+          "title": "HCL",
+          "accent": "#016BB5",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": "Freelancer (Self Employed)",
+      "data": [
+        {
+          "title": "Android Developer",
+          "subtitle": "July 2013 - Present | New Delhi, India",
+          "description": "Developer, Programmer, UI/UX Designer and Publisher.\nAttended Google Play App Excellence Summit 2017.\nOver 500K downloads on Google Play.",
+          "accent": "#A4C639",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Google Play",
+              "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
+              "ironIcon": "pp-icons:shop",
+              "accent": "#A4C639"
+            }
+          ]
+        },
+        {
+          "title": "Web Developer",
+          "subtitle": "June 2015 - Present | New Delhi, India",
+          "description": "Working on some websites using MySQL and PHP for backend (Database) and CSS/HTML and JavaScript for frontend (User Interface with the ability to perform dynamic operations).\nThis website is also written and designed by me using Polymer and Firebase.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Recognized Developer | XDA-Developers",
+          "subtitle": "March 2013 - Present | New Delhi, India",
+          "description": "ROM Developer (ArcMini & xNXT), Ported lots of applications to older versions of Android using various concepts (smali) and hacks of reverse engineering.\nFirst to port Sony Small Apps API to Xperia™ 2011 MDPI devices.",
+          "accent": "#F48002",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Profile",
+              "url": "http://forum.xda-developers.com/member.php?u=3962236",
+              "ironIcon": "pp-icons:person",
+              "accent": "#F48002"
+            }
+          ]
+        },
+        {
+          "title": "Recognized Themer | XDA-Developers",
+          "subtitle": "August 2012 - September 2018 | New Delhi, India",
+          "description": "Designed colourful themes for CynogenMod and also for my own ROMs (Arcmini & xNXT).\nFixed various layout issues with Xperia™ apps on small screen devices (MDPI).",
+          "accent": "#F48002",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Profile",
+              "url": "http://forum.xda-developers.com/member.php?u=3962236",
+              "ironIcon": "pp-icons:person",
+              "accent": "#F48002"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Official",
+      "data": [
+        {
+          "title": "Head - Software Development | 4GM Hyve Mobility",
+          "subtitle": "October 2016 - 2017 | New Delhi, India",
+          "description": "Lead the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM's software team in China to provide best user experience.",
+          "accent": "#000000",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Senior Android Developer | 4GM Hyve Mobility",
+          "subtitle": "December 2015 - September 2016 | New Delhi, India",
+          "description": "Attended Google OEM Summit 2016.\nBuilt various customised features for our devices.",
+          "accent": "#000000",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Senior Android Developer | Flyrobe",
+          "subtitle": "September 2015 - December 2015 | Mumbai, India",
+          "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
+          "accent": "#000000",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        }
+      ]
+    },
+    {
+      "category": "Training",
+      "data": [
+        {
+          "title": "Trainee | HCL Infosystems Ltd.",
+          "subtitle": "June 2013 - July 2013 | Ghaziabad, U.P., India",
+          "description": "ASP.Net and C# with A+ grade.",
+          "accent": "#016BB5",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Website",
+              "url": "http://www.hcl.com/hcl-infosystems",
+              "ironIcon": "pp-icons:public",
+              "accent": "#016BB5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

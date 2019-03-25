@@ -1,105 +1,165 @@
 {
-    "categories": [{
-        "category": "The Beginning...",
-        "data": [{
-            "title": "New Delhi, India",
-            "subtitle": "8th August 1992",
-            "description": "My name is Pranav Pandey. I was born on August 8th, 1992 in New Delhi, India. As I was growing up, my elders let me try many different things and provided me with the resources to try them and the major things that came out were playing outdoor games like cricket, badminton, volleyball, interest in pc games and computer programming. You can search my name on Google to know more about my contributions in software development, especially in Android.",
-            "links": [{
-                "link": "Google Search",
-                "url": "https://www.google.co.in/?gfe_rd=cr&ei=A_7uV7bYEKTG8AfhmJaACA#q=pranav+pandey+android",
-                "ironIcon": "pp-icons:search",
-                "accent": "#2196F3"
-            }]
-        }]
-    }, {
-        "category": "Background",
-        "data": [{
-            "title": "Qualification",
-            "subtitle": "Computer Science & Engineering",
-            "description": "I am an Engineer by Qualification (B. Tech. in Computer Science & Engineering) and a Programmer and UI/UX Designer by work. I have 5+ years of experience in Android development. I have also worked on some websites and can design some good graphics in Photoshop/Illustrator. Read below about some of my best things.",
-            "links": []
-        }, {
-            "title": "Android Themes, MODS and Custom ROMs",
-            "subtitle": "Reverse Engineering",
-            "description": "I have started custom ROM development by reading tutorials from website and forums like XDA. It helped me a lot in learning the basics and life cycle of Android. I have developed two ROMs (ArcMini and xNXT) which became very popular and also ported many latest (at that time) apps and APIs to 2011 Xperia™ devices. I was first to Port Sony Small Apps API and also released a most stable WALKMAN port for those devices. Then, I became Recognized Themer at XDA followed by Recognized Developer in 2013.",
-            "links": [{
-                "link": "xNXT ROM",
-                "url": "http://forum.xda-developers.com/showthread.php?t=2093511",
-                "ironIcon": "pp-icons:link",
-                "accent": "#F48002"
-            }, {
-                "link": "ArcMini ROM",
-                "url": "http://forum.xda-developers.com/showthread.php?t=1225668",
-                "ironIcon": "pp-icons:link",
-                "accent": "#F48002"
-            }]
-        }, {
-            "title": "Android Apps",
-            "subtitle": "Forward Engineering",
-            "description": "I have started developing apps in 2013. As I ported the Small App API so, I decided to develop Small Apps first which were featured on XDA and many other blogs. There was a good response from users due to unique design and advanced features which I have implemented in those apps. Still, they are the most advanced small apps for Sony devices. My apps have over 500K downloads on Google Play.",
-            "links": [{
-                "link": "Featured on XDA",
-                "url": "http://www.xda-developers.com/expand-your-sony-xperia-small-apps-collection",
-                "ironIcon": "pp-icons:link",
-                "accent": "#F48002"
-            }]
-        }, {
-            "title": "Rotation",
-            "subtitle": "An Orientation Manager",
-            "description": "Switching orientation is always be a problem for people having big devices. So, I have designed a system independent framework to help those users and Rotation was born. Then, I have added all the modes and features on users request. It has been featured on many blogs and has over 250K downloads on Google Play.",
-            "links": [{
-                "link": "XDA",
-                "url": "http://www.xda-developers.com/android/rotation-take-control-orientation-settings",
-                "ironIcon": "pp-icons:link",
-                "accent": "#F48002"
-            }, {
-                "link": "PhoneArena",
-                "url": "http://www.phonearena.com/news/How-to-customize-your-Android-phones-screen-orientation-with-Rotation-manager_id63540",
-                "ironIcon": "pp-icons:link",
-                "accent": "#29B6F6"
-            }, {
-                "link": "AddictiveTips",
-                "url": "http://www.addictivetips.com/android/per-app-control-over-your-devices-orientation",
-                "ironIcon": "pp-icons:link"
-            }]
-        }, {
-            "title": "Web development and Future plans",
-            "subtitle": "",
-            "description": "I have also worked on some websites so that I can improve my web skills. This website is also written & designed by me. Please reach me via this website if you have anything good for me.",
-            "links": []
-        }]
-    }, {
-        "category": "Education",
-        "data": [{
-            "title": "Uttar Pradesh Technical University",
-            "subtitle": "2010 - 2014",
-            "description": "Bachelor of Technology (B.Tech.), Computer Science and Engineering.",
-            "links": [{
-                "link": "Website",
-                "url": "http://aktu.ac.in",
-                "ironIcon": "pp-icons:public"
-            }]
-        }, {
-            "title": "Rajkiya Pratibha Vikas Vidyalaya (RPVV)",
-            "subtitle": "2007 - 2009",
-            "description": "All India Senior School Certificate Examination (Class XII), Physics, Chemistry, Maths (PCM).",
-            "links": [{
-                "link": "Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Rajkiya_Pratibha_Vikas_Vidyalaya",
-                "ironIcon": "pp-icons:public",
-                "accent": "#000000"
-            }]
-        }, {
-            "title": "Rajkiya Pratibha Vikas Vidyalaya (RPVV)",
-            "subtitle": "2003 - 2007",
-            "description": "Secondary School Certificate Examination (Class X), English, Hindi, Mathematics, Science, Socal Studies, Sanskrit.",
-            "links": [{
-                "link": "Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Rajkiya_Pratibha_Vikas_Vidyalaya",
-                "ironIcon": "pp-icons:public",
-                "accent": "#000000"
-            }]
-        }]
-    }]
+  "categories": [
+    {
+      "category": "The Beginning...",
+      "data": [
+        {
+          "title": "New Delhi, India",
+          "subtitle": "8th August 1992",
+          "description": "My name is Pranav Pandey. I was born on August 8th, 1992 in New Delhi, India. As I was growing up, my elders let me try many different things and provided me with the resources to try them and the major things that came out were playing outdoor games like cricket, badminton, volleyball, interest in pc games and computer programming. You can search my name on Google to know more about my contributions in software development, especially in Android.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Google Search",
+              "url": "https://www.google.co.in/#q=pranav+pandey+android",
+              "ironIcon": "pp-icons:search",
+              "accent": "#2196F3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Background",
+      "data": [
+        {
+          "title": "Qualification",
+          "subtitle": "Computer Science & Engineering",
+          "description": "I am an Engineer by Qualification (B. Tech. in Computer Science & Engineering) and a Programmer and UI/UX Designer by work. I have 5+ years of experience in Android development. I have also worked on some websites and can design some good graphics in Photoshop/Illustrator. Read below about some of my best things.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        },
+        {
+          "title": "Android Themes, MODS and Custom ROMs",
+          "subtitle": "Reverse Engineering",
+          "description": "I have started custom ROM development by reading tutorials from website and forums like XDA. It helped me a lot in learning the basics and life cycle of Android. I have developed two ROMs (ArcMini and xNXT) which became very popular and also ported many latest (at that time) apps and APIs to 2011 Xperia™ devices. I was first to Port Sony Small Apps API and also released a most stable WALKMAN port for those devices. Then, I became Recognized Themer at XDA followed by Recognized Developer in 2013.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "xNXT ROM",
+              "url": "http://forum.xda-developers.com/showthread.php?t=2093511",
+              "ironIcon": "pp-icons:link",
+              "accent": "#F48002"
+            },
+            {
+              "link": "ArcMini ROM",
+              "url": "http://forum.xda-developers.com/showthread.php?t=1225668",
+              "ironIcon": "pp-icons:link",
+              "accent": "#F48002"
+            }
+          ]
+        },
+        {
+          "title": "Android Apps",
+          "subtitle": "Forward Engineering",
+          "description": "I have started developing apps in 2013. As I ported the Small App API so, I decided to develop Small Apps first which were featured on XDA and many other blogs. There was a good response from users due to unique design and advanced features which I have implemented in those apps. Still, they are the most advanced small apps for Sony devices. My apps have over 500K downloads on Google Play.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Featured on XDA",
+              "url": "http://www.xda-developers.com/expand-your-sony-xperia-small-apps-collection",
+              "ironIcon": "pp-icons:link",
+              "accent": "#F48002"
+            }
+          ]
+        },
+        {
+          "title": "Rotation",
+          "subtitle": "An Orientation Manager",
+          "description": "Switching orientation is always be a problem for people having big devices. So, I have designed a system independent framework to help those users and Rotation was born. Then, I have added all the modes and features on users request. It has been featured on many blogs and has over 250K downloads on Google Play.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "XDA",
+              "url": "http://www.xda-developers.com/android/rotation-take-control-orientation-settings",
+              "ironIcon": "pp-icons:link",
+              "accent": "#F48002"
+            },
+            {
+              "link": "PhoneArena",
+              "url": "http://www.phonearena.com/news/How-to-customize-your-Android-phones-screen-orientation-with-Rotation-manager_id63540",
+              "ironIcon": "pp-icons:link",
+              "accent": "#29B6F6"
+            },
+            {
+              "link": "AddictiveTips",
+              "url": "http://www.addictivetips.com/android/per-app-control-over-your-devices-orientation",
+              "ironIcon": "pp-icons:link"
+            }
+          ]
+        },
+        {
+          "title": "Web development and Future plans",
+          "subtitle": "",
+          "description": "I have also worked on some websites so that I can improve my web skills. This website is also written & designed by me. Please reach me via this website if you have anything good for me.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": []
+        }
+      ]
+    },
+    {
+      "category": "Education",
+      "data": [
+        {
+          "title": "Uttar Pradesh Technical University",
+          "subtitle": "2010 - 2014",
+          "description": "Bachelor of Technology (B.Tech.), Computer Science and Engineering.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Website",
+              "url": "http://aktu.ac.in",
+              "ironIcon": "pp-icons:public"
+            }
+          ]
+        },
+        {
+          "title": "Rajkiya Pratibha Vikas Vidyalaya (RPVV)",
+          "subtitle": "2007 - 2009",
+          "description": "All India Senior School Certificate Examination (Class XII), Physics, Chemistry, Maths (PCM).",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rajkiya_Pratibha_Vikas_Vidyalaya",
+              "ironIcon": "pp-icons:public",
+              "accent": "#000000"
+            }
+          ]
+        },
+        {
+          "title": "Rajkiya Pratibha Vikas Vidyalaya (RPVV)",
+          "subtitle": "2003 - 2007",
+          "description": "Secondary School Certificate Examination (Class X), English, Hindi, Mathematics, Science, Socal Studies, Sanskrit.",
+          "accent": "",
+          "header": "",
+          "headerPlaceholder": "",
+          "links": [
+            {
+              "link": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Rajkiya_Pratibha_Vikas_Vidyalaya",
+              "ironIcon": "pp-icons:public",
+              "accent": "#000000"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

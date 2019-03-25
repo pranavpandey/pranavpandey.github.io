@@ -37,109 +37,66 @@ git clone https://github.com/pranavpandey/pranavpandey.github.io
 ```
 
 ### Install dependencies
-It uses [bower] (https://bower.io/) to manage dependensies. Run below command
-to install `bower` via npm.
+It uses [npm] (https://www.npmjs.com) to manage dependensies. Run the below command 
+in the root dir of project to automatically install the dependencies.
 
 ```
-npm install -g bower
-```
-
-Now, run the below command in the root dir of project to automatically install
-the dependencies.
-
-```
-bower install
+npm install
 ```
 
 ### Start the development server
 
-This command serves the app at `http://localhost:8081` and provides basic URL
-routing for the app.
+This command serves the app at `http://127.0.0.1:8081` and provides basic URL
+routing for the app:
+
+    npm start
+
+### Build
+
+The `npm run build` command builds your Polymer application for production, using build configuration options provided by the command line or in your project's `polymer.json` file.
+
+You can configure your `polymer.json` file to create multiple builds. This is necessary if you will be serving different builds optimized for different browsers. You can define your own named builds, or use presets. See the documentation on [building your project for production](https://www.polymer-project.org/3.0/toolbox/build-for-production) for more information.
+
+The Polymer Starter Kit is configured to create three builds. These builds will be output to a subdirectory under the `build/` directory as follows:
 
 ```
-polymer serve
+build/
+  es5-bundled/
+  es6-bundled/
+  esm-bundled/
 ```
 
----
+* `es5-bundled` is a bundled, minified build with a service worker. ES6 code is compiled to ES5 for compatibility with older browsers.
+* `es6-bundled` is a bundled, minified build with a service worker. ES6 code is served as-is. This build is for browsers that can handle ES6 code - see [building your project for production](https://www.polymer-project.org/3.0/toolbox/build-for-production#compiling) for a list.
+* `esm-bundled` is a bundled, minified build with a service worker. It uses standard ES module import/export statements for browsers that support them.
 
-## Build
+Run `polymer help build` for the full list of available options and optimizations. Also, see the documentation on the [polymer.json specification](https://www.polymer-project.org/3.0/docs/tools/polymer-json) and [building your Polymer application for production](https://www.polymer-project.org/3.0/toolbox/build-for-production).
 
-Build a Polymer application for production. This includes support for
-optimizations like code bundling, minification, and ES6 compilation to run
-on older browsers.
+### Preview the build
 
-Most optimizations are disabled by default. To make sure the correct build
-enhancements are always used, you can provide a set of build configurations via
-the ["builds"](https://www.polymer-project.org/2.0/docs/tools/polymer-json#builds)
-field of your `polymer.json` file:
+This command serves your app. Replace `build-folder-name` with the folder name of the build you want to serve.
 
-```json
-"builds": [{
-  "bundle": true,
-  "js": {"minify": true},
-  "css": {"minify": true},
-  "html": {"minify": true}
-}],
-```
+    npm start build/build-folder-name/
 
-Run `polymer help build` for the full list of available options & optimizations.
+### Run tests
 
-If you need support for something that is missing from the CLI, check out the
-[polymer-build](https://github.com/Polymer/polymer-build) library. Is the JS
-library that powers the CLI, and calling it directly gives you much greater
-control than the CLI can provide. Visit the repo for usage information and
-examples.
+This command will run [Web Component Tester](https://github.com/Polymer/web-component-tester)
+against the browsers currently installed on your machine:
 
-```
-polymer build [options...]
-```
+    npm test
 
----
+If running Windows you will need to set the following environment variables:
 
-## Test the build
+- LAUNCHPAD_BROWSERS
+- LAUNCHPAD_CHROME
 
-Start a development server designed for serving Polymer & Web Component
-projects. Applications are served as-is, while elements are served from a
-special route where it can properly reference its dependencies.
-
-By default, the server will automatically use [Babel](https://babeljs.io) to
-transpile any ES6 code down to ES5 for browsers that don't have native support
-for important ES6 features like classes. This behavior can be explicitly turned
-on/off for all browsers via the `--compile` option.
-
-Run `polymer help serve` for the full list of available options.
-
-```
-polymer serve [options...]
-```
-
-Lint your project for common errors. Specify a set of linting rules via
-the `--rules` command option or your `polymer.json` configuration. To make
-sure you always use the correct rule set, we recommend adding a "lint" section
-to your polymer.json like so:
-
-```json
-"lint": {
-  "rules": [
-    "polymer-2-hybrid"
-  ]
-},
-```
-
-Run `polymer help lint` for the full list of available options and rule sets.
-
-```
-polymer lint [--rules RULE_SET] [options...]
-```
-
-In case of any issue, please follow the official guidelines
-[here](https://github.com/Polymer/polymer-cli).
+Read More here [daffl/launchpad](https://github.com/daffl/launchpad#environment-variables-impacting-local-browsers-detection)
 
 ---
 
 ## Deploy with Firebase
 
-1. [Sign up for a Firebase account](https://www.firebase.com/signup/).
+1. [Sign up](https://www.firebase.com/signup/) for a Firebase account.
 
 2. Install the Firebase command line tools.
 
@@ -189,19 +146,13 @@ serve up index.html for any URL's that don't otherwise end in a file extension.
 
   The URL to your live site is listed in the output.
 
-In case of any issue, please follow the official guidelines
-[here](https://www.polymer-project.org/1.0/start/toolbox/deploy).
-
 ---
 
 ## Extend
 
 You can extend the app by adding more elements that will be demand-loaded
 e.g. based on the route, or to progressively render non-critical sections
-of the application.  Each new demand-loaded fragment should be added to the
-list of `fragments` in the included `polymer.json` file.  This will ensure
-those components and their dependencies are added to the list of pre-cached
-components (and will have bundles created in the fallback `bundled` build).
+of the application.
 
 ### Data
 
@@ -212,14 +163,15 @@ the `json` schema otherwise, it will not display the data.
 ### Google Analytics
 
 It has [Google Analytics](https://www.google.co.in/analytics/#?modal_active=none)
-support to monitor the website traffic. Add your tracking id in the
-`index.html` file to track the website data.
+support to monitor the website traffic. Add your tracking id in the `index.html` 
+file to track the website data.
 
 ```html
-<body fullbleed layout vertical unresolved>
-  <start-google-analytics-tracker
-    code="YOUR-TRACKING-ID">
-  </start-google-analytics-tracker>
+<body>
+  <!-- Start Google Analytics tracker -->
+  <pp-analytics
+    api-key="YOUR-TRACKING-ID">
+  </pp-analytics>
 
   ...
 </body>
@@ -228,22 +180,22 @@ support to monitor the website traffic. Add your tracking id in the
 ### Twitter widgets
 
 Home screen has an option to display twitter widgets. Add your profile
-link in the `src/pages/pp-home.html` file to display the latest tweets. For
-loading twitter widgets, I am using
-[this polymer element](https://github.com/joaovieira/twitter-widgets). You can
-also add multiple widgets.
+link in the `src/pages/pp-home.html` file to display the latest tweets. 
+For loading twitter widgets, I have ported the 
+[Twitter widgets](https://developer.twitter.com/en/docs/twitter-for-websites) for 
+Polymer 3.x. You can also add multiple widgets.
 
 ```html
-<twitter-widgets>
+<pp-twitter>
   ...
 
-  <a class="twitter-timeline" href="https://twitter.com/YOUR_USER_NAME"
-    data-tweet-limit="5"
-    data-chrome="nofooter transparent">
+  <a class="twitter-timeline" 
+    href="https://twitter.com/YOUR_USER_NAME"
+    data-tweet-limit="5" data-chrome="nofooter transparent">
   </a>
 
   ...
-</twitter-widgets>
+</pp-twitter>
 ```
 
 ### Contact form
