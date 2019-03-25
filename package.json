@@ -1,6 +1,10 @@
 {
     "name": "pranavpandey.github.io",
+    "description": "A place for me on the web.",
+    "version": "3.0.0",
+    "author": "Pranav Pandey",
     "license": "BSD-3-Clause",
+    "repository": "pranavpandey/pranavpandey.github.io",
     "devDependencies": {
         "eslint": "^3.19.0",
         "eslint-config-google": "^0.7.0",
