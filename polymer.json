@@ -79,8 +79,7 @@
     "moduleResolution": "node",
     "npm": true,
     "lint": {
-        "rules": [
-            "polymer-3"
-        ]
+        "rules": ["polymer-3"],
+        "ignoreWarnings": ["non-literal-import"]
     }
 }
