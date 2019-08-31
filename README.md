@@ -252,7 +252,8 @@ _themeChanged(theme) {
           data-chrome="nofooter transparent">
         </a>
       <paper-card>
-  </pp-twitter>`;
+    </pp-twitter>
+  `;
 }
 ```
 
@@ -297,6 +298,16 @@ documentation [here](https://developers.google.com/maps/documentation/javascript
   </div>
 </paper-card>
 ```
+
+---
+
+## Author
+
+Pranav Pandey
+
+[![GitHub](https://img.shields.io/github/followers/pranavpandey?label=GitHub&style=social)](https://github.com/pranavpandey)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/pranavpandeydev?label=Follow&style=social)](https://twitter.com/intent/follow?screen_name=pranavpandeydev)
+[![Donate via PayPal](https://img.shields.io/static/v1?label=Donate&message=PayPal&color=blue)](https://paypal.me/pranavpandeydev)
 
 ---
 
