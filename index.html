@@ -1,7 +1,7 @@
 <!--
 @license
 Copyright (c) 2019 Pranav Pandey.
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
 This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
 The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
@@ -96,10 +96,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </script>
 
     <!-- Load webcomponents-loader.js to check and load any polyfills your browser needs -->
-    <script defer src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
 
-    <!-- Load your application shell -->
-    <script type="module" src="src/pp-app.js"></script>
+    <!-- Load component when polyfills are definitely ready -->
+    <script type="module">
+      // Take care of cases in which the browser runs this
+      // script before it has finished running 
+      // webcomponents-loader.js (e.g. Firefox script execution order)
+      window.WebComponents = window.WebComponents || { 
+        waitFor(cb){ addEventListener('WebComponentsReady', cb) }
+      }
+
+      WebComponents.waitFor(async () => { 
+        import('./src/pp-app.js');
+      });
+    </script>
 
     <!-- Add any global styles for body, document, etc. -->
     <style>
@@ -108,16 +119,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         font-family: 'Roboto', 'Noto', sans-serif;
         line-height: 1.5;
         min-height: 100vh;
-        background-color: #eee;
       }
     </style>
   </head>
 
   <body>
     <!-- Start Google Analytics tracker -->
-    <pp-analytics
-      api-key="YOUR-TRACKING-ID">
-    </pp-analytics>
+    <pp-analytics api-key="YOUR-TRACKING-ID"></pp-analytics>
 
     <pp-app></pp-app>
     <!-- Notify about javascript requirement -->

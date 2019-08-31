@@ -1,7 +1,7 @@
 /**
  * @license
  * Copyright (c) 2019 Pranav Pandey.
- * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+ * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
  * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
  * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
  * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
@@ -33,36 +33,60 @@ class PPApp extends PolymerElement {
 
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]"></app-location>
 
-      <app-route route="{{route}}" pattern="[[rootPath]]:page" data="{{routeData}}" tail="{{subroute}}">
+      <app-route route="{{route}}" pattern="[[rootPath]]:page" 
+        data="{{routeData}}" tail="{{subroute}}">
       </app-route>
 
-      <iron-ajax auto="" url="../data/base64.json" handle-as="json" last-response="{{dataBase64}}">
+      <app-localstorage-document key="theme" data="{{theme}}">
+      </app-localstorage-document>
+
+      <iron-ajax auto="" url="../data/base64.json" 
+        handle-as="json" last-response="{{dataBase64}}">
       </iron-ajax>
 
       <app-drawer-layout responsive-width="700px" fullbleed="" narrow="{{narrow}}">
         <!-- Drawer content -->
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
-          <div class="scrollable">
-            <app-toolbar class="drawer-header layout horizontal center-justified">
-              <div class="drawer-header-circle flex">
+          <div class="scrollable flex">
+            <app-toolbar class="drawer-header layout horizontal center-vertical">
+              <div>
                 <iron-image class="drawer-header-image" sizing="cover" preload="" 
                   placeholder="[[dataBase64.drawerHeader]]" src="../images/drawer.jpg">
                 </iron-image>
               </div>
-              <div class="drawer-quote flex">
+              <div>
                 <p class="drawer-quote">Nothing is perfect but can be better. Developing such better things!</p>
               </div>
             </app-toolbar>
 
             <pp-divider></pp-divider>
+            
+            <div id="theme-selector">
+              <app-toolbar class="drawer-section layout horizontal center-vertical">
+                <div>
+                  <iron-icon class="style color-primary" icon="pp-icons:theme">
+                </div>
+                <div>
+                  <iron-icon class="theme color-secondary" icon="pp-icons:theme-day">
+                </div>
+                <div>
+                  <paper-toggle-button class="theme color-primary"></paper-toggle-button>
+                </div>
+                <div>
+                  <iron-icon class="theme color-secondary" icon="pp-icons:theme-night">
+                </div>
+              </app-toolbar>
+
+              <pp-divider></pp-divider>
+            </div>
 
             <div class="drawer-list-container">
-              <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" 
-                role="navigation" on-iron-activate="drawerSelected">
+              <iron-selector selected="[[page]]" attr-for-selected="name" 
+                class="drawer-list" role="navigation" on-iron-activate="drawerSelected">
                 <a name="home" href="[[rootPath]]home">
-                  <iron-icon icon="pp-icons:home">
-                  </iron-icon><paper-ripple class="primary">
-                  </paper-ripple>Home
+                <iron-icon icon="pp-icons:home">
+                </iron-icon><paper-ripple class="primary">
+                </paper-ripple>Home
                 </a>
                 <a name="about" href="[[rootPath]]about">
                   <iron-icon icon="pp-icons:account-circle">
@@ -94,7 +118,6 @@ class PPApp extends PolymerElement {
 
             <pp-divider></pp-divider>
 
-            <p class="menu-category">Links</p>
             <div class="drawer-list-container">
               <iron-selector class="drawer-list" selectable="false" on-iron-activate="drawerSelected">
                 <!-- <a href="https://techtics.xyz" target="_blank" rel="noopener" tabindex="-1">
@@ -103,8 +126,8 @@ class PPApp extends PolymerElement {
                   </paper-ripple>Techtics
                 </a> -->
                 <a href="https://privacy.pranavpandey.com" target="_blank" rel="noopener" tabindex="-1">
-                  <iron-icon icon="pp-icons:security">
-                  </iron-icon><paper-ripple class="primary">
+                  <iron-icon class="color-link-privacy" icon="pp-icons:security">
+                  </iron-icon><paper-ripple class="color-link-privacy">
                   </paper-ripple>Privacy &amp; Terms
                 </a>
               </iron-selector>
@@ -125,11 +148,13 @@ class PPApp extends PolymerElement {
             <app-toolbar>
               <paper-icon-button icon="pp-icons:menu" aria-hidden="true" drawer-toggle=""></paper-icon-button>
               <div condensed-title="">Pranav Pandey</div>
-              <a class=".drawer-list a" href="https://github.com/pranavpandey" target="_blank" rel="noopener" tabindex="-1" aria-label="GitHub">
-                <paper-icon-button class="color-white" icon="social-icons:github" aria-hidden="true">
+              <a class=".drawer-list a" href="https://github.com/pranavpandey" 
+                target="_blank" rel="noopener" tabindex="-1" aria-label="GitHub">
+                <paper-icon-button class="color-tint-primary" icon="social-icons:github" aria-hidden="true">
               </paper-icon-button></a>
-              <a class=".drawer-list a" href="https://twitter.com/pranavpandeydev" target="_blank" rel="noopener" tabindex="-1" aria-label="Twitter">
-                <paper-icon-button class="color-white" icon="pp-icons:person" aria-hidden="true">
+              <a class=".drawer-list a" href="https://twitter.com/pranavpandeydev" 
+                target="_blank" rel="noopener" tabindex="-1" aria-label="Twitter">
+                <paper-icon-button class="color-tint-primary" icon="pp-icons:person" aria-hidden="true">
               </paper-icon-button></a>
             </app-toolbar>
             <app-toolbar></app-toolbar>
@@ -144,13 +169,14 @@ class PPApp extends PolymerElement {
 
           <div>
             <div class="content-frame" hidden\$="[[loading]]">
-              <iron-pages class="content" role="main" selected="[[page]]" attr-for-selected="name" fallback-selection="404">
-                <pp-home loading="{{loading}}" name="home"></pp-home>
-                <pp-about loading="{{loading}}" name="about"></pp-about>
-                <pp-skills loading="{{loading}}" name="skills"></pp-skills>
-                <pp-projects loading="{{loading}}" name="projects"></pp-projects>
-                <pp-work loading="{{loading}}" name="work"></pp-work>
-                <pp-contact loading="{{loading}}" name="contact"></pp-contact>
+              <iron-pages class="content" role="main" selected="[[page]]" 
+                attr-for-selected="name" fallback-selection="404">
+                <pp-home theme="[[theme]]" loading="{{loading}}" name="home"></pp-home>
+                <pp-about theme="[[theme]]" loading="{{loading}}" name="about"></pp-about>
+                <pp-skills theme="[[theme]]" loading="{{loading}}" name="skills"></pp-skills>
+                <pp-projects theme="[[theme]]" loading="{{loading}}" name="projects"></pp-projects>
+                <pp-work theme="[[theme]]" loading="{{loading}}" name="work"></pp-work>
+                <pp-contact theme="[[theme]]" loading="{{loading}}" name="contact"></pp-contact>
                 <pp-404 name="404"></pp-404>
               </iron-pages>
             </div>
@@ -161,7 +187,8 @@ class PPApp extends PolymerElement {
           </div>
         </app-header-layout>
 
-        <a class=".drawer-list a" href="https://play.google.com/store/apps/dev?id=6608630615059087491" target="_blank" rel="noopener" tabindex="-1">
+        <a class=".drawer-list a" href="https://play.google.com/store/apps/dev?id=6608630615059087491" 
+          target="_blank" rel="noopener" tabindex="-1" aria-label="Google Play">
           <paper-fab icon="pp-icons:shop" title="Google Play">
         </paper-fab></a>
       </app-drawer-layout>
@@ -182,14 +209,20 @@ class PPApp extends PolymerElement {
       },
       routeData: Object,
       subroute: String,
+      theme: {
+        type: String,
+        value: "light",
+        reflectToAttribute: true,
+        observer: '_themeChanged'
+      },
       smallLayout: {
         type: Boolean,
-        value: false
+        value: false,
+        reflectToAttribute: true
       },
       loading: {
         type: Boolean,
-        value: true,
-        notify: true
+        value: false
       }
     };
   }
@@ -205,9 +238,37 @@ class PPApp extends PolymerElement {
     super.ready();
 
     this.setCopyright();
+
     window.addEventListener('show-toast', (e) => {
       this._showToast(e);
     });
+
+    this.shadowRoot.querySelector('paper-toggle-button')
+      .addEventListener('change', (e) => {
+        this.setTheme(null, e.target.checked);
+    }); 
+  }
+
+  _themeChanged(theme, reload) {
+    if (theme === 'dark') {
+      this.updateStyles(this.getDarkTheme());
+      this.shadowRoot.querySelector('paper-toggle-button').checked = true;
+    } else {          
+      this.updateStyles(this.getLightTheme());
+      this.shadowRoot.querySelector('paper-toggle-button').checked = false;
+    }
+  }
+  
+  setTheme(theme, dark) {
+    if (theme === 'dark' || dark) {
+      this.set('theme', 'dark');
+    } else {          
+      this.set('theme', 'light');
+    }
+
+    if (this.reloadOnThemeChange()) {
+      window.location.reload();
+    }
   }
 
   _routePageChanged(page) {
@@ -224,40 +285,34 @@ class PPApp extends PolymerElement {
   }
 
   _pageChanged(page) {
+    let pageTitle;
 
-    var pageTitle;
     switch (page) {
       default:
-        import('./pages/pp-home.js');
         pageTitle = '';
         break;
       case 'about':
-        import('./pages/pp-about.js');
         pageTitle = 'About - ';
         break;
       case 'skills':
-        import('./pages/pp-skills.js');
         pageTitle = 'Skills - ';
         break;
       case 'projects':
-        import('./pages/pp-projects.js');
         pageTitle = 'Projects - ';
         break;
       case 'work':
-        import('./pages/pp-work.js');
         pageTitle = 'Work - ';
         break;
       case 'contact':
-        import('./pages/pp-contact.js');
         pageTitle = 'Contact - ';
         break;
       case '404':
-        import('./pages/pp-404.js');
-        pageTitle = '404 - ';
+        pageTitle = 'Error - ';
         break;
     }
 
     document.title = pageTitle + 'Pranav Pandey';
+    import(`./pages/pp-${page}.js`).then(null, this._showPage404.bind(this));
 
     // Track page via analytics.
     this.dispatchEvent(new CustomEvent('on-track-page', {
@@ -266,8 +321,12 @@ class PPApp extends PolymerElement {
     }));
   }
 
+  _showPage404() {
+    this.page = '404';
+  }
+
   _showToast(event) {
-    var toast = this.shadowRoot.querySelector('paper-toast');
+    const toast = this.shadowRoot.querySelector('paper-toast');
     toast.text = event.detail.text;
     toast.toggle();
   }
@@ -279,6 +338,44 @@ class PPApp extends PolymerElement {
       document.body.style.overflow = 'visible';
     }
   }
+  
+  getLightTheme() {
+    return { '--dt-theme': 'light',
+      '--dt-background-color': '#EAEAEA',
+      '--dt-surface-color': '#EEEEEE',
+      '--dt-selector-color': '#DADADA',
+      '--dt-header-color': '#3F51B5',
+      '--dt-primary-color': '#3F51B5',
+      '--dt-secondary-color': '#E91E63',
+      '--dt-tint-primary-color': '#FFFFFF',
+      '--dt-text-primary-color': '#000000',
+      '--dt-text-secondary-color': '#454545',
+      '--dt-text-description-color': '#787878',
+      '--dt-link-privacy-color': '#1976D2',
+      '--pp-divider-color': '#CACACA'
+    };
+  }
+
+  getDarkTheme() {
+    return { '--dt-theme': 'dark', 
+      '--dt-background-color': '#222222',
+      '--dt-surface-color': '#343434',
+      '--dt-selector-color': '#323232',
+      '--dt-header-color': '#3F51B5',
+      '--dt-primary-color': '#7986CB',
+      '--dt-secondary-color': '#FF4081',
+      '--dt-tint-primary-color': '#FFFFFF',
+      '--dt-text-primary-color': '#FFFFFF',
+      '--dt-text-secondary-color': '#CDCDCD',
+      '--dt-text-description-color': '#787878',
+      '--dt-link-privacy-color': '#2196F3',
+      '--pp-divider-color': '#4A4A4A'
+    };
+  }
+
+  reloadOnThemeChange() {
+    return window.navigator.userAgent.match(/(MSIE|Trident)/);
+  }
 
   setCopyright() {
     this.$.copyright.innerHTML = 
@@ -286,20 +383,10 @@ class PPApp extends PolymerElement {
   }
 
   drawerSelected() {
-    var drawer = this.shadowRoot.querySelector('app-drawer');
+    const drawer = this.shadowRoot.querySelector('app-drawer');
     if (!drawer.persistent && drawer.opened) {
       drawer.close();
     }
-  }
-
-  stringify(obj) {
-    return JSON.stringify(obj);
-  }
-
-  openLink(event) {
-    var arg = event.currentTarget.getAttribute('link');
-    window.open(arg, '_blank');
-    this.drawerSelected();
   }
 }
 

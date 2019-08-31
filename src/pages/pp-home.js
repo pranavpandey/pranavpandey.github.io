@@ -1,7 +1,7 @@
 /**
  * @license
  * Copyright (c) 2019 Pranav Pandey.
- * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+ * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
  * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
  * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
  * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
@@ -18,9 +18,10 @@ class PPHome extends PolymerElement {
     return html`
       <style include="pp-styles"></style>
 
-      <iron-ajax auto="" url="../../data/home.json" handle-as="json" loading="{{loading}}" last-response="{{dataHome}}">
+      <iron-ajax auto="" url="../../data/home.json" handle-as="json" 
+        loading="{{loading}}" last-response="{{dataHome}}">
       </iron-ajax>
-
+      
       <h2 class="padding-horizontal">{{dataHome.home.title}}</h2>
       <paper-card>
         <div class="card-content">
@@ -28,9 +29,9 @@ class PPHome extends PolymerElement {
         </div>
       </paper-card>
 
-      <paper-card class="primary">
+      <paper-card id="quote" class="primary">
         <div class="card-content">
-          <p class="color-white">{{dataHome.home.quote}}</p>
+          <p class="color-tint-primary">{{dataHome.home.quote}}</p>
         </div>
       </paper-card>
 
@@ -45,18 +46,26 @@ class PPHome extends PolymerElement {
       </paper-card> -->
 
       <!-- Add your user name to show Twitter feeds -->
-      <pp-twitter>
-        <paper-card>
-          <a class="twitter-timeline" href="https://twitter.com/pranavpandeydev" data-chrome="nofooter transparent">
-          </a>
-        <paper-card>
-        </paper-card></paper-card>
-      </pp-twitter>
+      <div id="twitter-container" class="color-primary">
+        <pp-twitter>
+          <paper-card>
+            <a class="twitter-timeline"
+              href="https://twitter.com/YOUR_USER_NAME" 
+              data-chrome="nofooter transparent">
+            </a>
+          <paper-card>
+        </pp-twitter>
+      </div>
     `;
   }
 
   static get properties() {
     return {
+      theme: {
+        type: String,
+        reflectToAttribute: true,
+        observer: "_themeChanged"
+      },
       loading: {
         type: Boolean,
         value: false,
@@ -65,6 +74,25 @@ class PPHome extends PolymerElement {
     };
   }
 
+  _themeChanged(theme) {
+    const container = this.shadowRoot.querySelector("#twitter-container");
+    const linkColor = this.isDarkTheme(theme) ? "#7986CB" : "#3F51B5";
+    container.innerHTML = `
+      <pp-twitter>
+        <paper-card>
+          <a class="twitter-timeline" data-theme="${theme}" 
+            data-link-color="${linkColor}"
+            href="https://twitter.com/YOUR_USER_NAME" 
+            data-chrome="nofooter transparent">
+          </a>
+        <paper-card>
+    </pp-twitter>`;
+  }
+
+  isDarkTheme(theme) {
+    return theme === 'dark';
+  }
+  
   isJSONEmpty(jsonObject) {
     return jsonObject == null || !jsonObject.length ||
       !jsonObject.filter(function(a) {

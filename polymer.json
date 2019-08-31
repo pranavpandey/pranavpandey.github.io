@@ -1,6 +1,15 @@
 {
     "entrypoint": "index.html",
     "shell": "src/pp-app.js",
+    "fragments": [
+      "src/pages/pp-home.js",
+      "src/pages/pp-about.js",
+      "src/pages/pp-skills.js",
+      "src/pages/pp-projects.js",
+      "src/pages/pp-work.js",
+      "src/pages/pp-contact.js",
+      "src/pages/pp-404.js"
+    ],
     "sources": [
         "images/**/*",
         "assets/**/*",
@@ -53,7 +62,7 @@
         {
           "name": "es5-bundled",
           "js": {
-            "minify": false,
+            "minify": true,
             "compile": true,
             "transformModulesToAmd": true
           },

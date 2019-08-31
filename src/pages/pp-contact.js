@@ -1,7 +1,7 @@
 /**
  * @license
  * Copyright (c) 2019 Pranav Pandey.
- * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+ * Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
  * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
  * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
  * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
@@ -23,7 +23,9 @@ class PPContact extends PolymerElement {
     return html`
       <style include="pp-styles"></style>
 
-      <pp-content url="../../data/contact.json" loading="{{loading}}"></pp-content>
+      <pp-content url="../../data/contact.json" 
+        theme="[[theme]]" loading="{{loading}}">
+      </pp-content>
 
       <div class="weight-half">
         <h2 class="padding-horizontal">Form</h2>
@@ -74,7 +76,7 @@ class PPContact extends PolymerElement {
 
           <div class="card-content">
             <h3 class="card-subtitle no-vertical-margin">
-              YOUR_LOCATION_TEXT
+            YOUR_LOCATION_TEXT
             </h3>
           </div>
         </paper-card>
@@ -84,6 +86,10 @@ class PPContact extends PolymerElement {
 
   static get properties() {
     return {
+      theme: {
+        type: String,
+        notify: true
+      },
       loading: {
         type: Boolean,
         value: false,
@@ -113,7 +119,7 @@ class PPContact extends PolymerElement {
   }
 
   resetForm() {
-    this.shadowRoot.querySelector('iron-form').reset();
+    this.shadowRoot.querySelector('iron-form').reset();s
   }
 }
 

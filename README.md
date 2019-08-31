@@ -154,11 +154,52 @@ You can extend the app by adding more elements that will be demand-loaded
 e.g. based on the route, or to progressively render non-critical sections
 of the application.
 
+### Theme
+
+It supports `light` and `dark` themes which can be changed at runtime. It will store
+the user preference in local storage to persist it for the future visits.
+
+You can modify the various color variables in `src/pages/app.js` file to create your 
+own unique theme. Currently, it supports the following variables:
+
+```
+--dt-theme: light
+--dt-background-color: #EAEAEA
+--dt-surface-color: #EEEEEE
+--dt-selector-color: #DADADA
+--dt-header-color: #3F51B5
+--dt-primary-color: #3F51B5
+--dt-secondary-color: #E91E63
+--dt-tint-primary-color: #FFFFFF
+--dt-text-primary-color: #000000
+--dt-text-secondary-color: #454545
+--dt-text-description-color: #787878
+--dt-link-privacy-color: #1976D2
+--pp-divider-color: #CACACA
+
+--dt-theme: dark
+--dt-background-color: #222222
+--dt-surface-color: #343434
+--dt-selector-color: #323232
+--dt-header-color: #3F51B5
+--dt-primary-color: #7986CB
+--dt-secondary-color: #FF4081
+--dt-tint-primary-color: #FFFFFF
+--dt-text-primary-color: #FFFFFF
+--dt-text-secondary-color: #CDCDCD
+--dt-text-description-color: #787878
+--dt-link-privacy-color: #2196F3
+--pp-divider-color: #4A4A4A
+```
+
+> Update the `theme-color` in `manifest.json` and `index.html` files to complete 
+the theme.
+
 ### Data
 
-Almost all the website data is generated via `json` files stored in the `data`
+Almost all the website data is generated via `JSON` files stored in the `data`
 folder. Modify all the data files to display your own data. Please do not break
-the `json` schema otherwise, it will not display the data.
+the `JSON` schema otherwise, it will not display the data.
 
 ### Google Analytics
 
@@ -168,10 +209,7 @@ file to track the website data.
 
 ```html
 <body>
-  <!-- Start Google Analytics tracker -->
-  <pp-analytics
-    api-key="YOUR-TRACKING-ID">
-  </pp-analytics>
+  <pp-analytics api-key="YOUR-TRACKING-ID"></pp-analytics>
 
   ...
 </body>
@@ -180,7 +218,7 @@ file to track the website data.
 ### Twitter widgets
 
 Home screen has an option to display twitter widgets. Add your profile
-link in the `src/pages/pp-home.html` file to display the latest tweets. 
+link in the `src/pages/pp-home.js` file to display the latest tweets. 
 For loading twitter widgets, I have ported the 
 [Twitter widgets](https://developer.twitter.com/en/docs/twitter-for-websites) for 
 Polymer 3.x. You can also add multiple widgets.
@@ -198,35 +236,53 @@ Polymer 3.x. You can also add multiple widgets.
 </pp-twitter>
 ```
 
+> Update the `theme` and `username` in javascript function also to get the 
+optimal results on theme change.
+
+```javascript
+_themeChanged(theme) {
+  const container = this.shadowRoot.querySelector("#twitter-container");
+  const linkColor = this.isDarkTheme(theme) ? "#7986CB" : "#3F51B5";
+  container.innerHTML = `
+    <pp-twitter>
+      <paper-card>
+        <a class="twitter-timeline" data-theme="${theme}" 
+          data-link-color="${linkColor}"
+          href="https://twitter.com/YOUR_USER_NAME" 
+          data-chrome="nofooter transparent">
+        </a>
+      <paper-card>
+  </pp-twitter>`;
+}
+```
+
 ### Contact form
 
 Contact form is very useful if someone wants to contact you on your official
 email id. It has built in support via [formspree.io](https://formspree.io/).
-Add your verified email id in the `src/pages/pp-contact.html` file to get emails
+Add your verified email id in the `src/pages/pp-contact.js` file to get emails
 via `formspree.io`.
 
 ```html
-<paper-card class="weight-half">
-  <form is="iron-form" id="presubmit"
-    action="https://formspree.io/YOUR_EMAIL_ID" method="post"
-    on-iron-form-presubmit="_presubmit">
+<iron-form id="contactform">
+  <form action="https://formspree.io/YOUR_EMAIL_ID" method="post">
 
     ...
   </form>
-
-  ...
-</paper-card>
+</iron-form>
 ```
 
 ### Google Maps
 
 It has Google Maps support to display your location on contact page. Add your
-API Key in the `src/pages/pp-contact.html` file and modify the location to
+API Key in the `src/pages/pp-contact.js` file and modify the location to
 display it on the map. To generate an API Key, please follow the official
 documentation [here](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
 ```html
-<paper-card class="weight-half">
+<paper-card>
+  ...
+
   <google-map latitude="LATITUDE" longitude="LONGITUDE"
      api-key="YOUR_API_KEY" zoom="13">
     <google-map-marker latitude="LATITUDE" longitude="LONGITUDE"
