@@ -329,11 +329,14 @@ $_documentContainer.innerHTML =
       }
 
       paper-fab {
-        --paper-fab-background: var(--dt-secondary-color);
         position: fixed;
         right: 24px;
         bottom: 24px;
         font-size: 20px;
+        color: var(--dt-tint-secondary-color);
+        --paper-fab-background: var(--dt-secondary-color);
+        --paper-fab-keyboard-focus-background: var(--dt-secondary-color);
+        --paper-fab-disabled-background: var(--dt-selector-color);
       }
 
       paper-input {

@@ -10,7 +10,7 @@
  */
 
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
-import '../elements/pp-elements.js';
+import '../elements/pp-content.js';
 import '../elements/pp-twitter.js';
 
 class PPHome extends PolymerElement {

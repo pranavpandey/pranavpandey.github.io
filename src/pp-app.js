@@ -44,7 +44,7 @@ class PPApp extends PolymerElement {
         handle-as="json" last-response="{{dataBase64}}">
       </iron-ajax>
 
-      <app-drawer-layout responsive-width="700px" fullbleed="" narrow="{{narrow}}">
+      <app-drawer-layout responsive-width="700px" fullbleed narrow="{{narrow}}">
         <!-- Drawer content -->
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
           <div class="scrollable flex">
@@ -348,6 +348,7 @@ class PPApp extends PolymerElement {
       '--dt-primary-color': '#3F51B5',
       '--dt-secondary-color': '#E91E63',
       '--dt-tint-primary-color': '#FFFFFF',
+      '--dt-tint-secondary-color': '#FFFFFF',
       '--dt-text-primary-color': '#000000',
       '--dt-text-secondary-color': '#454545',
       '--dt-text-description-color': '#787878',
@@ -365,6 +366,7 @@ class PPApp extends PolymerElement {
       '--dt-primary-color': '#7986CB',
       '--dt-secondary-color': '#FF4081',
       '--dt-tint-primary-color': '#FFFFFF',
+      '--dt-tint-secondary-color': '#FFFFFF',
       '--dt-text-primary-color': '#FFFFFF',
       '--dt-text-secondary-color': '#CDCDCD',
       '--dt-text-description-color': '#787878',

@@ -18,10 +18,10 @@ class PPContent extends PolymerElement {
       <style include="pp-styles"></style>
 
       <iron-ajax auto="" url="{{url}}" handle-as="json" 
-        loading="{{loading}}" last-response="{{dataContent}}">
+        loading="{{loading}}" last-response="{{data}}">
       </iron-ajax>
 
-      <template id="showcase" is="dom-repeat" items="[[dataContent.showcases]]" as="showcaseCategory">
+      <template id="showcase" is="dom-repeat" items="[[data.showcases]]" as="showcaseCategory">
         <h2 hidden\$="[[!showcaseCategory.category]]" class="padding-horizontal">{{showcaseCategory.category}}</h2>
         <template is="dom-repeat" items="[[showcaseCategory.data]]" as="showcaseData">
           <a class="showcase" href\$="[[setUrl(showcaseData.url)]]" 
@@ -46,13 +46,13 @@ class PPContent extends PolymerElement {
         </template>
       </template>
 
-      <template id="content" is="dom-repeat" items="[[dataContent.categories]]" as="contentCategory">
+      <template id="content" is="dom-repeat" items="[[data.categories]]" as="contentCategory">
         <h2 class="padding-horizontal" hidden\$="[[!contentCategory.category]]">{{contentCategory.category}}</h2>
         <template is="dom-repeat" items="[[contentCategory.data]]" as="categoryData">
           <paper-card>
             <div hidden\$="[[!categoryData.header]]">
               <iron-image class="card-header" hidden\$="[[!categoryData.header]]" 
-                sizing="cover" preload="" fade="" style\$="[[setBackgroundColor(categoryData.color)]]" 
+                sizing="cover" preload fade style\$="[[setBackgroundColor(categoryData.color)]]" 
                 placeholder\$="[[categoryData.headerPlaceholder]]" src\$="[[categoryData.header]]">
               </iron-image>
             </div>
