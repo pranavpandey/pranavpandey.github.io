@@ -37,22 +37,27 @@ class PPContact extends PolymerElement {
               <form action="https://formspree.io/YOUR_EMAIL_ID" method="post">
                 <h3 class="card-subtitle">If you have any queries or anything good for me, you can contact me via this form.</h3>
                 <input type="text" name="_gotcha" style="display:none">
-                <paper-input class="margin-top" type="text" name="name" label="Name" floatinglabel="" required="" auto-validate="" error-message="Name cannot be empty!">
+                <paper-input class="margin-top" type="text" name="name" label="Name" 
+                  floatinglabel required auto-validate error-message="Name cannot be empty!">
                   <iron-icon slot="prefix" class="small" icon="pp-icons:person"></iron-icon>
                 </paper-input>
-                <paper-input class="margin-top" name="_replyto" type="email" label="Email" floatinglabel="" required="" auto-validate="" error-message="Please enter your email id.">
+                <paper-input class="margin-top" name="_replyto" type="email" label="Email" 
+                  floatinglabel required auto-validate error-message="Please enter your email id.">
                   <iron-icon slot="prefix" class="small" icon="pp-icons:mail"></iron-icon>
                 </paper-input>
-                <paper-input class="margin-top" type="text" name="_subject" label="Subject" floatinglabel="" required="" auto-validate="" error-message="Please enter subject.">
+                <paper-input class="margin-top" type="text" name="_subject" label="Subject" 
+                  floatinglabel required auto-validate error-message="Please enter subject.">
                   <iron-icon slot="prefix" class="small" icon="pp-icons:create"></iron-icon>
                 </paper-input>
-                <paper-textarea class="margin-top" id="message" type="text" label="Message" name="message" floatinglabel="" multiline="" rows="3" required="" placeholder="Something about your subject..." error-message="Message cannot be empty!">
+                <paper-textarea class="margin-top" id="message" type="text" label="Message" 
+                  name="message" floatinglabel multiline rows="3" required 
+                  placeholder="Something about your subject..." error-message="Message cannot be empty!">
                 </paper-textarea>
               </form>
             </iron-form>
           </div>
           <div class="card-actions contact-footer">
-            <paper-button id="btn_submit" class="secondary" raised="" on-tap="submitForm">
+            <paper-button id="btn_submit" class="secondary" raised on-tap="submitForm">
               <iron-icon class="small" icon="pp-icons:submit"></iron-icon>
               Submit
             </paper-button>

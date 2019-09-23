@@ -17,7 +17,7 @@ class PPContent extends PolymerElement {
     return html`
       <style include="pp-styles"></style>
 
-      <iron-ajax auto="" url="{{url}}" handle-as="json" 
+      <iron-ajax auto url="{{url}}" handle-as="json" 
         loading="{{loading}}" last-response="{{data}}">
       </iron-ajax>
 

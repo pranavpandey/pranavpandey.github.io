@@ -40,7 +40,7 @@ class PPApp extends PolymerElement {
       <app-localstorage-document key="theme" data="{{theme}}">
       </app-localstorage-document>
 
-      <iron-ajax auto="" url="../data/base64.json" 
+      <iron-ajax auto url="../data/base64.json" 
         handle-as="json" last-response="{{dataBase64}}">
       </iron-ajax>
 
@@ -50,7 +50,7 @@ class PPApp extends PolymerElement {
           <div class="scrollable flex">
             <app-toolbar class="drawer-header layout horizontal center-vertical">
               <div>
-                <iron-image class="drawer-header-image" sizing="cover" preload="" 
+                <iron-image class="drawer-header-image" sizing="cover" preload 
                   placeholder="[[dataBase64.drawerHeader]]" src="../images/drawer.jpg">
                 </iron-image>
               </div>
@@ -144,10 +144,10 @@ class PPApp extends PolymerElement {
 
         <!-- Main content -->
         <app-header-layout>
-          <app-header slot="header" condenses="" fixed="" effects="material">
+          <app-header slot="header" condenses fixed effects="material">
             <app-toolbar>
-              <paper-icon-button icon="pp-icons:menu" aria-hidden="true" drawer-toggle=""></paper-icon-button>
-              <div condensed-title="">Pranav Pandey</div>
+              <paper-icon-button icon="pp-icons:menu" aria-hidden="true" drawer-toggle></paper-icon-button>
+              <div condensed-title>Pranav Pandey</div>
               <a class=".drawer-list a" href="https://github.com/pranavpandey" 
                 target="_blank" rel="noopener" tabindex="-1" aria-label="GitHub">
                 <paper-icon-button class="color-tint-primary" icon="social-icons:github" aria-hidden="true">
@@ -160,7 +160,7 @@ class PPApp extends PolymerElement {
             <app-toolbar></app-toolbar>
             <app-toolbar hidden\$="[[smallLayout]]"></app-toolbar>
             <app-toolbar>
-              <div main-title="">Pranav Pandey<br>
+              <div main-title>Pranav Pandey<br>
                 <span class="main-subtitle">Software Developer &amp; Designer</span>
               </div>
             </app-toolbar>

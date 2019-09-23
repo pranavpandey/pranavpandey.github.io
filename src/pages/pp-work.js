@@ -16,7 +16,7 @@ class PPWork extends PolymerElement {
   static get template() {
     return html`
       <pp-content url="../../data/work.json" 
-        theme="[[theme]]" loading="{{loading}}" hide-showcase-icon="">
+        theme="[[theme]]" loading="{{loading}}" hide-showcase-icon>
       </pp-content>
     `;
   }

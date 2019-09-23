@@ -18,7 +18,7 @@ class PPHome extends PolymerElement {
     return html`
       <style include="pp-styles"></style>
 
-      <iron-ajax auto="" url="../../data/home.json" handle-as="json" 
+      <iron-ajax auto url="../../data/home.json" handle-as="json" 
         loading="{{loading}}" last-response="{{dataHome}}">
       </iron-ajax>
       
