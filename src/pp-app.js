@@ -182,7 +182,7 @@ class PPApp extends PolymerElement {
             </div>
 
             <div class="progress" hidden\$="[[!loading]]">
-              <paper-spinner active\$="[[loading]]"> </paper-spinner>
+              <paper-spinner active\$="[[loading]]"></paper-spinner>
             </div>
           </div>
         </app-header-layout>

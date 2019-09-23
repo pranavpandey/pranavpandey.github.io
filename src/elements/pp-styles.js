@@ -247,6 +247,21 @@ $_documentContainer.innerHTML =
         height: 420px;
         background-color: var(--dt-secondary-color);
       }
+
+      paper-spinner {
+        --paper-spinner-layer-1-color: var(--dt-secondary-color);
+        --paper-spinner-layer-2-color: var(--dt-primary-color);
+        --paper-spinner-layer-3-color: var(--dt-secondary-color);
+        --paper-spinner-layer-4-color: var(--dt-primary-color);
+      }
+
+      .progress {
+        margin: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
       
       paper-ripple.primary {
         color: var(--dt-primary-color);
@@ -365,14 +380,6 @@ $_documentContainer.innerHTML =
         height: 352px;
         width: 100%;
         display: block;
-      }
-
-      .progress {
-        margin: 48px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
       }
 
       .margin-top {
