@@ -159,7 +159,7 @@ of the application.
 It supports `light` and `dark` themes which can be changed at runtime. It will store
 the user preference in local storage to persist it for the future visits.
 
-You can modify the various color variables in `src/pages/app.js` file to create your 
+You can modify the various color variables in `src/pp-app.js` file to create your 
 own unique theme. Currently, it supports the following variables:
 
 ```
