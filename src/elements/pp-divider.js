@@ -22,6 +22,7 @@ class PPDivider extends PolymerElement {
           max-height: 1px;
           background-color: var(--pp-divider-color, #000);
           opacity: 0.7;
+          
           @apply --pp-divider;
         }
       </style>
