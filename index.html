@@ -19,7 +19,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <title>Pranav Pandey</title>
     <meta name="description" content="Software Developer &amp; Designer">
-    <meta name="keywords" content="Android,Google Play,Rotation,Orientation,Manager,Xperia,Small Apps,XDA,GIT,Technology,Techtics,Mobile,Computer,Software,Open Source,Website">
+    <meta name="keywords" content="Android,Google Play,Rotation,Orientation,Manager,Xperia,Small Apps,XDA,GIT,Technology,Techtics,Mobile,Computer,Software,Open source,Website">
 
     <!--
       The `<base>` tag below is present to support two advanced deployment options:
@@ -108,21 +108,47 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       });
     </script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-TRACKING-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'YOUR-TRACKING-ID', { 'anonymize_ip': true });
+    </script>
+
     <!-- Add any global styles for body, document, etc. -->
     <style>
+      html {
+        scroll-behavior: smooth;
+        scrollbar-color: #3F51B5 #C9CEEA;
+        scrollbar-width: thin;
+      }
       body {
         margin: 0;
         font-family: 'Roboto', 'Noto', sans-serif;
         line-height: 1.5;
         min-height: 100vh;
       }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+        background-color: #C9CEEA;
+      }
+
+      ::-webkit-scrollbar-track {
+        width: 8px;
+        background-color: #C9CEEA;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #3F51B5;
+      }
     </style>
   </head>
 
   <body>
-    <!-- Start Google Analytics tracker -->
-    <pp-analytics api-key="YOUR-TRACKING-ID"></pp-analytics>
-
     <pp-app></pp-app>
     <!-- Notify about javascript requirement -->
     <noscript>

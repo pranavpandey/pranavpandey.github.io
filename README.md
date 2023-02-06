@@ -210,11 +210,12 @@ support to monitor the website traffic. Add your tracking id in the `index.html`
 file to track the website data.
 
 ```html
-<body>
-  <pp-analytics api-key="YOUR-TRACKING-ID"></pp-analytics>
-
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-TRACKING-ID"></script>
+<script>
   ...
-</body>
+
+  gtag('config', 'YOUR-TRACKING-ID', { 'anonymize_ip': true });
+</script>
 ```
 
 ### Contact form
