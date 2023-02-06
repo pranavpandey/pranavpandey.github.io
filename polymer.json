@@ -14,7 +14,8 @@
         "images/**/*",
         "assets/**/*",
         "data/**/*",
-        "robots.txt"
+        "robots.txt",
+        "app-ads.txt"
     ],
     "extraDependencies": [
         "manifest.json",
@@ -79,7 +80,7 @@
     "moduleResolution": "node",
     "npm": true,
     "lint": {
-        "rules": ["polymer-3"],
-        "ignoreWarnings": ["non-literal-import"]
+      "rules": ["polymer-3"],
+      "ignoreWarnings": ["non-literal-import"]
     }
 }
