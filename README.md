@@ -221,12 +221,12 @@ file to track the website data.
 
 Contact form is very useful if someone wants to contact you on your official
 email id. It has built in support via [formspree.io](https://formspree.io/).
-Add your verified email id in the `src/pages/pp-contact.js` file to get emails
-via `formspree.io`.
+Add your form id after signing up in the `src/pages/pp-contact.js` file to get 
+emails via `formspree.io`.
 
 ```html
 <iron-form id="contactform">
-  <form action="https://formspree.io/YOUR_EMAIL_ID" method="post">
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
     ...
   </form>
