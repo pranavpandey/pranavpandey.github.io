@@ -18,17 +18,19 @@ class PP404 extends PolymerElement {
       <style include="pp-styles"></style>
 
       <h2 class="padding-horizontal">404</h2>
-      <paper-card>
-        <div class="card-content">
-          <h3 class="card-subtitle no-vertical-margin">This is not the web page you are looking for!</h3>
-        </div>
-      </paper-card>
+      <div class="container">
+        <paper-card class="width-large">
+          <div class="card-content">
+            <h3 class="card-subtitle no-vertical-margin">This is not the web page you are looking for!</h3>
+          </div>
+        </paper-card>
 
-      <paper-card class="primary">
-        <div class="card-content">
-          <p class="color-tint-primary">The requested URL <b>{{getPathName()}}</b> was not found on this server.</p>
-        </div>
-      </paper-card>
+        <paper-card class="width-large primary">
+          <div class="card-content">
+            <p class="color-tint-primary">The requested URL <b>{{getPathName()}}</b> was not found on this server.</p>
+          </div>
+        </paper-card>
+      </div>
     `;
   }
 
