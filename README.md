@@ -217,48 +217,6 @@ file to track the website data.
 </body>
 ```
 
-### Twitter widgets
-
-Home screen has an option to display twitter widgets. Add your profile
-link in the `src/pages/pp-home.js` file to display the latest tweets. 
-For loading twitter widgets, I have ported the 
-[Twitter widgets](https://developer.twitter.com/en/docs/twitter-for-websites) for 
-Polymer 3.x. You can also add multiple widgets.
-
-```html
-<pp-twitter>
-  ...
-
-  <a class="twitter-timeline" 
-    href="https://twitter.com/YOUR_USER_NAME"
-    data-tweet-limit="5" data-chrome="nofooter transparent">
-  </a>
-
-  ...
-</pp-twitter>
-```
-
-> Update the `theme` and `username` in javascript function also to get the 
-optimal results on theme change.
-
-```javascript
-_themeChanged(theme) {
-  const container = this.shadowRoot.querySelector("#twitter-container");
-  const linkColor = this.isDarkTheme(theme) ? "#7986CB" : "#3F51B5";
-  container.innerHTML = `
-    <pp-twitter>
-      <paper-card>
-        <a class="twitter-timeline" data-theme="${theme}" 
-          data-link-color="${linkColor}"
-          href="https://twitter.com/YOUR_USER_NAME" 
-          data-chrome="nofooter transparent">
-        </a>
-      <paper-card>
-    </pp-twitter>
-  `;
-}
-```
-
 ### Contact form
 
 Contact form is very useful if someone wants to contact you on your official

@@ -11,7 +11,6 @@
 
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import '../elements/pp-content.js';
-import '../elements/pp-twitter.js';
 
 class PPHome extends PolymerElement {
   static get template() {
@@ -44,18 +43,6 @@ class PPHome extends PolymerElement {
           allowfullscreen>
         </iframe>
       </paper-card> -->
-
-      <!-- Add your user name to show Twitter feeds -->
-      <div id="twitter-container" class="color-primary">
-        <pp-twitter>
-          <paper-card>
-            <a class="twitter-timeline"
-              href="https://twitter.com/YOUR_USER_NAME" 
-              data-chrome="nofooter transparent">
-            </a>
-          <paper-card>
-        </pp-twitter>
-      </div>
     `;
   }
 
@@ -75,18 +62,7 @@ class PPHome extends PolymerElement {
   }
 
   _themeChanged(theme) {
-    const container = this.shadowRoot.querySelector("#twitter-container");
     const linkColor = this.isDarkTheme(theme) ? "#7986CB" : "#3F51B5";
-    container.innerHTML = `
-      <pp-twitter>
-        <paper-card>
-          <a class="twitter-timeline" data-theme="${theme}" 
-            data-link-color="${linkColor}"
-            href="https://twitter.com/YOUR_USER_NAME" 
-            data-chrome="nofooter transparent">
-          </a>
-        <paper-card>
-    </pp-twitter>`;
   }
 
   isDarkTheme(theme) {
