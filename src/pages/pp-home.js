@@ -11,28 +11,52 @@
 
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import '../elements/pp-content.js';
+import '../elements/pp-videos.js';
 
 class PPHome extends PolymerElement {
   static get template() {
     return html`
       <style include="pp-styles"></style>
 
+      <app-location route="{{route}}" query-params="{{queryParams}}"></app-location>
+
       <iron-ajax auto url="../../data/home.json" handle-as="json" 
-        loading="{{loading}}" last-response="{{dataHome}}">
+        loading="{{loading}}" last-response="{{data}}">
       </iron-ajax>
       
-      <h2 class="padding-horizontal">{{dataHome.home.title}}</h2>
-      <paper-card>
-        <div class="card-content">
-          <h3 class="card-subtitle no-vertical-margin">{{dataHome.home.description}}</h3>
-        </div>
-      </paper-card>
+      <pp-content url="../../data/home.json" 
+        theme="[[theme]]" loading="{{loading}}">
+      </pp-content>
 
-      <paper-card id="quote" class="primary">
-        <div class="card-content">
-          <p class="color-tint-primary">{{dataHome.home.quote}}</p>
-        </div>
-      </paper-card>
+      <div class="container">
+        <paper-card id="achievement" class="width-large secondary" hidden$="[[!data.home.achievement]]">
+          <div class="card-content">
+            <p class="color-tint-secondary">{{data.home.achievement}}</p>
+          </div>
+        </paper-card>
+        
+        <paper-card id="quote" class="width-large primary" hidden$="[[!data.home.quote]]">
+          <div class="card-content">
+            <p class="color-tint-primary">{{data.home.quote}}</p>
+          </div>
+        </paper-card>
+      </div>
+
+      <pp-content url="../../data/home-apps.json"
+        theme="[[theme]]" loading="{{loading}}">
+      </pp-content>
+
+      <pp-content url="../../data/home-blog.json"
+        theme="[[theme]]" loading="{{loading}}">
+      </pp-content>
+
+      <pp-content url="../../data/home-graphics.json"
+        theme="[[theme]]" loading="{{loading}}">
+      </pp-content>
+
+      <pp-videos url="../../data/home-videos.json"
+        theme="[[theme]]" loading="{{loading}}">
+      </pp-videos>
 
       <!-- Un-comment for the Google/IO video -->
       <!-- <h2 class="padding-horizontal">Google I/O 2018</h2>
@@ -61,19 +85,25 @@ class PPHome extends PolymerElement {
     };
   }
 
-  _themeChanged(theme) {
-    const linkColor = this.isDarkTheme(theme) ? "#7986CB" : "#3F51B5";
-  }
+  _themeChanged(theme) { }
 
   isDarkTheme(theme) {
     return theme === 'dark';
   }
   
   isJSONEmpty(jsonObject) {
-    return jsonObject == null || !jsonObject.length ||
-      !jsonObject.filter(function(a) {
+    return jsonObject == null || !jsonObject.length 
+      || !jsonObject.filter(function(a) {
         return Object.keys(a).length;
       }).length;
+  }
+
+  getBaseThemeUrl() {
+    return 'https://theme.pranavpandey.com/?theme=';
+  }
+
+  isEmpty(string) {
+    return !string || string === null || string === "";
   }
 }
 
