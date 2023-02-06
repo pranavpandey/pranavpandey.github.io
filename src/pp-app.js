@@ -433,7 +433,7 @@ class PPApp extends PolymerElement {
       '--dt-link-support-color': '#3DDC84',
       '--dt-link-theme-color': '#CDDC39',
       '--dt-link-privacy-color': '#2196F3',
-      '--pp-divider-color': '#454545',
+      '--pp-divider-color': '#454545'
     };
   }
 
