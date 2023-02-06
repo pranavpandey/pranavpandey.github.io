@@ -21,8 +21,34 @@ $_documentContainer.innerHTML =
         --app-drawer-width: 340px;
         --app-primary-color: var(--dt-primary-color);
         --app-secondary-color: var(--dt-secondary-color);
+        --dt-preview-size: 320px;
+        --dt-preview-size-small: 160px;
+        --dt-preview-size-large: 520px;
+        --dt-preview-size-xlarge: 1200px;
+        --dt-preview-size-xxlarge: 1600px;
+
         @apply --paper-font-common-base;
         @apply --layout-flex;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+        background-color: var(--dt-tint-primary-color);
+      }
+
+      ::-webkit-scrollbar-track {
+        width: 8px;
+        background-color: var(--dt-tint-primary-color);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--dt-primary-color);
+      }
+      
+      ::selection {
+        color: var(--dt-tint-secondary-color);
+        background: var(--dt-secondary-color);
+        background-color: var(--dt-secondary-color);
       }
       
       .flex {
@@ -98,7 +124,9 @@ $_documentContainer.innerHTML =
         color: var(--dt-tint-primary-color);
         background-color: var(--dt-header-color);
         --app-header-background-front-layer: {
-          background-image: url(../../images/header.jpg);
+          background-image: linear-gradient(135deg, var(--dt-header-color) 30%, var(--dt-secondary-color) 100%);
+          -webkit-filter: brightness(80%);
+          filter: brightness(80%);
           background-position: center;
           background-size: cover;
         };
@@ -125,6 +153,8 @@ $_documentContainer.innerHTML =
         height: 100%;
         overflow: auto;
         background-color: var(--dt-background-color);
+        scrollbar-color: var(--dt-primary-color) var(--dt-tint-primary-color);
+        scrollbar-width: thin;
       }
 
       .drawer-header {
@@ -135,8 +165,8 @@ $_documentContainer.innerHTML =
       }
 
       .drawer-section {
-        margin-left: 8px;
-        margin-right: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
       }
 
       .drawer-header-image {
@@ -146,7 +176,7 @@ $_documentContainer.innerHTML =
         margin-right: 16px;
         border-radius: 50%;
         border-collapse: separate;
-        background-color: var(--dt-primary-color);
+        background-color: var(--pp-divider-color);
       }
 
       .drawer-quote {
@@ -177,8 +207,8 @@ $_documentContainer.innerHTML =
       }
 
       .drawer-list a.iron-selected {
-        background-color: var(--dt-selector-color);
-        color: var(--dt-primary-color);
+        background-color: var(--dt-tint-secondary-color);
+        color: var(--dt-secondary-color);
       }
 
       .footer {
@@ -190,18 +220,40 @@ $_documentContainer.innerHTML =
       .content-frame {
         height: 100%;
         background-color: var(--dt-background-color);
+
         @apply --layout-flex;
         @apply --layout-vertical;
       }
 
       .content {
+        max-width: var(--dt-preview-size-xxlarge);
         padding: 12px 24px;
         padding-bottom: 48px;
         background-color: var(--dt-background-color);
       }
 
+      .content-margin {
+        margin-top: 12px;
+        margin-right: 8px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+      }
+
+      .width-large {
+        position: block;
+        max-width: 100%;
+      }
+
+      .width-xlarge {
+        max-width: var(--dt-preview-size-xlarge);
+      }
+
       .weight-half {
-        float: left;
+        position: relative;
         width: 48.7%;
         margin-right: 8px;
       }
@@ -227,17 +279,14 @@ $_documentContainer.innerHTML =
       }
 
       iron-icon.small {
-        --iron-icon-height: 20px;
-        --iron-icon-width: 20px;
         margin-right: 8px;
         margin-bottom: 2px;
-      }
-      
-      iron-icon.style {
-        margin-right: 32px;
+        --iron-icon-height: 20px;
+        --iron-icon-width: 20px;
       }
       
       iron-icon.theme {
+        margin-bottom: 2px;
         --iron-icon-height: 28px;
         --iron-icon-width: 28px;
       }
@@ -248,11 +297,20 @@ $_documentContainer.innerHTML =
         background-color: var(--dt-secondary-color);
       }
 
+      paper-icon-button.theme {
+        margin-right: 22px;
+      }
+
       paper-spinner {
         --paper-spinner-layer-1-color: var(--dt-secondary-color);
         --paper-spinner-layer-2-color: var(--dt-primary-color);
         --paper-spinner-layer-3-color: var(--dt-secondary-color);
         --paper-spinner-layer-4-color: var(--dt-primary-color);
+      }
+
+      paper-tooltip {
+        --paper-tooltip-background: var(--dt-secondary-color);
+        --paper-tooltip-text-color: var(--dt-tint-secondary-color);
       }
 
       .progress {
@@ -267,10 +325,30 @@ $_documentContainer.innerHTML =
         color: var(--dt-primary-color);
       }
 
+      paper-ripple.secondary {
+        color: var(--dt-secondary-color);
+      }
+
+      paper-ripple.selector {
+        color: var(--dt-tint-background-color);
+      }
+
+      paper-button {
+        padding: 0.5em 0.7em;
+      }
+
+      paper-button.primary {
+        color: var(--dt-primary-color);
+      }
+      
       paper-button.secondary {
         color: var(--dt-secondary-color);
       }
-      
+
+      paper-button.tint-background {
+        color: var(--dt-tint-background-color);
+      }
+
       paper-toggle-button {
         --paper-toggle-button-unchecked-bar-color: var(--dt-text-description-color);
         --paper-toggle-button-unchecked-button-color: var(--dt-text-description-color);
@@ -279,13 +357,24 @@ $_documentContainer.innerHTML =
 
       paper-toggle-button.color-primary {
         --paper-toggle-button-checked-bar-color: var(--dt-primary-color);
+        --paper-toggle-button-checked-bar-color([disabled]): var(--dt-primary-color);
         --paper-toggle-button-checked-button-color: var(--dt-primary-color);
         --paper-toggle-button-checked-ink-color: var(--dt-primary-color);
       }
 
+      paper-toggle-button.color-secondary {
+        --paper-toggle-button-checked-bar-color: var(--dt-secondary-color);
+        --paper-toggle-button-checked-bar-color([disabled]): var(--dt-secondary-color);
+        --paper-toggle-button-checked-button-color: var(--dt-secondary-color);
+        --paper-toggle-button-checked-ink-color: var(--dt-secondary-color);
+      }
+
       paper-toggle-button.theme {
         margin-left: 16px;
-        margin-right: 16px
+        margin-right: 12px;
+        --paper-toggle-button-unchecked-bar-color: var(--paper-toggle-button-checked-bar-color);
+        --paper-toggle-button-unchecked-button-color: var(--paper-toggle-button-checked-bar-color);
+        --paper-toggle-button-unchecked-ink-color: var(--paper-toggle-button-checked-bar-color);
       }
 
       paper-card {
@@ -294,18 +383,43 @@ $_documentContainer.innerHTML =
         margin-bottom: 12px;
         --paper-card-background-color: var(--dt-surface-color);
         --paper-card-actions: {
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
           border-top: 1px solid var(--pp-divider-color);
         }
+
+        @apply --shadow-transition;
       }
 
+      paper-card:hover {
+        --paper-card-background-color: var(--dt-surface-color-elevation);
+        
+        @apply --paper-material-elevation-4;
+      }
+
+      paper-card iron-image {
+        max-height: var(--dt-preview-size);
+      }
+    
       paper-card.primary {
         --paper-card-background-color: var(--dt-primary-color);
         --paper-card-header-color: var(--dt-tint-primary-color);
       }
 
+      paper-card.secondary {
+        --paper-card-background-color: var(--dt-secondary-color);
+        --paper-card-header-color: var(--dt-tint-secondary-color);
+      }
+
+      paper-card.secondary ::selection {
+        color: var(--dt-tint-primary-color);
+        background: var(--dt-primary-color);
+        background-color: var(--dt-primary-color);
+      }
+
       paper-card.showcase {
         position: relative;
-        width: 148px;
+        max-width: var(--dt-preview-size-small);
         margin-right: 8px;
       }
 
@@ -316,7 +430,19 @@ $_documentContainer.innerHTML =
 
       paper-card.showcase div iron-image {
         width: 100%;
-        height: 112px;
+        max-height: var(--dt-preview-size-small);
+      }
+
+      paper-card.video {
+        max-width: var(--dt-preview-size-large);
+        margin-right: 8px;
+      }
+
+      iframe.video {
+        width: 100%;
+        height: var(--dt-preview-size);
+        left: 0;
+        top: 0;
       }
 
       .card-subtitle {
@@ -348,29 +474,33 @@ $_documentContainer.innerHTML =
         right: 24px;
         bottom: 24px;
         font-size: 20px;
-        color: var(--dt-tint-secondary-color);
+        color: var(--dt-background-color);
         --paper-fab-background: var(--dt-secondary-color);
         --paper-fab-keyboard-focus-background: var(--dt-secondary-color);
-        --paper-fab-disabled-background: var(--dt-selector-color);
+        --paper-fab-disabled-background: var(--dt-tint-secondary-color);
+      }
+
+      paper-fab:hover{
+        @apply --paper-material-elevation-4;
       }
 
       paper-input {
         --paper-input-container-color: var(--dt-text-description-color);     
-        --paper-input-container-focus-color: var(--dt-primary-color);   
-        --paper-input-container-invalid-color: var(--dt-secondary-color);          
+        --paper-input-container-focus-color: var(--dt-secondary-color);   
+        --paper-input-container-invalid-color: var(--dt-text-primary-color);          
         --paper-input-container-input: {
           color: var(--dt-text-secondary-color);
         };
       }
 
       paper-input iron-icon {
-        color: var(--dt-text-primary-color);
+        color: var(--dt-tint-background-color);
       }
 
       paper-textarea {
         --paper-input-container-color: var(--dt-text-description-color);     
-        --paper-input-container-focus-color: var(--dt-primary-color);
-        --paper-input-container-invalid-color: var(--dt-secondary-color);
+        --paper-input-container-focus-color: var(--dt-secondary-color);   
+        --paper-input-container-invalid-color: var(--dt-text-primary-color);          
         --paper-input-container-input: {
           color: var(--dt-text-secondary-color);
         };
@@ -387,8 +517,8 @@ $_documentContainer.innerHTML =
       }
 
       .contact-footer {
-        padding-top: 22px;
-        padding-bottom: 23px;
+        padding-top: 1em;
+        padding-bottom: 1em;
       }
 
       .color-primary {
@@ -399,19 +529,47 @@ $_documentContainer.innerHTML =
         color: var(--dt-secondary-color);
       }
 
+      .color-tint-background {
+        color: var(--dt-tint-background-color);
+      }
+      
       .color-tint-primary {
         color: var(--dt-tint-primary-color);
       }
 
-      .color-tint-primary {
-        color: var(--dt-tint-primary-color);
+      .color-tint-secondary {
+        color: var(--dt-tint-secondary-color);
+      }
+
+      .color-link-techtics {
+        color: var(--dt-link-techtics-color);
+      }
+
+      .color-link-support {
+        color: var(--dt-link-support-color);
+      }
+
+      .color-link-theme {
+        color: var(--dt-link-theme-color);
       }
 
       .color-link-privacy {
         color: var(--dt-link-privacy-color);
       }
 
+      @media (min-width: 1490px) {
+        .width-large {
+          position: relative;
+          max-width: var(--dt-preview-size-large);
+          margin-right: 8px;
+        }
+      }
+
       @media (max-width: 1109px) {
+        .width-xlarge {
+          max-width: 100%;
+        }
+        
         .weight-half {
           position: block;
           width: 100%;
@@ -424,7 +582,7 @@ $_documentContainer.innerHTML =
         }
       }
 
-      @media (max-width: 748px) {
+      @media (max-width: 840px) {
         [main-title] {
           font-size: 1.6em;
         }
@@ -437,6 +595,11 @@ $_documentContainer.innerHTML =
       @media (max-width: 700px) {
         :host {
           --app-drawer-width: 310px;
+        }
+
+        .drawer-header-image {
+          width: 48px;
+          height: 48px;
         }
 
         h2.padding-horizontal {
@@ -454,6 +617,11 @@ $_documentContainer.innerHTML =
           padding-bottom: 48px;
         }
 
+        .content-margin {
+          margin-top: 8px;
+          margin-right: 8px;
+        }
+
         iron-image.card-header {
           height: 240px;
         }
@@ -467,11 +635,11 @@ $_documentContainer.innerHTML =
       @media (max-width: 600px) {
         :host {
           --app-drawer-width: 300px;
-        }
-
-        .drawer-header-image {
-          width: 48px;
-          height: 48px;
+          --dt-preview-size: 280px;
+          --dt-preview-size-small: 140px;
+          --dt-preview-size-large: 460px;
+          --dt-preview-size-xlarge: 1000px;
+          --dt-preview-size-xxlarge: 1200px;
         }
       }
     </style>

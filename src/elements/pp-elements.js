@@ -31,5 +31,6 @@ import '@polymer/paper-ripple/paper-ripple.js';
 import '@polymer/paper-spinner/paper-spinner.js';
 import '@polymer/paper-toast/paper-toast.js';
 import '@polymer/paper-toggle-button/paper-toggle-button.js';
+import '@polymer/paper-tooltip/paper-tooltip.js';
 import './pp-styles.js';
 import './pp-icons.js';
