@@ -2,8 +2,6 @@
 
 # My Personal Website
 
-[![Build Status](https://travis-ci.org/pranavpandey/pranavpandey.github.io.svg?branch=polymer-2.x-hybrid)](https://travis-ci.org/pranavpandey/pranavpandey.github.io)
-
 This is my personal website in which I am following the
 [Material Design Guidelines](https://material.io/) by Google using
 [Polymer](https://www.polymer-project.org/2.0/) and will keep experimenting
@@ -157,45 +155,53 @@ of the application.
 ### Theme
 
 It supports `light` and `dark` themes which can be changed at runtime. It will store
-the user preference in local storage to persist it for the future visits.
+the user preference in local storage to persist it for future visits.
 
 You can modify the various color variables in `src/pp-app.js` file to create your 
 own unique theme. Currently, it supports the following variables:
 
 ```
---dt-theme: light
---dt-background-color: #EAEAEA
---dt-surface-color: #EEEEEE
---dt-selector-color: #DADADA
---dt-header-color: #3F51B5
---dt-primary-color: #3F51B5
---dt-secondary-color: #E91E63
---dt-tint-primary-color: #FFFFFF
---dt-tint-secondary-color': #FFFFFF
---dt-text-primary-color: #000000
---dt-text-secondary-color: #454545
---dt-text-description-color: #787878
---dt-link-privacy-color: #1976D2
---pp-divider-color: #CACACA
+'--dt-theme': 'light',
+'--dt-background-color': '#EAEAEA',
+'--dt-surface-color': '#EBEBEB',
+'--dt-surface-color-elevation': '#EBEBEB',
+'--dt-header-color': '#3F51B5',
+'--dt-primary-color': '#3F51B5',
+'--dt-secondary-color': '#E91E63',
+'--dt-tint-background-color': '#414141',
+'--dt-tint-primary-color': '#C9CEEA',
+'--dt-tint-secondary-color': '#F8C0D3',
+'--dt-text-primary-color': '#121212',
+'--dt-text-secondary-color': '#343434',
+'--dt-text-description-color': '#676767',
+'--dt-link-techtics-color': '#138808',
+'--dt-link-support-color': '#4285F4',
+'--dt-link-theme-color': '#9C27B0',
+'--dt-link-privacy-color': '#1976D2',
+'--pp-divider-color': '#BCBCBC'
 
---dt-theme: dark
---dt-background-color: #222222
---dt-surface-color: #343434
---dt-selector-color: #323232
---dt-header-color: #3F51B5
---dt-primary-color: #7986CB
---dt-secondary-color: #FF4081
---dt-tint-primary-color: #FFFFFF
---dt-tint-secondary-color': #FFFFFF
---dt-text-primary-color: #FFFFFF
---dt-text-secondary-color: #CDCDCD
---dt-text-description-color: #787878
---dt-link-privacy-color: #2196F3
---pp-divider-color: #4A4A4A
+'--dt-theme': 'dark', 
+'--dt-background-color': '#252525',
+'--dt-surface-color': '#2D2D2D',
+'--dt-surface-color-elevation': '#353535',
+'--dt-header-color': '#3F51B5',
+'--dt-primary-color': '#3F51B5',    
+'--dt-secondary-color': '#FBC02D',
+'--dt-tint-background-color': '#C1C1C1',
+'--dt-tint-primary-color': '#C9CEEA',
+'--dt-tint-secondary-color': '#46350C',
+'--dt-text-primary-color': '#EFEFEF',
+'--dt-text-secondary-color': '#CDCDCD',
+'--dt-text-description-color': '#898989',
+'--dt-link-techtics-color': '#FF9933',
+'--dt-link-support-color': '#3DDC84',
+'--dt-link-theme-color': '#CDDC39',
+'--dt-link-privacy-color': '#2196F3',
+'--pp-divider-color': '#454545'
 ```
 
-> Update the `theme-color` in `manifest.json` and `index.html` files to complete 
-the theme.
+> Update the `theme-color` in the `manifest.json` and `index.html` files to 
+complete the theme.
 
 ### Data
 
@@ -220,8 +226,8 @@ file to track the website data.
 
 ### Contact form
 
-Contact form is very useful if someone wants to contact you on your official
-email id. It has built in support via [formspree.io](https://formspree.io/).
+The contact form is very useful if someone wants to contact you on your official
+email id. It has built-in support via [formspree.io](https://formspree.io/).
 Add your form id after signing up in the `src/pages/pp-contact.js` file to get 
 emails via `formspree.io`.
 
@@ -236,17 +242,17 @@ emails via `formspree.io`.
 
 ### Google Maps
 
-It has Google Maps support to display your location on contact page. Add your
-API Key in the `src/pages/pp-contact.js` file and modify the location to
-display it on the map. To generate an API Key, please follow the official
-documentation [here](https://developers.google.com/maps/documentation/javascript/get-api-key).
+It has Google Maps support to display your location on the contact page. Add your
+API Key in the `src/pages/pp-contact.js` file and modify the location to display it 
+on the map. To generate an API Key, please follow the official documentation 
+[here](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
 ```html
 <paper-card>
   ...
 
   <google-map latitude="LATITUDE" longitude="LONGITUDE"
-     api-key="YOUR_API_KEY" zoom="13">
+    api-key="YOUR_API_KEY" zoom="13">
     <google-map-marker latitude="LATITUDE" longitude="LONGITUDE"
       title="TITLE" draggable="true">
     </google-map-marker>
