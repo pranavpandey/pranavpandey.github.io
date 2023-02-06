@@ -3,19 +3,139 @@
     "public": "build/es5-bundled",
     "redirects": [
       {
+        "source": "/android",
+        "destination": "https://play.google.com/store/apps/dev?id=6608630615059087491",
+        "type": 302
+      },
+      {
+        "source": "/android/rotation",
+        "destination": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation",
+        "type": 302
+      },
+      {
+        "source": "/android/everyday",
+        "destination": "https://play.google.com/store/apps/details?id=com.pranavpandey.calendar",
+        "type": 302
+      },
+      {
+        "source": "/android/palettes",
+        "destination": "https://play.google.com/store/apps/details?id=com.pranavpandey.theme",
+        "type": 302
+      },
+      {
+        "source": "/android/barquode",
+        "destination": "https://play.google.com/store/apps/details?id=com.pranavpandey.matrix",
+        "type": 302
+      },
+      {
+        "source": "/android/zerocros",
+        "destination": "https://play.google.com/store/apps/details?id=com.pranavpandey.tictactoe",
+        "type": 302
+      },
+      {
+        "source": "/twitter",
+        "destination": "https://twitter.com/pranavpandeydev",
+        "type": 301
+      },
+      {
+        "source": "/facebook",
+        "destination": "https://facebook.com/pranavpandeydev",
+        "type": 301
+      },
+      {
+        "source": "/instagram",
+        "destination": "https://instagram.com/pranavpandeydev",
+        "type": 301
+      },
+      {
+        "source": "/github",
+        "destination": "https://github.com/pranavpandey",
+        "type": 301
+      },
+      {
+        "source": "/stack-exchange",
+        "destination": "http://stackexchange.com/users/6528964/pranavpandey",
+        "type": 301
+      },
+      {
+        "source": "/stack-overflow",
+        "destination": "https://stackoverflow.com/users/5050751/pranavpandey",
+        "type": 301
+      },
+      {
+        "source": "/xda",
+        "destination": "http://forum.xda-developers.com/member.php?u=3962236",
+        "type": 301
+      },
+      {
+        "source": "/linkedin",
+        "destination": "https://in.linkedin.com/in/pranav-pandey-09032974",
+        "type": 301
+      },
+      {
+        "source": "/resume",
+        "destination": "https://drive.google.com/open?id=1M0LvUIlWa-KqiOOhJ55Rcw74wlMRY_A6",
+        "type": 302
+      },
+      {
+        "source": "/mail",
+        "destination": "/contact",
+        "type": 302
+      },
+      {
+        "source": "/graphics",
+        "destination": "https://gumroad.com/pranavpandey",
+        "type": 302
+      },
+      {
+        "source": "/graphics/android",
+        "destination": "https://gum.co/TrKWO",
+        "type": 302
+      },
+      {
+        "source": "/graphics/icon/android",
+        "destination": "https://gum.co/XwwAA",
+        "type": 302
+      },
+      {
+        "source": "/translate",
+        "destination": "https://translate.pranavpandey.com",
+        "type": 301
+      },
+      {
+        "source": "/blog",
+        "destination": "https://techtics.xyz",
+        "type": 301
+      },
+      {
+        "source": "/blog/:page",
+        "destination": "https://techtics.xyz/:page",
+        "type": 301
+      },
+      {
+        "source": "/theme",
+        "destination": "https://theme.pranavpandey.com",
+        "type": 301
+      },
+      {
+        "source": "/theme/:page",
+        "destination": "https://theme.pranavpandey.com/:page",
+        "type": 301
+      },
+      {
         "source": "/privacy",
         "destination": "https://privacy.pranavpandey.com",
-        "type": 302
+        "type": 301
       },
       {
         "source": "/privacy/:page",
         "destination": "https://privacy.pranavpandey.com/:page",
-        "type": 302
+        "type": 301
       }
     ],
     "rewrites": [
       {
-        "source": "**/!(*.js|*.html|*.css|*.json|*.svg|*.png|*.jpg|*.jpeg)",
+        "source": "**/!(*.js|*.html|*.css|*.svg|*.png|*.jpg|*.jpeg)",
         "destination": "/index.html"
       }
     ],
