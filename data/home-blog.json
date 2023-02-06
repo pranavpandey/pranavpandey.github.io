@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "category": "Blog",
+      "data": [
+        {
+          "title": "Rotation | Techtale",
+          "subtitle": "Prologue | Campaign | Epilogue",
+          "description": "The 8-year-long development story of my best-selling app.",
+          "color": "#5C6BC0",
+          "header": "../../images/blog/techtale-rotation.png",
+          "links": [
+            {
+              "link": "Techtics",
+              "url": "https://techtics.xyz/rotation-prologue",
+              "ironIcon": "pp-icons:launch",
+              "color": "#5C6BC0",
+              "colorDark": "#FF8A80"
+            }
+          ]
+        },
+        {
+          "title": "Dynamic Support",
+          "subtitle": "Rotation | Epilogue",
+          "description": "A technical tale sequence explaining why and how these libraries were built.",
+          "color": "#5C6BC0",
+          "header": "../../images/blog/techtale-support.png",
+          "links": [
+            {
+              "link": "Techtics",
+              "url": "https://techtics.xyz/rotation-epilogue",
+              "ironIcon": "pp-icons:launch",
+              "color": "#5C6BC0",
+              "colorDark": "#FF8A80"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

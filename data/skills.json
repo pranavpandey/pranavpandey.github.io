@@ -4,157 +4,157 @@
       "category": "Showcase",
       "data": [
         {
-          "title": "Android",
           "icon": "pp-icons:android",
-          "color": "#4285f4",
+          "title": "Android",
+          "color": "#4285F4",
           "colorDark": "#3DDC84",
           "url": "https://www.android.com/"
         },
         {
-          "title": "Java",
           "icon": "skill-icons:java",
+          "title": "Java",
           "color": "#5382A1",
           "colorDark": "#F8981D",
           "url": "https://www.java.com/"
         },
         {
-          "title": "C",
           "icon": "skill-icons:c",
+          "title": "C",
           "color": "#7F8B99",
           "colorDark": "#A9B9CB",
           "url": "https://en.wikipedia.org/wiki/C_(programming_language)"
         },
         {
-          "title": "C++",
           "icon": "skill-icons:c++",
+          "title": "C++",
           "color": "#004482",
           "colorDark": "#659AD2",
           "url": "https://isocpp.org/"
         },
         {
-          "title": "HTML",
           "icon": "skill-icons:html",
+          "title": "HTML",
           "color": "#E34F26",
           "colorDark": "#EF652A",
           "url": "http://www.w3.org/html/"
         },
         {
-          "title": "CSS",
           "icon": "skill-icons:css",
+          "title": "CSS",
           "color": "#1572B6",
           "colorDark": "#3C9CD7",
           "url": "http://www.w3.org/Style/CSS/"
         },
         {
-          "title": "JavaScript",
           "icon": "skill-icons:javascript",
+          "title": "JavaScript",
           "color": "#000000",
           "colorDark": "#F0DB4F",
           "url": "https://en.wikipedia.org/wiki/JavaScript"
         },
         {
-          "title": "Node.js",
           "icon": "skill-icons:node",
+          "title": "Node.js",
           "color": "#339933",
           "colorDark": "#66CC33",
           "url": "https://nodejs.org/"
         },
         {
-          "title": "Angular",
           "icon": "skill-icons:angular",
+          "title": "Angular",
           "color": "#C3002F",
           "colorDark": "#E6FFFFFF",
           "url": "https://angularjs.org/"
         },
         {
-          "title": "Polymer",
           "icon": "pp-icons:polymer",
+          "title": "Polymer",
           "color": "#E91E63",
           "colorDark": "#FF4081",
           "url": "https://www.polymer-project.org/"
         },
         {
-          "title": ".NET",
           "icon": "skill-icons:dot-net",
+          "title": ".NET",
           "color": "#1172A8",
           "colorDark": "#56BBD6",
           "url": "https://www.microsoft.com/net"
         },
         {
-          "title": "C#",
           "icon": "skill-icons:c#",
+          "title": "C#",
           "color": "#1172A8",
           "colorDark": "#56BBD6",
           "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
         },
         {
-          "title": "Firebase",
           "icon": "social-icons:firebase",
+          "title": "Firebase",
           "color": "#F57F17",
           "colorDark": "#F4B400",
           "url": "https://firebase.google.com/"
         },
         {
-          "title": "PHP",
           "icon": "skill-icons:php",
+          "title": "PHP",
           "color": "#484C89",
           "colorDark": "#AEB2D5",
           "url": "https://secure.php.net/"
         },
         {
-          "title": "MySQL",
           "icon": "skill-icons:mysql",
+          "title": "MySQL",
           "color": "#00688F",
           "colorDark": "#E58E1A",
           "url": "https://www.mysql.com/"
         },
         {
-          "title": "GIT",
           "icon": "skill-icons:git",
+          "title": "GIT",
           "color": "#F34F29",
           "url": "https://git-scm.com/"
         },
         {
-          "title": "GIMP",
           "icon": "skill-icons:gimp",
+          "title": "GIMP",
           "color": "#595342",
           "colorDark": "#FFFFFF",
           "url": "https://www.gimp.org/"
         },
         {
-          "title": "Photoshop",
           "icon": "skill-icons:photoshop",
+          "title": "Photoshop",
           "color": "#80B5E2",
           "url": "http://www.adobe.com/in/products/photoshop.html"
         },
         {
-          "title": "Illustrator",
           "icon": "skill-icons:illustrator",
+          "title": "Illustrator",
           "color": "#FAA625",
           "url": "http://www.adobe.com/products/illustrator.html"
         },
         {
-          "title": "Linux",
           "icon": "skill-icons:linux",
+          "title": "Linux",
           "color": "#000000",
           "colorDark": "#F5BD0C",
           "url": "https://en.wikipedia.org/wiki/Linux"
         },
         {
-          "title": "Ubuntu",
           "icon": "skill-icons:ubuntu",
+          "title": "Ubuntu",
           "color": "#E95420",
           "url": "https://www.ubuntu.com/"
         },
         {
-          "title": "Windows",
           "icon": "skill-icons:windows",
+          "title": "Windows",
           "color": "#00ADEF",
           "url": "http://windows.microsoft.com"
         },
         {
-          "title": "macOS",
           "icon": "skill-icons:apple",
+          "title": "macOS",
           "color": "#000000",
           "colorDark": "#FFFFFF",
           "url": "http://www.apple.com/macos"
@@ -185,7 +185,7 @@
           "links": [
             {
               "link": "Google Play",
-              "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
+              "url": "https://play.google.com/store/apps/dev?id=6608630615059087491",
               "ironIcon": "pp-icons:shop",
               "color": "#4285f4",
               "colorDark": "#3DDC84"
@@ -228,7 +228,7 @@
         {
           "title": "Integrated Development Environment (IDE)",
           "subtitle": "Eclipse (with ADT), Android Studio, Visual Studio",
-          "description": "Familier with major software development IDEs out there.",
+          "description": "Familiar with major software development IDEs out there.",
           "links": []
         },
         {

@@ -1,7 +1,47 @@
 {
   "home": {
-    "title": "Welcome!",
-    "description": "My name is Pranav Pandey. I am a professional software developer and a little bit designer from India working on many technologies, especially from Google.",
-    "quote": "Don't be afraid of failures, it makes you more confident !!!"
+    "title": "Welcome",
+    "subtitle": "Developer, Programmer, UI/UX Designer and Publisher",
+    "description": "My name is Pranav Pandey. I am a professional software developer and a little bit designer from India working on many technologies, especially related to Android.",
+    "achievement": "● Reverse Engineering Android since 2011.\n● Over 10 active open source projects on GitHub.\n● Published over 20 apps on Google Play with more than 1M downloads.\n● Led the software development of 3 GMS approved Android devices.\n● Developed over 5 websites using Polymer, Jekyll, Wordpress and Firebase.\n● Deep understanding of Material Design by Google with the ability to design corresponding graphics using Photoshop and Illustrator.",
+    "quote": "Don't be afraid of failures, it makes you more confident!"
+  },
+  "categories": [
+    {
+      "category": "Welcome",
+      "data": [
+        {
+          "subtitle": "Developer, Programmer, UI/UX Designer and Publisher",
+          "description": "My name is Pranav Pandey. I am a professional software developer and a little bit designer from India working on many technologies, especially related to Android.",
+          "links": [
+            {
+              "link": "Twitter",
+              "url": "https://twitter.com/pranavpandeydev",
+              "ironIcon": "social-icons:twitter",
+              "color": "#00ACED"
+            },
+            {
+              "link": "Github",
+              "url": "https://github.com/pranavpandey",
+              "ironIcon": "social-icons:github",
+              "color": "#000000",
+              "colorDark": "#FFFFFF"
+            },
+            {
+              "link": "LinkedIn",
+              "url": "https://in.linkedin.com/in/pranav-pandey-09032974",
+              "ironIcon": "social-icons:linkedin",
+              "color": "#007BB6",
+              "colorDark": "#008FDD"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "theme": {
+    "title": "Theme",
+    "description": "You are here because either you don't have any supported apps installed or you are trying to open it from the web browser.",
+    "quote": "Please install any of the below apps according to the supported platform and try again!"
   }
 }

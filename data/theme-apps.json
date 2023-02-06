@@ -1,0 +1,44 @@
+{
+  "showcases": [
+    {
+      "category": "Android",
+      "data": [
+        {
+          "title": "Rotation",
+          "src": "../../images/projects/icon-rotation.png",
+          "color": "#5C6BC0",
+          "colorDark": "#FF8A80",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation"
+        },
+        {
+          "title": "Everyday",
+          "src": "../../images/projects/icon-everyday.png",
+          "color": "#7E57C2",
+          "colorDark": "#4DB6AC",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.calendar"
+        },
+        {
+          "title": "Palettes",
+          "src": "../../images/projects/icon-palettes.png",
+          "color": "#607D8B",
+          "colorDark": "#E6EE9C",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.theme"
+        },
+        {
+          "title": "Barquode",
+          "src": "../../images/projects/icon-barquode.png",
+          "color": "#AB47BC",
+          "colorDark": "#81D4FA",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.matrix"
+        },
+        {
+          "title": "Zerocros",
+          "src": "../../images/projects/icon-zerocros.png",
+          "color": "#795548",
+          "colorDark": "#00E676",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.tictactoe"
+        }
+      ]
+    }
+  ]
+}

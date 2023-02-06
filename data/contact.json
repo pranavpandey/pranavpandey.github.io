@@ -48,7 +48,7 @@
             },
             {
               "link": "Stack Overflow",
-              "url": "http://stackexchange.com/users/6528964/pranav-pandey",
+              "url": "https://stackoverflow.com/users/5050751/pranavpandey",
               "ironIcon": "social-icons:so",
               "color": "#FE7A15"
             }
@@ -67,12 +67,12 @@
             },
             {
               "link": "Resume",
-              "url": "https://github.com/pranavpandey/pranavpandey.github.io/raw/master/data/resume.pdf",
+              "url": "https://drive.google.com/open?id=1M0LvUIlWa-KqiOOhJ55Rcw74wlMRY_A6",
               "ironIcon": "pp-icons:attachment"
             },
             {
               "link": "Email",
-              "url": "mailto:pranavpande92@gmail.com",
+              "url": "mailto:me@pranavpandey.com",
               "ironIcon": "pp-icons:mail",
               "color": "#000000",
               "colorDark": "#FFFFFF"

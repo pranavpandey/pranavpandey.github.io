@@ -1,0 +1,252 @@
+{
+  "showcases": [
+    {
+      "category": "Android",
+      "data": [
+        {
+          "title": "Rotation",
+          "src": "../../images/projects/icon-rotation.png",
+          "color": "#5C6BC0",
+          "colorDark": "#FF8A80",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation"
+        },
+        {
+          "title": "Rotation Key",
+          "src": "../../images/projects/icon-rotation-key.png",
+          "color": "#5C6BC0",
+          "colorDark": "#FF8A80",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.rotation.key"
+        },
+        {
+          "title": "Everyday",
+          "src": "../../images/projects/icon-everyday.png",
+          "color": "#7E57C2",
+          "colorDark": "#4DB6AC",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.calendar"
+        },
+        {
+          "title": "Everyday Key",
+          "src": "../../images/projects/icon-everyday-key.png",
+          "color": "#7E57C2",
+          "colorDark": "#4DB6AC",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.calendar.key"
+        },
+        {
+          "title": "Palettes",
+          "src": "../../images/projects/icon-palettes.png",
+          "color": "#607D8B",
+          "colorDark": "#E6EE9C",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.theme"
+        },
+        {
+          "title": "Palettes Key",
+          "src": "../../images/projects/icon-palettes-key.png",
+          "color": "#607D8B",
+          "colorDark": "#E6EE9C",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.theme.key"
+        },
+        {
+          "title": "Barquode",
+          "src": "../../images/projects/icon-barquode.png",
+          "color": "#AB47BC",
+          "colorDark": "#81D4FA",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.matrix"
+        },
+        {
+          "title": "Zerocros",
+          "src": "../../images/projects/icon-zerocros.png",
+          "color": "#795548",
+          "colorDark": "#00E676",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.tictactoe"
+        },
+        {
+          "title": "Files",
+          "src": "../../images/projects/icon-files.png",
+          "color": "#E49164",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.files.lite"
+        },
+        {
+          "title": "Stopwatch",
+          "src": "../../images/projects/icon-stopwatch.png",
+          "color": "#7D87C0",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.stopwatch"
+        },
+        {
+          "title": "Torch",
+          "src": "../../images/projects/icon-torch.png",
+          "color": "#26A69A",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.torch.lite"
+        },
+        {
+          "title": "Launcher",
+          "src": "../../images/projects/icon-launcher.png",
+          "color": "#669DF8",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.launcher"
+        },
+        {
+          "title": "Phone",
+          "src": "../../images/projects/icon-phone.png",
+          "color": "#66BB6A",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.phone"
+        },
+        {
+          "title": "Lock",
+          "src": "../../images/projects/icon-lock.png",
+          "color": "#688491",
+          "colorDark": "#78909C",
+          "url": "https://play.google.com/store/apps/details?id=com.pranavpandey.smallapp.lock"
+        }
+      ]
+    },
+    {
+      "category": "Open Source",
+      "data": [
+        {
+          "title": "Dynamic Support",
+          "src": "../../images/projects/icon-dynamic-support.png",
+          "color": "#3F51B5",
+          "colorDark": "#9FA8DA",
+          "url": "https://github.com/pranavpandey/dynamic-support"
+        },
+        {
+          "title": "Dynamic Theme",
+          "src": "../../images/projects/icon-dynamic-theme.png",
+          "color": "#7E57C2",
+          "colorDark": "#B39DDB",
+          "url": "https://github.com/pranavpandey/dynamic-theme"
+        },
+        {
+          "title": "Dynamic Locale",
+          "src": "../../images/projects/icon-dynamic-locale.png",
+          "color": "#1E88E5",
+          "colorDark": "#8FC4F2",
+          "url": "https://github.com/pranavpandey/dynamic-locale"
+        },
+        {
+          "title": "Dynamic Engine",
+          "src": "../../images/projects/icon-dynamic-engine.png",
+          "color": "#795548",
+          "colorDark": "#BCAAA4",
+          "url": "https://github.com/pranavpandey/dynamic-engine"
+        },
+        {
+          "title": "Dynamic Rating",
+          "src": "../../images/projects/icon-dynamic-rating.png",
+          "color": "#F86734",
+          "colorDark": "#FCB39A",
+          "url": "https://github.com/pranavpandey/dynamic-rating"
+        },
+        {
+          "title": "Dynamic Ads",
+          "src": "../../images/projects/icon-dynamic-ads.png",
+          "color": "#005E6A",
+          "colorDark": "#00BCD4",
+          "url": "https://github.com/pranavpandey/dynamic-ads"
+        },
+        {
+          "title": "Dynamic Key",
+          "src": "../../images/projects/icon-dynamic-key.png",
+          "color": "#9C27B0",
+          "colorDark": "#CE93d8",
+          "url": "https://github.com/pranavpandey/dynamic-key"
+        },
+        {
+          "title": "Dynamic Billing",
+          "src": "../../images/projects/icon-dynamic-billing.png",
+          "color": "#1E6E42",
+          "colorDark": "#3DDC84",
+          "url": "https://github.com/pranavpandey/dynamic-billing"
+        },
+        {
+          "title": "Dynamic Backup",
+          "src": "../../images/projects/icon-dynamic-backup.png",
+          "color": "#7C5412",
+          "colorDark": "#F9A825",
+          "url": "https://github.com/pranavpandey/dynamic-backup"
+        },
+        {
+          "title": "Dynamic Utils",
+          "src": "../../images/projects/icon-dynamic-utils.png",
+          "color": "#688491",
+          "colorDark": "#B4C2C8",
+          "url": "https://github.com/pranavpandey/dynamic-utils"
+        },
+        {
+          "title": "Dynamic Preferences",
+          "src": "../../images/projects/icon-dynamic-preferences.png",
+          "color": "#009688",
+          "colorDark": "#80CBC4",
+          "url": "https://github.com/pranavpandey/dynamic-preferences"
+        },
+        {
+          "title": "Dynamic Dialogs",
+          "src": "../../images/projects/icon-dynamic-dialogs.png",
+          "color": "#673AB7",
+          "colorDark": "#B39DDB",
+          "url": "https://github.com/pranavpandey/dynamic-dialogs"
+        },
+        {
+          "title": "Dynamic Motion",
+          "src": "../../images/projects/icon-dynamic-motion.png",
+          "color": "#575A15",
+          "colorDark": "#CDDC39",
+          "url": "https://github.com/pranavpandey/dynamic-motion"
+        },
+        {
+          "title": "Dynamic Toasts",
+          "src": "../../images/projects/icon-dynamic-toasts.png",
+          "color": "#F44336",
+          "colorDark": "#FAA19B",
+          "url": "https://github.com/pranavpandey/dynamic-toasts"
+        },
+        {
+          "title": "Small App Support",
+          "src": "../../images/projects/icon-sas.png",
+          "color": "#688491",
+          "colorDark": "#B4C2C8",
+          "url": "https://github.com/pranavpandey/small-app-support"
+        },
+        {
+          "title": "Polymer Website",
+          "src": "../../images/projects/icon-pp.png",
+          "color": "#3F51B5",
+          "colorDark": "#FBC02D",
+          "url": "https://github.com/pranavpandey/pranavpandey.github.io"
+        }
+      ]
+    },
+    {
+      "category": "Others",
+      "data": [
+        {
+          "title": "Techtics",
+          "src": "../../images/projects/icon-techtics.png",
+          "color": "#138808",
+          "colorDark": "#FF9933",
+          "url": "https://techtics.xyz"
+        },
+        {
+          "title": "Graphics",
+          "src": "../../images/projects/icon-graphics.png",
+          "color": "#4285F4",
+          "colorDark": "#3DDC84",
+          "url": "https://gumroad.com/pranavpandey"
+        },
+        {
+          "title": "Dynamics",
+          "src": "../../images/projects/icon-dynamics-dark.png",
+          "color": "#4527A0",
+          "colorDark": "#B39DDB",
+          "url": "https://gum.co/dOqhw"
+        },
+        {
+          "title": "Light",
+          "src": "../../images/projects/icon-dynamics-light.png",
+          "color": "#1565C0",
+          "colorDark": "#90CAF9",
+          "url": "https://gum.co/fWycT"
+        }
+      ]
+    }
+  ]
+}

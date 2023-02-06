@@ -6,11 +6,11 @@
         {
           "title": "New Delhi, India",
           "subtitle": "8th August 1992",
-          "description": "My name is Pranav Pandey. I was born on August 8th, 1992 in New Delhi, India. As I was growing up, my elders let me try many different things and provided me with the resources to try them and the major things that came out were playing outdoor games like cricket, badminton, volleyball, interest in pc games and computer programming. You can search my name on Google to know more about my contributions in software development, especially in Android.",
+          "description": "My name is Pranav Pandey. I was born on August 8th, 1992 in New Delhi, India. As I was growing up, my elders let me try many different things and provided me with the resources to try them and the major things that came out were playing outdoor games like cricket, badminton, volleyball, interest in pc games and computer programming. You can search my name on Google to know more about my contributions to software development, especially for Android.",
           "links": [
             {
               "link": "Google Search",
-              "url": "https://www.google.co.in/#q=pranav+pandey+android",
+              "url": "https://www.google.com/search?q=pranav+pandey+android",
               "ironIcon": "pp-icons:search",
               "color": "#2196F3",
               "colorDark": "#64B5F6"
@@ -25,13 +25,13 @@
         {
           "title": "Qualification",
           "subtitle": "Computer Science & Engineering",
-          "description": "I am an Engineer by Qualification (B. Tech. in Computer Science & Engineering) and a Programmer and UI/UX Designer by work. I have 5+ years of experience in Android development. I have also worked on some websites and can design some good graphics in Photoshop/Illustrator. Read below about some of my best things.",
+          "description": "I am an Engineer by Qualification (B. Tech. in Computer Science & Engineering) and a Programmer and UI/UX Designer by work. I have 5+ years of experience in Android development. I have also worked on some websites and can design some good graphics in Photoshop/Illustrator. Please read below about some of my best things.",
           "links": []
         },
         {
           "title": "Android Themes, MODS and Custom ROMs",
           "subtitle": "Reverse Engineering",
-          "description": "I have started custom ROM development by reading tutorials from website and forums like XDA. It helped me a lot in learning the basics and life cycle of Android. I have developed two ROMs (ArcMini and xNXT) which became very popular and also ported many latest (at that time) apps and APIs to 2011 Xperia™ devices. I was first to Port Sony Small Apps API and also released a most stable WALKMAN port for those devices. Then, I became Recognized Themer at XDA followed by Recognized Developer in 2013.",
+          "description": "I have started custom ROM development by reading tutorials from website and forums like XDA. It helped me a lot in learning the basics and life cycle of Android. I have developed two ROMs (ArcMini and xNXT) which became very popular and also ported many latest (at that time) apps and APIs to 2011 Xperia™ devices. I was first to Port Sony Small Apps API and also released a most stable WALKMAN port for those devices. Then I became Recognized Themer at XDA followed by Recognized Developer in 2013.",
           "links": [
             {
               "link": "xNXT ROM",
@@ -50,7 +50,7 @@
         {
           "title": "Android Apps",
           "subtitle": "Forward Engineering",
-          "description": "I have started developing apps in 2013. As I ported the Small App API so, I decided to develop Small Apps first which were featured on XDA and many other blogs. There was a good response from users due to unique design and advanced features which I have implemented in those apps. Still, they are the most advanced small apps for Sony devices. My apps have over 500K downloads on Google Play.",
+          "description": "I have started developing apps in 2013. As I ported the Small App API, so I decided to develop Small Apps first which were featured on XDA and many other blogs. There was a good response from users due to the unique design and advanced features that I have implemented in those apps. Still, they are the most advanced small apps for Sony devices. My apps have over 1M downloads on Google Play.",
           "links": [
             {
               "link": "Featured on XDA",
@@ -62,8 +62,8 @@
         },
         {
           "title": "Rotation",
-          "subtitle": "An Orientation Manager",
-          "description": "Switching orientation is always be a problem for people having big devices. So, I have designed a system independent framework to help those users and Rotation was born. Then, I have added all the modes and features on users request. It has been featured on many blogs and has over 250K downloads on Google Play.",
+          "subtitle": "Orientation Manager",
+          "description": "Switching orientation is always a problem for people having big devices, so I designed a system-independent framework to help those users and Rotation was born. Then, I have added all the modes and various features on users' requests. It has been featured on many blogs and has over 575K downloads on Google Play.",
           "links": [
             {
               "link": "XDA",

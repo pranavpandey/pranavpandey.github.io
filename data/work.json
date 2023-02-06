@@ -36,13 +36,13 @@
         {
           "title": "Android Developer",
           "subtitle": "July 2013 - Present | New Delhi, India",
-          "description": "Developer, Programmer, UI/UX Designer and Publisher.\nAttended Google Play App Excellence Summit 2017.\nOver 500K downloads on Google Play.",
+          "description": "Developer, Programmer, UI/UX Designer and Publisher.\nAttended Google Play App Excellence Summit 2017.\nOver 1M downloads on Google Play.",
           "links": [
             {
               "link": "Google Play",
-              "url": "https://play.google.com/store/apps/dev?id=6608630615059087491&hl=en",
+              "url": "https://play.google.com/store/apps/dev?id=6608630615059087491",
               "ironIcon": "pp-icons:shop",
-              "color": "#4285f4",
+              "color": "#4285F4",
               "colorDark": "#3DDC84"
             }
           ]

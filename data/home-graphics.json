@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "category": "Graphics",
+      "data": [
+        {
+          "title": "Icon",
+          "subtitle": "Android | Google Play",
+          "description": "A set of icons according to the official guidelines required to publish an app on Google Play. Each folder contains a PSD and some PNG files to show the default usage. It must be customized to get the final output for a project",
+          "color": "#4285F4",
+          "header": "../../images/graphics/graphics.png",
+          "links": [
+            {
+              "link": "Download",
+              "url": "https://gum.co/XwwAA",
+              "ironIcon": "pp-icons:public",
+              "color": "#4285F4",
+              "colorDark": "#3DDC84"
+            }
+          ]
+        },
+        {
+          "title": "Graphics",
+          "subtitle": "Android | Google Play",
+          "description": "A collection of resources required to publish an app on Google Play. It is divided into various folders according to its purpose. Each folder contains a PSD and some PNG files to show the default usage. It must be customized to get the final output for a project.",
+          "color": "#4285F4",
+          "header": "../../images/graphics/graphics-alt.png",
+          "links": [
+            {
+              "link": "Download",
+              "url": "https://gum.co/TrKWO",
+              "ironIcon": "pp-icons:public",
+              "color": "#4285F4",
+              "colorDark": "#3DDC84"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
