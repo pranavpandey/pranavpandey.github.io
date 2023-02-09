@@ -35,8 +35,8 @@
       "data": [
         {
           "title": "Android Developer",
-          "subtitle": "July 2013 - Present | New Delhi, India",
-          "description": "Developer, Programmer, UI/UX Designer and Publisher.\nAttended Google Play App Excellence Summit 2017.\nOver 1M downloads on Google Play.",
+          "subtitle": "July 2013 - Present | Remote",
+          "description": "Developer, Programmer, UI/UX Designer and Publisher.\nAttended Google Play App Excellence Summit 2017.\nPublished over 20 apps on Google Play with more than 1M downloads.\nCreating various open-source libraries for Android to provide better customization options and speed up the development process.",
           "links": [
             {
               "link": "Google Play",
@@ -49,33 +49,15 @@
         },
         {
           "title": "Web Developer",
-          "subtitle": "June 2015 - Present | New Delhi, India",
-          "description": "Working on some websites using MySQL and PHP for backend (Database) and CSS/HTML and JavaScript for frontend (User Interface with the ability to perform dynamic operations).\nThis website is also written and designed by me using Polymer and Firebase.",
-          "links": []
-        },
-        {
-          "title": "Recognized Developer | XDA-Developers",
-          "subtitle": "March 2013 - Present | New Delhi, India",
-          "description": "ROM Developer (ArcMini & xNXT), Ported lots of applications to older versions of Android using various concepts (smali) and hacks of reverse engineering.\nFirst to port Sony Small Apps API to Xperia™ 2011 MDPI devices.",
+          "subtitle": "June 2015 - Present | Remote",
+          "description": "Managing my personal websites using Polymer and Firebase.\nWorked on some websites using MySQL and PHP for the backend (Database) and CSS/HTML and JavaScript for the frontend (user interface with the ability to perform dynamic operations).",
           "links": [
             {
-              "link": "Profile",
-              "url": "http://forum.xda-developers.com/member.php?u=3962236",
-              "ironIcon": "pp-icons:person",
-              "color": "#F48002"
-            }
-          ]
-        },
-        {
-          "title": "Recognized Themer | XDA-Developers",
-          "subtitle": "August 2012 - September 2018 | New Delhi, India",
-          "description": "Designed colourful themes for CynogenMod and also for my own ROMs (Arcmini & xNXT).\nFixed various layout issues with Xperia™ apps on small screen devices (MDPI).",
-          "links": [
-            {
-              "link": "Profile",
-              "url": "http://forum.xda-developers.com/member.php?u=3962236",
-              "ironIcon": "pp-icons:person",
-              "color": "#F48002"
+              "link": "GitHub",
+              "url": "https://github.com/pranavpandey/pranavpandey.github.io",
+              "ironIcon": "social-icons:github",
+              "color": "#000000",
+              "colorDark": "#FFFFFF"
             }
           ]
         }
@@ -87,20 +69,28 @@
         {
           "title": "Head - Software Development | 4GM Hyve Mobility",
           "subtitle": "October 2016 - 2017 | New Delhi, India",
-          "description": "Attended Google OEM Summit 2016.\nLead the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM's software team in China to provide best user experience.",
+          "description": "Attended Google OEM Summit 2016.\nLed the software development of 3 Android devices with different specs and features.\nDesigned Pure Android experience with GMS approved apps and regular security patch updates.\nVisited and collaborated with ODM’s software team in China to provide the best user experience.",
           "links": []
         },
         {
           "title": "Senior Android Developer | 4GM Hyve Mobility",
           "subtitle": "December 2015 - September 2016 | New Delhi, India",
-          "description": "Implemented customized calling feature by using the fingerprint sensor.\nDeveloped default home screen clock widget according to the company's hexagonal logo.\nDeveloped user facing care app to provide useful support links within the device and to register the warranty information.",
+          "description": "Implemented customized calling feature by using the fingerprint sensor.\nDeveloped default home screen clock widget according to the company's hexagonal logo.\nDeveloped user facing care app to provide useful support links within the device and to register the warranty information. ",
           "links": []
         },
         {
           "title": "Senior Android Developer | Flyrobe",
           "subtitle": "September 2015 - December 2015 | Mumbai, India",
-          "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the API's given by them.\nAdded new features/improvements to the app as per requirements and from the user feedbacks.",
-          "links": []
+          "description": "Worked on UI/UX improvements by adapting Material Design by Google.\nCollaborated with the backend team and integrated the APIs given by them.\nAdded new features/improvements to the app as per requirements and from the user feedback.",
+          "links": [
+            {
+              "link": "Website",
+              "url": "https://flyrobe.com",
+              "ironIcon": "pp-icons:public",
+              "color": "#000000",
+              "colorDark": "#FFFFFF"
+            }
+          ]
         }
       ]
     },
@@ -110,7 +100,7 @@
         {
           "title": "Trainee | HCL Infosystems Ltd.",
           "subtitle": "June 2013 - July 2013 | Ghaziabad, U.P., India",
-          "description": "ASP.Net and C# with A+ grade.",
+          "description": "ASP.Net and C# with an A+ grade.",
           "links": [
             {
               "link": "Website",
@@ -118,6 +108,51 @@
               "ironIcon": "pp-icons:public",
               "color": "#0066B3",
               "colorDark": "#4696D2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Volunteer",
+      "data": [
+        {
+          "title": "Recognized Developer | XDA-Developers",
+          "subtitle": "March 2013 - Present | Remote",
+          "description": "First to port Google Pixel live wallpapers to other devices.\nROM Developer (ArcMini & xNXT), ported lots of applications to older versions of Android using various concepts (smali) and hacks of reverse engineering.\nFirst to port Sony Small Apps API to Xperia™ 2011 MDPI devices.",
+          "links": [
+            {
+              "link": "Profile",
+              "url": "http://forum.xda-developers.com/member.php?u=3962236",
+              "ironIcon": "pp-icons:person",
+              "color": "#F48002"
+            }
+          ]
+        },
+        {
+          "title": "Recognized Themer | XDA-Developers",
+          "subtitle": "August 2012 - September 2018 | Remote",
+          "description": "Designed colorful themes for CyanogenMod and also for my own ROMs (Arcmini & xNXT).\nFixed various layout issues with Xperia™ apps on small-screen devices (MDPI).",
+          "links": [
+            {
+              "link": "Profile",
+              "url": "http://forum.xda-developers.com/member.php?u=3962236",
+              "ironIcon": "pp-icons:person",
+              "color": "#F48002"
+            }
+          ]
+        },
+        {
+          "title": "Dev Library Author | Google",
+          "subtitle": "December 2021 - Present | Remote",
+          "description": "Developing open-source libraries to make Android development better.",
+          "links": [
+            {
+              "link": "Profile",
+              "url": "https://devlibrary.withgoogle.com/authors/pranavpandey",
+              "ironIcon": "pp-icons:person",
+              "color": "#4285F4",
+              "colorDark": "#F4B400"
             }
           ]
         }
