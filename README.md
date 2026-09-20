@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/pranavpandey/pranavpandey.github.io/master/images/projects/icon-pp.png" width="160" height="160" align="right" hspace="20">
+<img src="./images/projects/icon-pp.png" height="160">
 
 # My Personal Website
 
